@@ -1,0 +1,7 @@
+{{ with .Site.Taxonomies.tags }}
+  <div class="tag-cloud">
+    {{ range $name, $taxonomy := . }}
+      <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a>
+    {{ end }}
+  </div>
+{{ end }}

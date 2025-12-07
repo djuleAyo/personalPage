@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Must-Read on djuleayo</title>
+    <link>http://localhost:39541/categories/must-read/</link>
+    <description>Recent content in Must-Read on djuleayo</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 17 May 2025 09:22:50 +0200</lastBuildDate>
+    <atom:link href="http://localhost:39541/categories/must-read/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The missing development metric - UX complexity</title>
+      <link>http://localhost:39541/posts/uxmetrix/</link>
+      <pubDate>Sat, 17 May 2025 09:22:50 +0200</pubDate>
+      <guid>http://localhost:39541/posts/uxmetrix/</guid>
+      <description>&lt;h1 id=&#34;the-missing-development-metric---ux-complexity&#34;&gt;&#xA;  The missing development metric - UX complexity&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#the-missing-development-metric---ux-complexity&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;</description>
+    </item>
+  </channel>
+</rss>

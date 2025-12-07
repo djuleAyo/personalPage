@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Opts on djuleayo</title>
+    <link>http://www.example.com/tags/opts/</link>
+    <description>Recent content in Opts on djuleayo</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 15 May 2025 17:10:43 +0200</lastBuildDate>
+    <atom:link href="http://www.example.com/tags/opts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JS spread performance ⚠️warning</title>
+      <link>http://www.example.com/posts/spread-performance/</link>
+      <pubDate>Thu, 15 May 2025 17:10:43 +0200</pubDate>
+      <guid>http://www.example.com/posts/spread-performance/</guid>
+      <description>&lt;h1 id=&#34;js-spread-performance-warning&#34;&gt;&#xA;  JS spread performance ⚠️warning&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#js-spread-performance-warning&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Us web devs, we often speculate syntax based on &amp;ldquo;best practices&amp;rdquo; bestowed upon&#xA;us by the Gods of - meme lords. We praise our prettier and linters as basis of&#xA;all success. Looping between all 22 and a half options of a drop down&#xA;allows you to use exponential complexity implementations. In a loop.&#xA;Because even if you have 2k entries thats a warmup for one core.&#xA;So in all wire connections between types, runtime validators, component props,&#xA;api responses and requests, rarely in fact implementation matters from performance standpoint. Except when it does.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

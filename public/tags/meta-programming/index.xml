@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Meta-Programming on djuleayo</title>
+    <link>http://www.example.com/tags/meta-programming/</link>
+    <description>Recent content in Meta-Programming on djuleayo</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 24 Jul 2025 11:13:48 +0200</lastBuildDate>
+    <atom:link href="http://www.example.com/tags/meta-programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Parser types</title>
+      <link>http://www.example.com/posts/parser-types/</link>
+      <pubDate>Thu, 24 Jul 2025 11:13:48 +0200</pubDate>
+      <guid>http://www.example.com/posts/parser-types/</guid>
+      <description>&lt;h1 id=&#34;parser-types&#34;&gt;&#xA;  Parser types&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#parser-types&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;intro--formal-languages-and-parsing&#34;&gt;&#xA;  Intro — formal languages and parsing&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#intro--formal-languages-and-parsing&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;All programming languages are specified by a grammar. A grammar tells us whether a piece of text is a valid sentence in that language. A parser generator can take such a grammar and produce a parser. Parsing is the “front end” of compilation: it turns raw text into structure. That’s the basis of how formal languages work.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
