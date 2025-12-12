@@ -62,7 +62,7 @@ All programming languages are specified by a grammar. A grammar tells us whether
 
   
   
-  <link rel="stylesheet" href="/css/coder.min.7763f8bc6341ecf82378e867c285e1549abb063a899be313ccd25dbfcd24fa7d.css" integrity="sha256-d2P4vGNB7PgjeOhnwoXhVJq7BjqJm&#43;MTzNJdv80k&#43;n0=" crossorigin="anonymous" media="screen" />
+  <link rel="stylesheet" href="/css/coder.min.7ee04855f01a7f7a311ce189708f520a1a1d93c249cfed3b23e8c27666fc546e.css" integrity="sha256-fuBIVfAaf3oxHOGJcI9SChodk8JJz&#43;07I&#43;jCdmb8VG4=" crossorigin="anonymous" media="screen" />
 
 
 
@@ -258,7 +258,8 @@ expression: expression &#39;+&#39; expression
 </h2>
 <p>Configurations aren’t always free-form; values often depend on each other. Not every config that “type-checks” at the top level is semantically valid. Think of a configuration as:</p>
 <blockquote>
-<p>a constant value that must satisfy a language (expressed as an AST)</p></blockquote>
+<p>a constant value that must satisfy a language (expressed as an AST)</p>
+</blockquote>
 <p>If that clicks, good. TypeScript lets us enforce such languages at compile time. I call these parser types: recursive TS types that act like a grammar. They don’t parse tokens; they constrain shape the way a grammar constrains sentences.</p>
 <p>Consider:</p>
 <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="color:#ff7b72">type</span> Test <span style="color:#ff7b72;font-weight:bold">=</span> Record&lt;<span style="color:#7ee787">string</span>, Test&gt; <span style="color:#8b949e;font-style:italic">// ❌ can&#39;t do
