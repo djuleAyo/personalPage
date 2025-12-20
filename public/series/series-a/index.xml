@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Series A · djuleayo</title>
+    <link>http://localhost:1313/series/series-a/</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/series/series-a/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Automation Doesn’t Work for You – And That’s By Design</title>
+      <link>http://localhost:1313/posts/power-of-automation/</link>
+      <guid>http://localhost:1313/posts/power-of-automation/</guid>
+      <pubDate>Sat, 24 May 2025 17:10:43 CEST</pubDate>
+      <description>&amp;lt;h1 id=&amp;#34;automation-doesnt-work-for-you--and-thats-by-design&amp;#34;&amp;gt;
+  Automation Doesn’t Work for You – And That’s By Design
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#automation-doesnt-work-for-you--and-thats-by-design&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h1&amp;gt;
+&amp;lt;blockquote&amp;gt;
+&amp;lt;p&amp;gt;Automation is Power.&amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+&amp;lt;p&amp;gt;This truth was carved into history when Alan Turing and others turned machines into war-winning tools. Those who mastered automation during wartime gained world-scale leverage. The ability to process and act faster than your enemy became the new axis of power. Such is the scale of automation.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Fast-forward to today. You have more raw computational power in your pocket than Turing had in all of Bletchley Park. You have access to programming languages, cloud infrastructure, and libraries of logic once reserved for elite scientists.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;But power of automation doesn&amp;amp;rsquo;t work for you!&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;This is the real question. Not &amp;amp;ldquo;will AI replace us&amp;amp;rdquo; junk. Why is power of automation,
+remember, world war scale power not working for me? Even tho you have ingredients, processing power and lets say
+ability to command that power - write code.
+Do you actually think about that?&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;The automation dream was hijacked. You have the electricity but not the switchboard. The processor but not the interface. The AI but not the reasoning layer.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Again: &amp;amp;ldquo;Will AI replace us?&amp;amp;rdquo; Don&amp;amp;rsquo;t you see it? Wrong question!
+Another promise of power which will by the mechanism that is already in place, yet again not work for you.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;You work for it. How?&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;fragmentation-the-smoke-bomb-of-the-digital-age&amp;#34;&amp;gt;
+  Fragmentation: The Smoke Bomb of the Digital Age
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#fragmentation-the-smoke-bomb-of-the-digital-age&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Each wave of technology promises more power. But each wave forces you to rewrite, reintegrate, relearn. Your logic becomes disposable. Your interfaces become incompatible. Your memory becomes siloed.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;This is not a bug. It is a feature of fragmentation.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Fragmentation is the mechanism by which systems disguise the fact that they are not automating anything. They are making you repeat the same patterns in new wrappers. Rebuilding the same UI, the same logic, the same workflows.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Take the modern chat app:&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;You cannot access your own conversations programmatically.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;You cannot extract patterns, memories, or trails of thought.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;You are locked in a scroll-and-forget interface designed to make you dependent, not aware.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;It is software modeled after corporate structure, not human intent.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;The chat box is the perfect metaphor: it simulates conversation, but blocks ownership of the knowledge.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;data-ownership-is-index-ownership&amp;#34;&amp;gt;
+  Data Ownership Is Index Ownership
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#data-ownership-is-index-ownership&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;The true value of data is not in possession, but in referencing.
+If you can&amp;amp;rsquo;t traverse it, connect it, recall it—you don&amp;amp;rsquo;t own it.&amp;lt;/p&amp;gt;
+&amp;lt;blockquote&amp;gt;
+&amp;lt;p&amp;gt;Data ownership is index ownership.&amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+&amp;lt;p&amp;gt;And by design, you do not own the index.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;The index is hidden behind UX.
+The index is locked behind APIs.
+The index is reshuffled and monetized in feeds you can&amp;amp;rsquo;t control.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;But the index is the power of intelligence.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;It is what lets memory become utility.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;It is what makes pattern recognition possible.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;It is what defines reasoning.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Ownership of data without the index is a decoy. A smokescreen.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Post-Fragmentation Systems: Toward Real Control&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;To reclaim power, we must move past naming, past folders, past the app paradigm.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;We must build systems where:&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Indexing is declarative, relational, and user-centric.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Search becomes semantic, associative, and deterministic.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Memory becomes a graph, not a graveyard.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Data and instruction become one, and automation becomes aligned.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;This is not fantasy. It is architecture. And it is being built.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Even among developers—millions of us who write the indexes—we still haven’t built a unified temple of collaboration and goodwill.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Yes, we have open source. And yes, you can spin up your own chat server and inspect your own data. But even open source remains locked in the design logic of a fragmented world.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;There is no single monorepo of human collaboration.
+No shared structure of memory.
+No living index that binds our work together.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Why?&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Because even in the act of programming itself, fragmentation is embedded at the root.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;The final tool of fragmentation is not an app, nor a UX.
+It is the deepest coupling in software itself—the binding of location and reference.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Stay tuned. That fracture deserves a chapter of its own.&amp;lt;/p&amp;gt;
+</description>
+      <content:encoded>&amp;lt;h1 id=&amp;#34;automation-doesnt-work-for-you--and-thats-by-design&amp;#34;&amp;gt;
+  Automation Doesn’t Work for You – And That’s By Design
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#automation-doesnt-work-for-you--and-thats-by-design&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h1&amp;gt;
+&amp;lt;blockquote&amp;gt;
+&amp;lt;p&amp;gt;Automation is Power.&amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+&amp;lt;p&amp;gt;This truth was carved into history when Alan Turing and others turned machines into war-winning tools. Those who mastered automation during wartime gained world-scale leverage. The ability to process and act faster than your enemy became the new axis of power. Such is the scale of automation.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Fast-forward to today. You have more raw computational power in your pocket than Turing had in all of Bletchley Park. You have access to programming languages, cloud infrastructure, and libraries of logic once reserved for elite scientists.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;But power of automation doesn&amp;amp;rsquo;t work for you!&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;This is the real question. Not &amp;amp;ldquo;will AI replace us&amp;amp;rdquo; junk. Why is power of automation,
+remember, world war scale power not working for me? Even tho you have ingredients, processing power and lets say
+ability to command that power - write code.
+Do you actually think about that?&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;The automation dream was hijacked. You have the electricity but not the switchboard. The processor but not the interface. The AI but not the reasoning layer.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Again: &amp;amp;ldquo;Will AI replace us?&amp;amp;rdquo; Don&amp;amp;rsquo;t you see it? Wrong question!
+Another promise of power which will by the mechanism that is already in place, yet again not work for you.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;You work for it. How?&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;fragmentation-the-smoke-bomb-of-the-digital-age&amp;#34;&amp;gt;
+  Fragmentation: The Smoke Bomb of the Digital Age
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#fragmentation-the-smoke-bomb-of-the-digital-age&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Each wave of technology promises more power. But each wave forces you to rewrite, reintegrate, relearn. Your logic becomes disposable. Your interfaces become incompatible. Your memory becomes siloed.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;This is not a bug. It is a feature of fragmentation.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Fragmentation is the mechanism by which systems disguise the fact that they are not automating anything. They are making you repeat the same patterns in new wrappers. Rebuilding the same UI, the same logic, the same workflows.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Take the modern chat app:&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;You cannot access your own conversations programmatically.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;You cannot extract patterns, memories, or trails of thought.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;You are locked in a scroll-and-forget interface designed to make you dependent, not aware.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;It is software modeled after corporate structure, not human intent.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;The chat box is the perfect metaphor: it simulates conversation, but blocks ownership of the knowledge.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;data-ownership-is-index-ownership&amp;#34;&amp;gt;
+  Data Ownership Is Index Ownership
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#data-ownership-is-index-ownership&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;The true value of data is not in possession, but in referencing.
+If you can&amp;amp;rsquo;t traverse it, connect it, recall it—you don&amp;amp;rsquo;t own it.&amp;lt;/p&amp;gt;
+&amp;lt;blockquote&amp;gt;
+&amp;lt;p&amp;gt;Data ownership is index ownership.&amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+&amp;lt;p&amp;gt;And by design, you do not own the index.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;The index is hidden behind UX.
+The index is locked behind APIs.
+The index is reshuffled and monetized in feeds you can&amp;amp;rsquo;t control.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;But the index is the power of intelligence.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;It is what lets memory become utility.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;It is what makes pattern recognition possible.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;It is what defines reasoning.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Ownership of data without the index is a decoy. A smokescreen.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Post-Fragmentation Systems: Toward Real Control&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;To reclaim power, we must move past naming, past folders, past the app paradigm.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;We must build systems where:&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Indexing is declarative, relational, and user-centric.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Search becomes semantic, associative, and deterministic.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Memory becomes a graph, not a graveyard.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Data and instruction become one, and automation becomes aligned.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;This is not fantasy. It is architecture. And it is being built.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Even among developers—millions of us who write the indexes—we still haven’t built a unified temple of collaboration and goodwill.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Yes, we have open source. And yes, you can spin up your own chat server and inspect your own data. But even open source remains locked in the design logic of a fragmented world.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;There is no single monorepo of human collaboration.
+No shared structure of memory.
+No living index that binds our work together.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Why?&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Because even in the act of programming itself, fragmentation is embedded at the root.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;The final tool of fragmentation is not an app, nor a UX.
+It is the deepest coupling in software itself—the binding of location and reference.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Stay tuned. That fracture deserves a chapter of its own.&amp;lt;/p&amp;gt;
+</content:encoded>
+    </item><item>
+      <title>FP vs IP and Microservices vs Monoliths are the same argument</title>
+      <link>http://localhost:1313/posts/recomputing-since-christ/</link>
+      <guid>http://localhost:1313/posts/recomputing-since-christ/</guid>
+      <pubDate>Thu, 15 May 2025 17:10:43 CEST</pubDate>
+      <description>&amp;lt;h1 id=&amp;#34;fp-vs-ip-and-microservices-vs-monoliths-are-the-same-argument&amp;#34;&amp;gt;
+  FP vs IP and Microservices vs Monoliths are the same argument
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#fp-vs-ip-and-microservices-vs-monoliths-are-the-same-argument&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h1&amp;gt;
+&amp;lt;p&amp;gt;There is a huge parallel between:&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;functional vs imperative programming&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;microservices vs monoliths&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;Now, the most unwelcome thing—dogma—should have no foothold in the software world. But it does.&amp;lt;br&amp;gt;
+Just like other markets, we ride waves of virality. It’s no coincidence that most beginners choose the most popular frameworks and languages.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;While this kind of marketing gives guidance, it destroys the very essence of what coding should be: &amp;lt;strong&amp;gt;sense&amp;lt;/strong&amp;gt;.&amp;lt;br&amp;gt;
+So parrots fly around and repeat things like:&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;&amp;amp;ldquo;Microservices are better than monoliths&amp;amp;rdquo;&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;&amp;amp;ldquo;Functional programming is better than imperative programming&amp;amp;rdquo;&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;But both approaches live, both are used—and that alone tells us both are good and both have their place.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Let’s draw the parallel between these two debates and expose the hype for what it is.&amp;lt;/p&amp;gt;
+&amp;lt;hr&amp;gt;
+&amp;lt;h2 id=&amp;#34;the-microservice-hype&amp;#34;&amp;gt;
+  The Microservice Hype
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#the-microservice-hype&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Every aspiring developer is told they must know how to build scalable systems before they can land a job—as if each of us is building cloud-scale infrastructure for side projects.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Buzzwords in job postings feed the hype, and so do slogans like:&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;“Your microservice team can be fed by one pizza.”&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;“Keep your services stateless.”&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;How many times have I heard the second one in interviews—only to open the source code and find a constructor call inside a &amp;lt;code&amp;gt;get&amp;lt;/code&amp;gt; method, of a class passed via dependency injection&amp;amp;hellip; in JavaScript.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Come on. Time to quit (this really happened 😅).&amp;lt;/p&amp;gt;
+&amp;lt;hr&amp;gt;
+&amp;lt;h2 id=&amp;#34;java-overengineering-in-javascript&amp;#34;&amp;gt;
+  Java Overengineering in JavaScript
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#java-overengineering-in-javascript&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Java-style overengineering doesn’t belong in JavaScript.&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;Your JS module is automatically a singleton (unless you use dynamic imports).&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;The runtime handles circular dependency resolution.&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Your module’s global-scope variables can’t be mutated from the outside without you &amp;lt;strong&amp;gt;exposing&amp;lt;/strong&amp;gt; an interface to do so.&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;And yet, people bring Java complexity patterns into JS like it&amp;amp;rsquo;s a rite of passage.&amp;lt;/p&amp;gt;
+&amp;lt;hr&amp;gt;
+&amp;lt;h2 id=&amp;#34;bitter-sweet-reality&amp;#34;&amp;gt;
+  Bitter sweet reality
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#bitter-sweet-reality&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;This brings us to the real point: most devs are beginners. This will always be true.
+Most of us are territorial (we defend our code even when it sucks), and many are driven by the desire to be &amp;lt;strong&amp;gt;right&amp;lt;/strong&amp;gt;—or at least to appear smart.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;This, combined with a general lack of experience, makes it almost a rule: &amp;lt;strong&amp;gt;large codebases will be colored with smells&amp;lt;/strong&amp;gt;.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Even &amp;amp;ldquo;stateless&amp;amp;rdquo; microservices often use stateful libraries or sessions for auth. Perspective is lacking—and that lack is guarded by dogma, which ultimately reduces to social behavior.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;And maybe that’s fine.&amp;lt;br&amp;gt;
+After all, every problem should’ve been solved yesterday. Business doesn’t wait. We must deliver. Fast.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;So there’s no time for:&amp;lt;/p&amp;gt;
+&amp;lt;blockquote&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;&amp;amp;ldquo;If you want to make pasta from scratch, you must first invent the universe.&amp;amp;rdquo;&amp;lt;/em&amp;gt;&amp;lt;br&amp;gt;
+— Carl Sagan&amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+&amp;lt;hr&amp;gt;
+&amp;lt;h2 id=&amp;#34;services-should-be-focused&amp;#34;&amp;gt;
+  Services Should Be Focused
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#services-should-be-focused&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Like modules, services should focus on &amp;lt;strong&amp;gt;one thing&amp;lt;/strong&amp;gt; and do it well.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Why? So we can scale them horizontally, reuse them, and maintain them independently.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;But here’s where inexperience hits.&amp;lt;br&amp;gt;
+Many devs—even seniors in web—have never written a proper multithreaded program. Those who have know that &amp;lt;strong&amp;gt;orchestrating multiple clones of the same thing requires overhead&amp;lt;/strong&amp;gt;.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;In microservices, this overhead is primarily the &amp;lt;strong&amp;gt;cost of statelessness&amp;lt;/strong&amp;gt;.&amp;lt;/p&amp;gt;
+&amp;lt;hr&amp;gt;
+&amp;lt;h2 id=&amp;#34;stateless-by-design--and-by-cost&amp;#34;&amp;gt;
+  Stateless by Design — and by Cost
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#stateless-by-design--and-by-cost&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Your message queues, Redis instances, and storage layers all need to be stateless (or used in a stateless way), because &amp;lt;strong&amp;gt;synchronizing across clones&amp;lt;/strong&amp;gt; goes against horizontal scaling.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Need more performance? Spin up more instances.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;The more instances you have, the harder it gets to synchronize them.&amp;lt;br&amp;gt;
+So… just don’t.&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;Don’t cache.&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Don’t store session data.&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Don’t share memory.&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;Instead: &amp;lt;strong&amp;gt;recompute everything&amp;lt;/strong&amp;gt; every time.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Just like how a server-side page is re-rendered per request.&amp;lt;/p&amp;gt;
+&amp;lt;hr&amp;gt;
+&amp;lt;h2 id=&amp;#34;example&amp;#34;&amp;gt;
+  Example
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#example&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Let’s put it in beginner-friendly terms.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Say you have a function:&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;#34;highlight&amp;#34;&amp;gt;&amp;lt;pre tabindex=&amp;#34;0&amp;#34; style=&amp;#34;color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&amp;#34;&amp;gt;&amp;lt;code class=&amp;#34;language-python&amp;#34; data-lang=&amp;#34;python&amp;#34;&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;def&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;#34;color:#d2a8ff;font-weight:bold&amp;#34;&amp;gt;fibonacci&amp;lt;/span&amp;gt;(n):
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;p&amp;gt;Now you call:&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;#34;highlight&amp;#34;&amp;gt;&amp;lt;pre tabindex=&amp;#34;0&amp;#34; style=&amp;#34;color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&amp;#34;&amp;gt;&amp;lt;code class=&amp;#34;language-python&amp;#34; data-lang=&amp;#34;python&amp;#34;&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;print(fibonacci(&amp;lt;span style=&amp;#34;color:#a5d6ff&amp;#34;&amp;gt;100&amp;lt;/span&amp;gt;))
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;print(fibonacci(&amp;lt;span style=&amp;#34;color:#a5d6ff&amp;#34;&amp;gt;101&amp;lt;/span&amp;gt;))
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;p&amp;gt;Neither functional programming nor microservices care that you just computed fibonacci(100).
+On line two, you start from scratch.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Only difference? A microservice wraps it in an HTTP request.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;So the real question becomes:&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Why is this better than a monolith?
+Why is it better than imperative code that could just cache the result—scaling vertically and holding runtime state with ease?&amp;lt;/p&amp;gt;
+&amp;lt;blockquote&amp;gt;
+&amp;lt;p&amp;gt;“Devs can think much further than they can code. Power to express oneself is lacking.”&amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+&amp;lt;p&amp;gt;This is the key.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Recomputing is obviously more expensive than caching, from the machine’s perspective. But from the developer’s perspective?&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Caching is low-level. Tedious. Demanding. Often lacking expressive power.
+So we avoid it.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Instead, we build massive CI pipelines, spin nuclear-scale infrastructure, and recompute everything since Christ—just to avoid managing memory.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;scaling-with-clones-vs-standing-on-state&amp;#34;&amp;gt;
+  Scaling with Clones vs Standing on State
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#scaling-with-clones-vs-standing-on-state&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Functional programming and microservices recompute anew—but can easily spawn 1000 instances of the same thing.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Imperative programming and monoliths tend to revolve around a single instance—but with the benefit of retained state and optimized memory usage.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Which one is better?&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;No straight answer.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;protecting-the-codebase-from-your-own-team&amp;#34;&amp;gt;
+  Protecting the Codebase from Your Own Team
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#protecting-the-codebase-from-your-own-team&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;If you have a large team, you often want to restrict expressive power.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;You narrow responsibilities so each dev works in isolation.
+This reduces risk, reduces damage, and speeds up onboarding.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Yes, expressive power is linked to production cost and complexity.
+And industry cares more about delivering features than squeezing performance.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Under one condition:&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;platforms-vs-applications&amp;#34;&amp;gt;
+  Platforms vs Applications
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#platforms-vs-applications&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;We can divide software into two rough categories:&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;Infrastructure — platforms like compilers, browsers, frameworks, and libraries&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Applications — business logic and user-facing systems&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;If you fall into the second category, you tend to value:&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Expressive power&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Fast iteration&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;High-level abstraction&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;That’s when you lean on frameworks, CI pipelines, and horizontal scaling.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;But if you&amp;amp;rsquo;re building infrastructure, you care more about:&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Precision&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Performance&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Long-term stability&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;So you optimize. You profile. You write tight, efficient code.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;the-pendulum-swings&amp;#34;&amp;gt;
+  The Pendulum Swings
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#the-pendulum-swings&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;We can’t always compute exactly when it’s time to switch paradigms.
+When is it worth optimizing that slow service? When is it better to lean into scale?&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;The pendulum will keep swinging—from monolith to microservice, from FP to imperative.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;But the ideal gap between what we can think and what we can express in code is still wide. Maybe unbridgeable.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;the-real-limitation-human-abstraction&amp;#34;&amp;gt;
+  The Real Limitation: Human Abstraction
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#the-real-limitation-human-abstraction&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;It’s not that we lack tools to build expressive languages. They exist.
+The real problem is:&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Human limitations in abstraction.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;As one of my respected colleagues once said:&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;“The more abstract you go, the more language resembles static noise.”&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;And that is something worth pondering.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;It may be the real cause behind these never-ending clashes in modern software:
+FP vs IP, MS vs monolith — and the limits of the human mind behind the keyboard.&amp;lt;/p&amp;gt;
+</description>
+      <content:encoded>&amp;lt;h1 id=&amp;#34;fp-vs-ip-and-microservices-vs-monoliths-are-the-same-argument&amp;#34;&amp;gt;
+  FP vs IP and Microservices vs Monoliths are the same argument
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#fp-vs-ip-and-microservices-vs-monoliths-are-the-same-argument&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h1&amp;gt;
+&amp;lt;p&amp;gt;There is a huge parallel between:&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;functional vs imperative programming&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;microservices vs monoliths&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;Now, the most unwelcome thing—dogma—should have no foothold in the software world. But it does.&amp;lt;br&amp;gt;
+Just like other markets, we ride waves of virality. It’s no coincidence that most beginners choose the most popular frameworks and languages.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;While this kind of marketing gives guidance, it destroys the very essence of what coding should be: &amp;lt;strong&amp;gt;sense&amp;lt;/strong&amp;gt;.&amp;lt;br&amp;gt;
+So parrots fly around and repeat things like:&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;&amp;amp;ldquo;Microservices are better than monoliths&amp;amp;rdquo;&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;&amp;amp;ldquo;Functional programming is better than imperative programming&amp;amp;rdquo;&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;But both approaches live, both are used—and that alone tells us both are good and both have their place.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Let’s draw the parallel between these two debates and expose the hype for what it is.&amp;lt;/p&amp;gt;
+&amp;lt;hr&amp;gt;
+&amp;lt;h2 id=&amp;#34;the-microservice-hype&amp;#34;&amp;gt;
+  The Microservice Hype
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#the-microservice-hype&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Every aspiring developer is told they must know how to build scalable systems before they can land a job—as if each of us is building cloud-scale infrastructure for side projects.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Buzzwords in job postings feed the hype, and so do slogans like:&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;“Your microservice team can be fed by one pizza.”&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;“Keep your services stateless.”&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;How many times have I heard the second one in interviews—only to open the source code and find a constructor call inside a &amp;lt;code&amp;gt;get&amp;lt;/code&amp;gt; method, of a class passed via dependency injection&amp;amp;hellip; in JavaScript.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Come on. Time to quit (this really happened 😅).&amp;lt;/p&amp;gt;
+&amp;lt;hr&amp;gt;
+&amp;lt;h2 id=&amp;#34;java-overengineering-in-javascript&amp;#34;&amp;gt;
+  Java Overengineering in JavaScript
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#java-overengineering-in-javascript&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Java-style overengineering doesn’t belong in JavaScript.&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;Your JS module is automatically a singleton (unless you use dynamic imports).&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;The runtime handles circular dependency resolution.&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Your module’s global-scope variables can’t be mutated from the outside without you &amp;lt;strong&amp;gt;exposing&amp;lt;/strong&amp;gt; an interface to do so.&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;And yet, people bring Java complexity patterns into JS like it&amp;amp;rsquo;s a rite of passage.&amp;lt;/p&amp;gt;
+&amp;lt;hr&amp;gt;
+&amp;lt;h2 id=&amp;#34;bitter-sweet-reality&amp;#34;&amp;gt;
+  Bitter sweet reality
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#bitter-sweet-reality&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;This brings us to the real point: most devs are beginners. This will always be true.
+Most of us are territorial (we defend our code even when it sucks), and many are driven by the desire to be &amp;lt;strong&amp;gt;right&amp;lt;/strong&amp;gt;—or at least to appear smart.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;This, combined with a general lack of experience, makes it almost a rule: &amp;lt;strong&amp;gt;large codebases will be colored with smells&amp;lt;/strong&amp;gt;.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Even &amp;amp;ldquo;stateless&amp;amp;rdquo; microservices often use stateful libraries or sessions for auth. Perspective is lacking—and that lack is guarded by dogma, which ultimately reduces to social behavior.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;And maybe that’s fine.&amp;lt;br&amp;gt;
+After all, every problem should’ve been solved yesterday. Business doesn’t wait. We must deliver. Fast.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;So there’s no time for:&amp;lt;/p&amp;gt;
+&amp;lt;blockquote&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;&amp;amp;ldquo;If you want to make pasta from scratch, you must first invent the universe.&amp;amp;rdquo;&amp;lt;/em&amp;gt;&amp;lt;br&amp;gt;
+— Carl Sagan&amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+&amp;lt;hr&amp;gt;
+&amp;lt;h2 id=&amp;#34;services-should-be-focused&amp;#34;&amp;gt;
+  Services Should Be Focused
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#services-should-be-focused&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Like modules, services should focus on &amp;lt;strong&amp;gt;one thing&amp;lt;/strong&amp;gt; and do it well.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Why? So we can scale them horizontally, reuse them, and maintain them independently.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;But here’s where inexperience hits.&amp;lt;br&amp;gt;
+Many devs—even seniors in web—have never written a proper multithreaded program. Those who have know that &amp;lt;strong&amp;gt;orchestrating multiple clones of the same thing requires overhead&amp;lt;/strong&amp;gt;.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;In microservices, this overhead is primarily the &amp;lt;strong&amp;gt;cost of statelessness&amp;lt;/strong&amp;gt;.&amp;lt;/p&amp;gt;
+&amp;lt;hr&amp;gt;
+&amp;lt;h2 id=&amp;#34;stateless-by-design--and-by-cost&amp;#34;&amp;gt;
+  Stateless by Design — and by Cost
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#stateless-by-design--and-by-cost&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Your message queues, Redis instances, and storage layers all need to be stateless (or used in a stateless way), because &amp;lt;strong&amp;gt;synchronizing across clones&amp;lt;/strong&amp;gt; goes against horizontal scaling.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Need more performance? Spin up more instances.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;The more instances you have, the harder it gets to synchronize them.&amp;lt;br&amp;gt;
+So… just don’t.&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;Don’t cache.&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Don’t store session data.&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Don’t share memory.&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;Instead: &amp;lt;strong&amp;gt;recompute everything&amp;lt;/strong&amp;gt; every time.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Just like how a server-side page is re-rendered per request.&amp;lt;/p&amp;gt;
+&amp;lt;hr&amp;gt;
+&amp;lt;h2 id=&amp;#34;example&amp;#34;&amp;gt;
+  Example
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#example&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Let’s put it in beginner-friendly terms.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Say you have a function:&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;#34;highlight&amp;#34;&amp;gt;&amp;lt;pre tabindex=&amp;#34;0&amp;#34; style=&amp;#34;color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&amp;#34;&amp;gt;&amp;lt;code class=&amp;#34;language-python&amp;#34; data-lang=&amp;#34;python&amp;#34;&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;def&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;#34;color:#d2a8ff;font-weight:bold&amp;#34;&amp;gt;fibonacci&amp;lt;/span&amp;gt;(n):
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;p&amp;gt;Now you call:&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;#34;highlight&amp;#34;&amp;gt;&amp;lt;pre tabindex=&amp;#34;0&amp;#34; style=&amp;#34;color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&amp;#34;&amp;gt;&amp;lt;code class=&amp;#34;language-python&amp;#34; data-lang=&amp;#34;python&amp;#34;&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;print(fibonacci(&amp;lt;span style=&amp;#34;color:#a5d6ff&amp;#34;&amp;gt;100&amp;lt;/span&amp;gt;))
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;print(fibonacci(&amp;lt;span style=&amp;#34;color:#a5d6ff&amp;#34;&amp;gt;101&amp;lt;/span&amp;gt;))
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;p&amp;gt;Neither functional programming nor microservices care that you just computed fibonacci(100).
+On line two, you start from scratch.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Only difference? A microservice wraps it in an HTTP request.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;So the real question becomes:&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Why is this better than a monolith?
+Why is it better than imperative code that could just cache the result—scaling vertically and holding runtime state with ease?&amp;lt;/p&amp;gt;
+&amp;lt;blockquote&amp;gt;
+&amp;lt;p&amp;gt;“Devs can think much further than they can code. Power to express oneself is lacking.”&amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+&amp;lt;p&amp;gt;This is the key.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Recomputing is obviously more expensive than caching, from the machine’s perspective. But from the developer’s perspective?&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Caching is low-level. Tedious. Demanding. Often lacking expressive power.
+So we avoid it.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Instead, we build massive CI pipelines, spin nuclear-scale infrastructure, and recompute everything since Christ—just to avoid managing memory.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;scaling-with-clones-vs-standing-on-state&amp;#34;&amp;gt;
+  Scaling with Clones vs Standing on State
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#scaling-with-clones-vs-standing-on-state&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Functional programming and microservices recompute anew—but can easily spawn 1000 instances of the same thing.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Imperative programming and monoliths tend to revolve around a single instance—but with the benefit of retained state and optimized memory usage.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Which one is better?&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;No straight answer.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;protecting-the-codebase-from-your-own-team&amp;#34;&amp;gt;
+  Protecting the Codebase from Your Own Team
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#protecting-the-codebase-from-your-own-team&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;If you have a large team, you often want to restrict expressive power.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;You narrow responsibilities so each dev works in isolation.
+This reduces risk, reduces damage, and speeds up onboarding.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Yes, expressive power is linked to production cost and complexity.
+And industry cares more about delivering features than squeezing performance.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Under one condition:&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;platforms-vs-applications&amp;#34;&amp;gt;
+  Platforms vs Applications
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#platforms-vs-applications&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;We can divide software into two rough categories:&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;Infrastructure — platforms like compilers, browsers, frameworks, and libraries&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Applications — business logic and user-facing systems&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;If you fall into the second category, you tend to value:&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Expressive power&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Fast iteration&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;High-level abstraction&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;That’s when you lean on frameworks, CI pipelines, and horizontal scaling.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;But if you&amp;amp;rsquo;re building infrastructure, you care more about:&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Precision&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Performance&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Long-term stability&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;So you optimize. You profile. You write tight, efficient code.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;the-pendulum-swings&amp;#34;&amp;gt;
+  The Pendulum Swings
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#the-pendulum-swings&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;We can’t always compute exactly when it’s time to switch paradigms.
+When is it worth optimizing that slow service? When is it better to lean into scale?&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;The pendulum will keep swinging—from monolith to microservice, from FP to imperative.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;But the ideal gap between what we can think and what we can express in code is still wide. Maybe unbridgeable.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;the-real-limitation-human-abstraction&amp;#34;&amp;gt;
+  The Real Limitation: Human Abstraction
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#the-real-limitation-human-abstraction&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;It’s not that we lack tools to build expressive languages. They exist.
+The real problem is:&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Human limitations in abstraction.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;As one of my respected colleagues once said:&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;“The more abstract you go, the more language resembles static noise.”&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;And that is something worth pondering.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;It may be the real cause behind these never-ending clashes in modern software:
+FP vs IP, MS vs monolith — and the limits of the human mind behind the keyboard.&amp;lt;/p&amp;gt;
+</content:encoded>
+    </item>
+  </channel>
+</rss>

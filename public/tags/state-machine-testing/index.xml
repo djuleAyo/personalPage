@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>State-Machine-Testing · djuleayo</title>
+    <link>http://localhost:1313/tags/state-machine-testing/</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/tags/state-machine-testing/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Every user flow e2es - model-based testing / state-machine testing</title>
+      <link>http://localhost:1313/posts/model-based-testing/</link>
+      <guid>http://localhost:1313/posts/model-based-testing/</guid>
+      <pubDate>Fri, 06 Jun 2025 14:05:26 CEST</pubDate>
+      <description>&amp;lt;h2 id=&amp;#34;intro&amp;#34;&amp;gt;
+  Intro
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#intro&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;What an exiting and strange time we live in! At the same time
+streets are poverty struck resembling void of beauty,
+and I can play with miniature special purpose machine brains sitting on
+gigantic legacy of modern computing. Words really is battlefront of light and dark. One of such brains can be constructed and used in app testing purposes.&amp;lt;/p&amp;gt;
+&amp;lt;h1 id=&amp;#34;every-user-flow-e2es---model-based-testing--state-machine-testing&amp;#34;&amp;gt;
+  Every user flow e2es - model-based testing / state-machine testing
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#every-user-flow-e2es---model-based-testing--state-machine-testing&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h1&amp;gt;
+&amp;lt;p&amp;gt;is end boss dream of e2e testing. Covering every user flow is implementationally
+demanding. On top of it Teams claim e2es are demanding to maintain. So they opt out.
+Interestingly solution lies, as its often case in life, there where we don&amp;amp;rsquo;t
+want to look at.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;With right code organization &amp;amp;ldquo;every user flow&amp;amp;rdquo; e2e testing is achievable
+and maintainable for almost the same effort as &amp;amp;ldquo;some user flows&amp;amp;rdquo; e2e testing.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;It&amp;amp;rsquo;s very obvious why would you want it, so let&amp;amp;rsquo;s dig straight into how.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;setup&amp;#34;&amp;gt;
+  Setup
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#setup&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;The solution lies in graphs. Lack of general purpose graph libraries is the best
+tell how taboo graphs are. Yet anything done smart requires a graph. It is
+after all what powers AI as well. Enough introduction lets define a graph
+structure that will allow us to cover every user flow with effort
+comparable if not less than &amp;amp;ldquo;some user flows&amp;amp;rdquo;.&amp;lt;/p&amp;gt;
+&amp;lt;blockquote&amp;gt;
+&amp;lt;p&amp;gt;UI state is node of the graph. (page, modal, panel - anything that requires user interaction)&amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+&amp;lt;blockquote&amp;gt;
+&amp;lt;p&amp;gt;User interaction needed to translate from one state to another is an edge of the graph.&amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+&amp;lt;p&amp;gt;Idea is very simple in fact. If you know about graphs. As soon as you have
+this graph you can traverse it in automated way! Thats the whole point.
+UI state/interaction graph is allowing automated traversal and each traversal
+is a user flow - aka e2e test.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;So test are generated from the graph with given parameters.
+No parameters = shortest path.
+If you want to go real fancy, real analytics data can be used as edge cost.
+This way tests can reflect real user behavior and be more realistic.
+But for now lets not go deep into traversal control.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;user-interaction-library&amp;#34;&amp;gt;
+  User interaction library
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#user-interaction-library&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;No matter what you are testing
+if you are at home page and want to open a menu, same user interaction is used.&amp;lt;/p&amp;gt;
+&amp;lt;blockquote&amp;gt;
+&amp;lt;p&amp;gt;User interaction library is defining set of edges&amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+&amp;lt;p&amp;gt;this promotes&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;reusability&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;maintainability&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;automation&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;Reasons why setting up &amp;amp;ldquo;every user flow&amp;amp;rdquo; doesn&amp;amp;rsquo;t cost much more than &amp;amp;ldquo;some user flows&amp;amp;rdquo;.
+Or even less.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;assertions&amp;#34;&amp;gt;
+  Assertions
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#assertions&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Content assertions can be used to verify if components are rendered correctly.
+But this is sort of &amp;amp;ldquo;glorified unit test&amp;amp;rdquo; disguised as e2e test.&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;e2es mimic user behavior&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;user has no clue what should render&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;he knows if data he needs is there&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;if things glow green or red - do they work&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;In e2e tests assertions can be split into intent libraries:&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;One is to recognize the state of the UI.
+Another is to extract data from the UI.&amp;lt;/p&amp;gt;
+&amp;lt;h3 id=&amp;#34;recognizers&amp;#34;&amp;gt;
+  Recognizers
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#recognizers&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h3&amp;gt;
+&amp;lt;p&amp;gt;Recognizers search for unique piece of UI to declare UI state.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Now we see we in fact have two graphs! One is static - described so far.
+It is a prescription of how to use the app. But app has states so not all
+prescriptions are valid at all times. Meaning we must construct dynamic graph
+that represents actual state of the app. This graph can be populated via recognizers.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Obviously these are also independent of the actual test goal. Fully reusable.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;alternative-jargon--beginner-friendliness&amp;#34;&amp;gt;
+  Alternative jargon / beginner friendliness
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#alternative-jargon--beginner-friendliness&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Graphs are, practice shows, a bit scary. So lets introduce less technical jargon&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;static graph is experienced user. Experienced user knows how to
+do stuff in the app. Graph is a brain of a user.
+Dynamic graph is new user asking for advice how to do something in the app
+from experienced user.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Once initial effort to setup graph traversals is done, devs write regular
+user interaction and assertions as they would otherwise laying them out in
+a set framework that defines the graph. Testing is then just declaring desired
+outcome (node/ui state ie something purchased) and giving required data. Test is generated&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;extractors&amp;#34;&amp;gt;
+  Extractors
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#extractors&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Should be seen as &amp;amp;ldquo;data extractors&amp;amp;rdquo; - each component has an extractor that
+reads the data from the UI and then that data can be compared in automatic and
+dynamic manner leading into existing runtime validators of the app.
+Especially if &amp;lt;code&amp;gt;zod&amp;lt;/code&amp;gt; is used. This once again allows to do more with less writing.
+Extractors are independent of the actual test goal. Reusable.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;independence-test&amp;#34;&amp;gt;
+  Independence test
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#independence-test&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;If we look at the backend as a black box, we do not know if its stateless,
+stateful, or has some other state management. And we do not care.
+By assigning weights to edges, possibly based on analytics data,
+tests can have budgets and traverse in suboptimal ways. IE they can loop
+purchasing multiple times. In such scenario user flows should still work.
+Implicitly this is testing the backend for independence of implementation
+with respect to growing state.&amp;lt;/p&amp;gt;
+</description>
+      <content:encoded>&amp;lt;h2 id=&amp;#34;intro&amp;#34;&amp;gt;
+  Intro
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#intro&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;What an exiting and strange time we live in! At the same time
+streets are poverty struck resembling void of beauty,
+and I can play with miniature special purpose machine brains sitting on
+gigantic legacy of modern computing. Words really is battlefront of light and dark. One of such brains can be constructed and used in app testing purposes.&amp;lt;/p&amp;gt;
+&amp;lt;h1 id=&amp;#34;every-user-flow-e2es---model-based-testing--state-machine-testing&amp;#34;&amp;gt;
+  Every user flow e2es - model-based testing / state-machine testing
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#every-user-flow-e2es---model-based-testing--state-machine-testing&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h1&amp;gt;
+&amp;lt;p&amp;gt;is end boss dream of e2e testing. Covering every user flow is implementationally
+demanding. On top of it Teams claim e2es are demanding to maintain. So they opt out.
+Interestingly solution lies, as its often case in life, there where we don&amp;amp;rsquo;t
+want to look at.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;With right code organization &amp;amp;ldquo;every user flow&amp;amp;rdquo; e2e testing is achievable
+and maintainable for almost the same effort as &amp;amp;ldquo;some user flows&amp;amp;rdquo; e2e testing.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;It&amp;amp;rsquo;s very obvious why would you want it, so let&amp;amp;rsquo;s dig straight into how.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;setup&amp;#34;&amp;gt;
+  Setup
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#setup&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;The solution lies in graphs. Lack of general purpose graph libraries is the best
+tell how taboo graphs are. Yet anything done smart requires a graph. It is
+after all what powers AI as well. Enough introduction lets define a graph
+structure that will allow us to cover every user flow with effort
+comparable if not less than &amp;amp;ldquo;some user flows&amp;amp;rdquo;.&amp;lt;/p&amp;gt;
+&amp;lt;blockquote&amp;gt;
+&amp;lt;p&amp;gt;UI state is node of the graph. (page, modal, panel - anything that requires user interaction)&amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+&amp;lt;blockquote&amp;gt;
+&amp;lt;p&amp;gt;User interaction needed to translate from one state to another is an edge of the graph.&amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+&amp;lt;p&amp;gt;Idea is very simple in fact. If you know about graphs. As soon as you have
+this graph you can traverse it in automated way! Thats the whole point.
+UI state/interaction graph is allowing automated traversal and each traversal
+is a user flow - aka e2e test.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;So test are generated from the graph with given parameters.
+No parameters = shortest path.
+If you want to go real fancy, real analytics data can be used as edge cost.
+This way tests can reflect real user behavior and be more realistic.
+But for now lets not go deep into traversal control.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;user-interaction-library&amp;#34;&amp;gt;
+  User interaction library
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#user-interaction-library&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;No matter what you are testing
+if you are at home page and want to open a menu, same user interaction is used.&amp;lt;/p&amp;gt;
+&amp;lt;blockquote&amp;gt;
+&amp;lt;p&amp;gt;User interaction library is defining set of edges&amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+&amp;lt;p&amp;gt;this promotes&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;reusability&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;maintainability&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;automation&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;Reasons why setting up &amp;amp;ldquo;every user flow&amp;amp;rdquo; doesn&amp;amp;rsquo;t cost much more than &amp;amp;ldquo;some user flows&amp;amp;rdquo;.
+Or even less.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;assertions&amp;#34;&amp;gt;
+  Assertions
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#assertions&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Content assertions can be used to verify if components are rendered correctly.
+But this is sort of &amp;amp;ldquo;glorified unit test&amp;amp;rdquo; disguised as e2e test.&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;e2es mimic user behavior&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;user has no clue what should render&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;he knows if data he needs is there&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;if things glow green or red - do they work&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;In e2e tests assertions can be split into intent libraries:&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;One is to recognize the state of the UI.
+Another is to extract data from the UI.&amp;lt;/p&amp;gt;
+&amp;lt;h3 id=&amp;#34;recognizers&amp;#34;&amp;gt;
+  Recognizers
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#recognizers&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h3&amp;gt;
+&amp;lt;p&amp;gt;Recognizers search for unique piece of UI to declare UI state.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Now we see we in fact have two graphs! One is static - described so far.
+It is a prescription of how to use the app. But app has states so not all
+prescriptions are valid at all times. Meaning we must construct dynamic graph
+that represents actual state of the app. This graph can be populated via recognizers.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Obviously these are also independent of the actual test goal. Fully reusable.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;alternative-jargon--beginner-friendliness&amp;#34;&amp;gt;
+  Alternative jargon / beginner friendliness
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#alternative-jargon--beginner-friendliness&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Graphs are, practice shows, a bit scary. So lets introduce less technical jargon&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;static graph is experienced user. Experienced user knows how to
+do stuff in the app. Graph is a brain of a user.
+Dynamic graph is new user asking for advice how to do something in the app
+from experienced user.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Once initial effort to setup graph traversals is done, devs write regular
+user interaction and assertions as they would otherwise laying them out in
+a set framework that defines the graph. Testing is then just declaring desired
+outcome (node/ui state ie something purchased) and giving required data. Test is generated&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;extractors&amp;#34;&amp;gt;
+  Extractors
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#extractors&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Should be seen as &amp;amp;ldquo;data extractors&amp;amp;rdquo; - each component has an extractor that
+reads the data from the UI and then that data can be compared in automatic and
+dynamic manner leading into existing runtime validators of the app.
+Especially if &amp;lt;code&amp;gt;zod&amp;lt;/code&amp;gt; is used. This once again allows to do more with less writing.
+Extractors are independent of the actual test goal. Reusable.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;independence-test&amp;#34;&amp;gt;
+  Independence test
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#independence-test&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;If we look at the backend as a black box, we do not know if its stateless,
+stateful, or has some other state management. And we do not care.
+By assigning weights to edges, possibly based on analytics data,
+tests can have budgets and traverse in suboptimal ways. IE they can loop
+purchasing multiple times. In such scenario user flows should still work.
+Implicitly this is testing the backend for independence of implementation
+with respect to growing state.&amp;lt;/p&amp;gt;
+</content:encoded>
+    </item>
+  </channel>
+</rss>

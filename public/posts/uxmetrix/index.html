@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+  The missing development metric - UX complexity · djuleayo
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="djuleayo">
+<meta name="description" content="UX complexity is the missing development metric. It is the cost of interaction and arguably the most important metric.">
+<meta name="keywords" content="blog,developer,personal">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="The missing development metric - UX complexity">
+  <meta name="twitter:description" content="UX complexity is the missing development metric. It is the cost of interaction and arguably the most important metric.">
+
+<meta property="og:url" content="http://localhost:1313/posts/uxmetrix/">
+  <meta property="og:site_name" content="djuleayo">
+  <meta property="og:title" content="The missing development metric - UX complexity">
+  <meta property="og:description" content="UX complexity is the missing development metric. It is the cost of interaction and arguably the most important metric.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-05-17T09:22:50+02:00">
+    <meta property="article:modified_time" content="2025-05-17T09:22:50+02:00">
+    <meta property="article:tag" content="Perspective">
+    <meta property="article:tag" content="System Design">
+    <meta property="article:tag" content="Innovation">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/posts/uxmetrix/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/img/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/">
+      djuleayo
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">About</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://localhost:1313/posts/uxmetrix/">
+              The missing development metric - UX complexity
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2025-05-17T09:22:50&#43;02:00">
+                May 17, 2025
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              5-minute read
+            </span>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/perspective/">Perspective</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/system-design/">System Design</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/innovation/">Innovation</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h1 id="the-missing-development-metric---ux-complexity">
+  The missing development metric - UX complexity
+  <a class="heading-link" href="#the-missing-development-metric---ux-complexity">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>While everyone, ok not every one is talking about computational complexity. Especially in high level languages with accent to functional programming.Recomputation is the name of the game. So even on that
+old topic a lot could be said. But <strong>UX complexity</strong> - the cost of interaction
+as arguably the most important metric and its not yet a termed metric.
+Let&rsquo;s face it, if you nailed UX complexity, you nailed computational complexity long ago.</p>
+<h2 id="innovation-in-ux-is-educational-process">
+  Innovation in UX is educational process
+  <a class="heading-link" href="#innovation-in-ux-is-educational-process">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Yes we hear designers bragging about one click less UX experience. Yet they use standardized component libraries and expected UX patterns. Not much to invent, a lot to be careful about! It’s almost like innovative design is discouraged. And if you ever payed attention how people of age of higher number use their devices
+you start to realize educating people on UX principles is driven, multiple decades long education process. First they were inspired by the idea of free
+of cost calls, now they play candy crush 🍌.</p>
+<h2 id="current-state-of-ux">
+  Current state of UX
+  <a class="heading-link" href="#current-state-of-ux">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>But if we step back even more, and see the UX of entire systems then clarity comes so easily. We do this to dig out problems and pain point I want to talk about. UX is</p>
+<ul>
+<li>fragmented</li>
+<li>locking</li>
+</ul>
+<p>Fragmented as UX is resembling more a corporate structure than intent of the user. Instead of sending a message being designed around UX of sending a message. It is designed around who owns the platform and what is the business model. There is nothing UX focused about that. Its all encompassing fragmentation of the system called &ldquo;app store&rdquo;.</p>
+<p>Current architecture is <strong>paas</strong> like. You have provider of platform - infrastructure (master). Then you have app fragmentation not caring a slightest bit about the user and intent. Then you have locking experiences in form
+of feeds, scrolls, hooks, notification pings and so on.</p>
+<h3 id="on-ux">
+  O(n) UX
+  <a class="heading-link" href="#on-ux">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Now scrolling is <strong>o(n)</strong> experience of UX where user is compelled to scroll like that pigeon with that button. 🔘🐦 And sadly, we all know how quickly
+time is traded in that trans like state. o(n) experience is unacceptable in any
+other areas as well. We all scrolled a gallery and after scrolling few hundred
+photos overscrolled past the photo like overlooking a food pot in fridge pointed by spouse. In one word, one emoji, trash 🗑️</p>
+<h3 id="olog-n-ux">
+  O(log n) UX
+  <a class="heading-link" href="#olog-n-ux">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Menus are <strong>o(log n)</strong> and I must compel you they too are not good enough.
+They are obviously miles ahead of scrolling, but lets see how avoiding them
+will make your life easier.
+When I think menus I think - specialized software. Gimp, blender, and alike.
+Those kind of softwares still require specialized professional. Is that not
+all the proof we need? I mean, I can edit a photo but its like an elephant
+in glass store. To work effectively in that kind of software one must develop
+muscle memory. Productive work needs muscle memory. And this is more important
+then you think. There is subconscious aversion if time to express your self
+and time to think of what you want to express have too wide gap.
+Most accessible example is browsing on a slow connection. After 5 minutes you just
+don&rsquo;t want to do it. Its the exact same story when im trying to edit a photo.
+If i could just access the function (blur the damn photo)without clicking through menus and knowing particular specifics of the software,
+and developing muscle memory for all that, I too could edit a photo. Because in the end I know the result, I know what arguments to achieve it.
+The only thing preventing me is the UX. It might be seen as a skill issue, but it is not. It is a UX issue.</p>
+<p>Another example is scrolling through a file tree if you are a coder.
+Here I proclaim.</p>
+<blockquote>
+<p>Never scroll through a file tree. It makes you a coding monkey</p>
+</blockquote>
+<p>Disable that part of the IDE. It is a bad habit. A waste of time.
+You have so many more ways to access a location then scrolling through a file tree. It is disastrous degradation of log complexity into linear.
+And it is never worth scrolling and always better using something else.
+But on this topic I will write a separate log.</p>
+<h3 id="o1-ux---the-dream">
+  O(1) UX - the dream
+  <a class="heading-link" href="#o1-ux---the-dream">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>So lets conclude this log entry by simply staying with the dream a while longer.</p>
+<blockquote>
+<p>We want to be able to command the system in any reach of our comprehension</p>
+</blockquote>
+<p>Now this is a dream envisioned in the movies and that iris episode of black mirror. AI chats kind of know what you want and they do provide wide range of
+solutions. We see more and more chat driven interfaces. But even that&hellip; response waits aint fun.</p>
+<p>So <strong>o(1)</strong> user experience complexity. I just think and the system knows what I want. What ever I want to refer to I can in constant time of user expression.</p>
+<p>Search engines kind of do this but you know:</p>
+<ul>
+<li>marketing</li>
+<li>third party interests</li>
+<li>&hellip;</li>
+</ul>
+<p>If you don&rsquo;t know what you are searching for, either by name or by link, you are screwed. Something is missing. Stick around for some of the next logs where I will explore this dream further.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        <div id="disqus_thread"></div>
+<script>
+  window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "djuleayo" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+    
+    document.addEventListener('themeChanged', function (e) { 
+        if (document.readyState == 'complete') {
+          DISQUS.reset({ reload: true, config: disqus_config });
+        }
+    });
+</script>
+        
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2019 -
+    
+    2025
+     djuleayo 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <script defer data-domain="djuleayo.com" src="https://plausible.io/js/script.js"></script>
+
+</body>
+</html>

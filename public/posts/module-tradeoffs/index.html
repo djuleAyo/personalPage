@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+  Tradeoffs of Module Management · djuleayo
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="djuleayo">
+<meta name="description" content="
+  Tradeoffs of Module Management
+  
+    
+    Link to heading
+  
+
+We all want reusability—until we’re in a hurry.
+Or under-skilled.
+Or just trying to ship something today instead of tomorrow.
+Reusability takes extra thought, extra structure, and a level of patience most developers can’t afford in the moment.
+So what do we do instead?
+We reach for the batteries-included approach.
+npm install becomes our reflex.
+Install a library for everything—debounce, isEqual, date formatting.
+You end up with three different utilities solving the same problem…
+and use none of them.">
+<meta name="keywords" content="blog,developer,personal">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Tradeoffs of Module Management">
+  <meta name="twitter:description" content="Tradeoffs of Module Management Link to heading We all want reusability—until we’re in a hurry.
+Or under-skilled.
+Or just trying to ship something today instead of tomorrow.
+Reusability takes extra thought, extra structure, and a level of patience most developers can’t afford in the moment.
+So what do we do instead? We reach for the batteries-included approach.
+npm install becomes our reflex. Install a library for everything—debounce, isEqual, date formatting. You end up with three different utilities solving the same problem… and use none of them.">
+
+<meta property="og:url" content="http://localhost:1313/posts/module-tradeoffs/">
+  <meta property="og:site_name" content="djuleayo">
+  <meta property="og:title" content="Tradeoffs of Module Management">
+  <meta property="og:description" content="Tradeoffs of Module Management Link to heading We all want reusability—until we’re in a hurry.
+Or under-skilled.
+Or just trying to ship something today instead of tomorrow.
+Reusability takes extra thought, extra structure, and a level of patience most developers can’t afford in the moment.
+So what do we do instead? We reach for the batteries-included approach.
+npm install becomes our reflex. Install a library for everything—debounce, isEqual, date formatting. You end up with three different utilities solving the same problem… and use none of them.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-05-26T11:20:59+02:00">
+    <meta property="article:modified_time" content="2025-05-26T11:20:59+02:00">
+    <meta property="article:tag" content="Perspective">
+    <meta property="article:tag" content="System Design">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/posts/module-tradeoffs/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/img/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/">
+      djuleayo
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">About</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://localhost:1313/posts/module-tradeoffs/">
+              Tradeoffs of Module Management
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2025-05-26T11:20:59&#43;02:00">
+                May 26, 2025
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              2-minute read
+            </span>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/perspective/">Perspective</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/system-design/">System Design</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h1 id="tradeoffs-of-module-management">
+  Tradeoffs of Module Management
+  <a class="heading-link" href="#tradeoffs-of-module-management">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>We all want reusability—until we’re in a hurry.</p>
+<p>Or under-skilled.</p>
+<p>Or just trying to ship something today instead of tomorrow.</p>
+<p>Reusability takes extra thought, extra structure, and a level of patience most developers can’t afford in the moment.</p>
+<p>So what do we do instead?
+We reach for the batteries-included approach.</p>
+<p>npm install becomes our reflex.
+Install a library for everything—debounce, isEqual, date formatting.
+You end up with three different utilities solving the same problem…
+and use none of them.</p>
+<p>But hey, you get battle-tested code.
+Often feature-rich. Reusable.
+The cost? Bloat. And often, poor fit for your exact problem.</p>
+<p>So what’s the alternative?</p>
+<h2 id="own-your-dependencies">
+  Own your dependencies.
+  <a class="heading-link" href="#own-your-dependencies">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Write exactly what you need.
+Small, sharp modules tailored to your system.
+Minimal by design. Reusable on your terms.</p>
+<p>Sounds good, right?
+Until it becomes your job to maintain them.</p>
+<p>First you build. Then you reuse.
+Then you realize you need to patch.</p>
+<p>Then patch again.
+Now you need tests.
+Now you need a proper build pipeline.
+So you move to a monorepo to keep it manageable.</p>
+<p>Now you’re dealing with cascading changes, test orchestration, and CI complexity.
+Even then—monorepos don’t save you from versioning.</p>
+<p>If a module lives deep in your dependency tree, changing it isn’t cheap.
+You either keep it backward-compatible,
+or you bump the version and update every consumer.
+And now you’re back in cascading effort territory.</p>
+<h2 id="heres-the-central-catch">
+  Here’s the central catch:
+  <a class="heading-link" href="#heres-the-central-catch">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>If you start owning your dependencies, they’ll often lack what you need.
+You’ll patch them.
+You’ll generalize them.
+You’ll try to reuse them across domains—and they won’t quite fit.</p>
+<p>That’s the moment most developers hit a wall.</p>
+<p>Do you make it generic?
+Do you fork?
+Do you duplicate?
+You’re back to versioning, rewrites, and the weight of ownership.</p>
+<h2 id="so-which-path-do-you-choose">
+  So which path do you choose?
+  <a class="heading-link" href="#so-which-path-do-you-choose">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Install and bloat — fast, reliable, but heavy and often misaligned.</p>
+<p>Write and own — light, tailored, but eventually expensive.</p>
+<p>Both are valid.
+And if you&rsquo;re building anything specific—anything real—you&rsquo;ll probably do both.</p>
+<p>The key isn’t picking one.
+The key is knowing where to draw the line.</p>
+<p>As we developers love to say:</p>
+<p>It’s an NP-hard problem.</p>
+<p>But even NP-hard problems can be tamed—with experience.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        <div id="disqus_thread"></div>
+<script>
+  window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "djuleayo" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+    
+    document.addEventListener('themeChanged', function (e) { 
+        if (document.readyState == 'complete') {
+          DISQUS.reset({ reload: true, config: disqus_config });
+        }
+    });
+</script>
+        
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2019 -
+    
+    2025
+     djuleayo 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <script defer data-domain="djuleayo.com" src="https://plausible.io/js/script.js"></script>
+
+</body>
+</html>

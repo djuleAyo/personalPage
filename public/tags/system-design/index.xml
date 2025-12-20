@@ -1,0 +1,1134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>System Design · djuleayo</title>
+    <link>http://localhost:1313/tags/system-design/</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/tags/system-design/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Why I created another markup language</title>
+      <link>http://localhost:1313/posts/why-i-wrote-another-markup-language/</link>
+      <guid>http://localhost:1313/posts/why-i-wrote-another-markup-language/</guid>
+      <pubDate>Sun, 14 Sep 2025 09:22:50 CEST</pubDate>
+      <description>&amp;lt;h1 id=&amp;#34;why-i-created-new-markup-language&amp;#34;&amp;gt;
+  Why I created new markup language?
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#why-i-created-new-markup-language&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h1&amp;gt;
+&amp;lt;p&amp;gt;Yet another time to call something &amp;amp;ldquo;yet another&amp;amp;rdquo;
+this time it is markup language.
+Yet another markup language&amp;amp;hellip;
+Why?&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;current&amp;#34;&amp;gt;
+  Current
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#current&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;HTML/XML is fair example.
+They are in essence as simple as it gets.&amp;lt;/p&amp;gt;
+&amp;lt;!-- raw HTML omitted --&amp;gt;
+&amp;lt;p&amp;gt;All that marking up was in days of early web to state what is what in mostly textual files
+and allow search engines to index it properly. Later on HTML became the most coupled
+tech in existence having some tags with semantic meaning, some with
+presentation meaning and some with both, then script tags and what not.
+This is because it was repurposed to follow the ever growing needs of web.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;The fact remains, You are marking up things and in process define trees.
+HTML is a tree of data. So is XML. So is JSON.
+While I went deeper into why and when trees are insufficient in the book,
+here Ill go briefly. HTML anticipated these insufficiencies and decided
+to bridge them with anchor tags. And that is - tree simply can&amp;amp;rsquo;t define as much as
+general graph can. So instead of defining coherent/atomic units of data, reference
+what you need. Those familiar with graphs will immediately recognize this
+leads to possibility of cycles. Cycles = problems and non determinism in many cases.
+Or simply &amp;amp;ldquo;oops this page can&amp;amp;rsquo;t be found&amp;amp;rdquo;&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;To address the central lack of trees:&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;laying data in trees is natural when we describe single taxonomy&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;data is often viewed in multidimensional way and tree requires proclaiming one categorization
+as superior which is ambiguous and not self contained&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;All this is the setup and something I named:&amp;lt;/p&amp;gt;
+&amp;lt;blockquote&amp;gt;
+&amp;lt;p&amp;gt;core coupling of programming&amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+&amp;lt;p&amp;gt;and that is we couple address/location with reference
+yet it is obviously coupling of two orthogonal concepts.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;As proof:&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;array index is memory location and reference&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;url is location and reference literally&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;file path is location and reference&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;variable name is location and reference&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;namespace, module, etc&amp;amp;hellip;&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;Yet human centric way is absolutely different. We reference without location all the time.
+Yes we have search engines and they allow us to reference without location using
+natural language. More or less.
+And this is reason why&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;graph-markup-language&amp;#34;&amp;gt;
+  Graph Markup Language
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#graph-markup-language&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;was created and lays data in graphs instead of trees.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;This line of thinking proved it self very fruitful and as consequence
+of such a language came many innovative concepts which i termed ELM
+ELM - evolving language model
+is consequence of raising hierarchies from static to dynamic
+generalizing them and using them for dynamic language generation.
+Dynamically generated languages allow for ELM embodied in trinity of
+data &amp;amp;lt;-&amp;amp;gt; language &amp;amp;lt;-&amp;amp;gt; interaction&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;What I&amp;amp;rsquo;m talking about is&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;deterministic&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;interactive&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;associative search&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;with data space visualization&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;Laying data in graph in such a way that elevates even relation as first class citizen
+and allows for dynamic generation of languages arisen from data itself.
+This dynamic language is formal and keeps all the properties of formal languages&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;determinism.&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;To put it shortly expressions of GML define graphs, subgraphs which form mini brains
+capable of talking in multidimensional way about data.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Read more in the book&amp;lt;/p&amp;gt;
+</description>
+      <content:encoded>&amp;lt;h1 id=&amp;#34;why-i-created-new-markup-language&amp;#34;&amp;gt;
+  Why I created new markup language?
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#why-i-created-new-markup-language&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h1&amp;gt;
+&amp;lt;p&amp;gt;Yet another time to call something &amp;amp;ldquo;yet another&amp;amp;rdquo;
+this time it is markup language.
+Yet another markup language&amp;amp;hellip;
+Why?&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;current&amp;#34;&amp;gt;
+  Current
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#current&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;HTML/XML is fair example.
+They are in essence as simple as it gets.&amp;lt;/p&amp;gt;
+&amp;lt;!-- raw HTML omitted --&amp;gt;
+&amp;lt;p&amp;gt;All that marking up was in days of early web to state what is what in mostly textual files
+and allow search engines to index it properly. Later on HTML became the most coupled
+tech in existence having some tags with semantic meaning, some with
+presentation meaning and some with both, then script tags and what not.
+This is because it was repurposed to follow the ever growing needs of web.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;The fact remains, You are marking up things and in process define trees.
+HTML is a tree of data. So is XML. So is JSON.
+While I went deeper into why and when trees are insufficient in the book,
+here Ill go briefly. HTML anticipated these insufficiencies and decided
+to bridge them with anchor tags. And that is - tree simply can&amp;amp;rsquo;t define as much as
+general graph can. So instead of defining coherent/atomic units of data, reference
+what you need. Those familiar with graphs will immediately recognize this
+leads to possibility of cycles. Cycles = problems and non determinism in many cases.
+Or simply &amp;amp;ldquo;oops this page can&amp;amp;rsquo;t be found&amp;amp;rdquo;&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;To address the central lack of trees:&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;laying data in trees is natural when we describe single taxonomy&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;data is often viewed in multidimensional way and tree requires proclaiming one categorization
+as superior which is ambiguous and not self contained&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;All this is the setup and something I named:&amp;lt;/p&amp;gt;
+&amp;lt;blockquote&amp;gt;
+&amp;lt;p&amp;gt;core coupling of programming&amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+&amp;lt;p&amp;gt;and that is we couple address/location with reference
+yet it is obviously coupling of two orthogonal concepts.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;As proof:&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;array index is memory location and reference&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;url is location and reference literally&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;file path is location and reference&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;variable name is location and reference&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;namespace, module, etc&amp;amp;hellip;&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;Yet human centric way is absolutely different. We reference without location all the time.
+Yes we have search engines and they allow us to reference without location using
+natural language. More or less.
+And this is reason why&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;graph-markup-language&amp;#34;&amp;gt;
+  Graph Markup Language
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#graph-markup-language&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;was created and lays data in graphs instead of trees.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;This line of thinking proved it self very fruitful and as consequence
+of such a language came many innovative concepts which i termed ELM
+ELM - evolving language model
+is consequence of raising hierarchies from static to dynamic
+generalizing them and using them for dynamic language generation.
+Dynamically generated languages allow for ELM embodied in trinity of
+data &amp;amp;lt;-&amp;amp;gt; language &amp;amp;lt;-&amp;amp;gt; interaction&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;What I&amp;amp;rsquo;m talking about is&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;deterministic&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;interactive&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;associative search&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;with data space visualization&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;Laying data in graph in such a way that elevates even relation as first class citizen
+and allows for dynamic generation of languages arisen from data itself.
+This dynamic language is formal and keeps all the properties of formal languages&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;determinism.&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;To put it shortly expressions of GML define graphs, subgraphs which form mini brains
+capable of talking in multidimensional way about data.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Read more in the book&amp;lt;/p&amp;gt;
+</content:encoded>
+    </item><item>
+      <title>Tradeoffs of Module Management</title>
+      <link>http://localhost:1313/posts/module-tradeoffs/</link>
+      <guid>http://localhost:1313/posts/module-tradeoffs/</guid>
+      <pubDate>Mon, 26 May 2025 11:20:59 CEST</pubDate>
+      <description>&amp;lt;h1 id=&amp;#34;tradeoffs-of-module-management&amp;#34;&amp;gt;
+  Tradeoffs of Module Management
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#tradeoffs-of-module-management&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h1&amp;gt;
+&amp;lt;p&amp;gt;We all want reusability—until we’re in a hurry.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Or under-skilled.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Or just trying to ship something today instead of tomorrow.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Reusability takes extra thought, extra structure, and a level of patience most developers can’t afford in the moment.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;So what do we do instead?
+We reach for the batteries-included approach.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;npm install becomes our reflex.
+Install a library for everything—debounce, isEqual, date formatting.
+You end up with three different utilities solving the same problem…
+and use none of them.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;But hey, you get battle-tested code.
+Often feature-rich. Reusable.
+The cost? Bloat. And often, poor fit for your exact problem.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;So what’s the alternative?&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;own-your-dependencies&amp;#34;&amp;gt;
+  Own your dependencies.
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#own-your-dependencies&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Write exactly what you need.
+Small, sharp modules tailored to your system.
+Minimal by design. Reusable on your terms.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Sounds good, right?
+Until it becomes your job to maintain them.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;First you build. Then you reuse.
+Then you realize you need to patch.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Then patch again.
+Now you need tests.
+Now you need a proper build pipeline.
+So you move to a monorepo to keep it manageable.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Now you’re dealing with cascading changes, test orchestration, and CI complexity.
+Even then—monorepos don’t save you from versioning.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;If a module lives deep in your dependency tree, changing it isn’t cheap.
+You either keep it backward-compatible,
+or you bump the version and update every consumer.
+And now you’re back in cascading effort territory.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;heres-the-central-catch&amp;#34;&amp;gt;
+  Here’s the central catch:
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#heres-the-central-catch&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;If you start owning your dependencies, they’ll often lack what you need.
+You’ll patch them.
+You’ll generalize them.
+You’ll try to reuse them across domains—and they won’t quite fit.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;That’s the moment most developers hit a wall.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Do you make it generic?
+Do you fork?
+Do you duplicate?
+You’re back to versioning, rewrites, and the weight of ownership.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;so-which-path-do-you-choose&amp;#34;&amp;gt;
+  So which path do you choose?
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#so-which-path-do-you-choose&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Install and bloat — fast, reliable, but heavy and often misaligned.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Write and own — light, tailored, but eventually expensive.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Both are valid.
+And if you&amp;amp;rsquo;re building anything specific—anything real—you&amp;amp;rsquo;ll probably do both.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;The key isn’t picking one.
+The key is knowing where to draw the line.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;As we developers love to say:&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;It’s an NP-hard problem.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;But even NP-hard problems can be tamed—with experience.&amp;lt;/p&amp;gt;
+</description>
+      <content:encoded>&amp;lt;h1 id=&amp;#34;tradeoffs-of-module-management&amp;#34;&amp;gt;
+  Tradeoffs of Module Management
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#tradeoffs-of-module-management&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h1&amp;gt;
+&amp;lt;p&amp;gt;We all want reusability—until we’re in a hurry.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Or under-skilled.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Or just trying to ship something today instead of tomorrow.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Reusability takes extra thought, extra structure, and a level of patience most developers can’t afford in the moment.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;So what do we do instead?
+We reach for the batteries-included approach.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;npm install becomes our reflex.
+Install a library for everything—debounce, isEqual, date formatting.
+You end up with three different utilities solving the same problem…
+and use none of them.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;But hey, you get battle-tested code.
+Often feature-rich. Reusable.
+The cost? Bloat. And often, poor fit for your exact problem.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;So what’s the alternative?&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;own-your-dependencies&amp;#34;&amp;gt;
+  Own your dependencies.
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#own-your-dependencies&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Write exactly what you need.
+Small, sharp modules tailored to your system.
+Minimal by design. Reusable on your terms.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Sounds good, right?
+Until it becomes your job to maintain them.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;First you build. Then you reuse.
+Then you realize you need to patch.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Then patch again.
+Now you need tests.
+Now you need a proper build pipeline.
+So you move to a monorepo to keep it manageable.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Now you’re dealing with cascading changes, test orchestration, and CI complexity.
+Even then—monorepos don’t save you from versioning.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;If a module lives deep in your dependency tree, changing it isn’t cheap.
+You either keep it backward-compatible,
+or you bump the version and update every consumer.
+And now you’re back in cascading effort territory.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;heres-the-central-catch&amp;#34;&amp;gt;
+  Here’s the central catch:
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#heres-the-central-catch&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;If you start owning your dependencies, they’ll often lack what you need.
+You’ll patch them.
+You’ll generalize them.
+You’ll try to reuse them across domains—and they won’t quite fit.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;That’s the moment most developers hit a wall.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Do you make it generic?
+Do you fork?
+Do you duplicate?
+You’re back to versioning, rewrites, and the weight of ownership.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;so-which-path-do-you-choose&amp;#34;&amp;gt;
+  So which path do you choose?
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#so-which-path-do-you-choose&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Install and bloat — fast, reliable, but heavy and often misaligned.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Write and own — light, tailored, but eventually expensive.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Both are valid.
+And if you&amp;amp;rsquo;re building anything specific—anything real—you&amp;amp;rsquo;ll probably do both.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;The key isn’t picking one.
+The key is knowing where to draw the line.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;As we developers love to say:&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;It’s an NP-hard problem.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;But even NP-hard problems can be tamed—with experience.&amp;lt;/p&amp;gt;
+</content:encoded>
+    </item><item>
+      <title>Automation Doesn’t Work for You – And That’s By Design</title>
+      <link>http://localhost:1313/posts/power-of-automation/</link>
+      <guid>http://localhost:1313/posts/power-of-automation/</guid>
+      <pubDate>Sat, 24 May 2025 17:10:43 CEST</pubDate>
+      <description>&amp;lt;h1 id=&amp;#34;automation-doesnt-work-for-you--and-thats-by-design&amp;#34;&amp;gt;
+  Automation Doesn’t Work for You – And That’s By Design
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#automation-doesnt-work-for-you--and-thats-by-design&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h1&amp;gt;
+&amp;lt;blockquote&amp;gt;
+&amp;lt;p&amp;gt;Automation is Power.&amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+&amp;lt;p&amp;gt;This truth was carved into history when Alan Turing and others turned machines into war-winning tools. Those who mastered automation during wartime gained world-scale leverage. The ability to process and act faster than your enemy became the new axis of power. Such is the scale of automation.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Fast-forward to today. You have more raw computational power in your pocket than Turing had in all of Bletchley Park. You have access to programming languages, cloud infrastructure, and libraries of logic once reserved for elite scientists.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;But power of automation doesn&amp;amp;rsquo;t work for you!&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;This is the real question. Not &amp;amp;ldquo;will AI replace us&amp;amp;rdquo; junk. Why is power of automation,
+remember, world war scale power not working for me? Even tho you have ingredients, processing power and lets say
+ability to command that power - write code.
+Do you actually think about that?&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;The automation dream was hijacked. You have the electricity but not the switchboard. The processor but not the interface. The AI but not the reasoning layer.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Again: &amp;amp;ldquo;Will AI replace us?&amp;amp;rdquo; Don&amp;amp;rsquo;t you see it? Wrong question!
+Another promise of power which will by the mechanism that is already in place, yet again not work for you.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;You work for it. How?&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;fragmentation-the-smoke-bomb-of-the-digital-age&amp;#34;&amp;gt;
+  Fragmentation: The Smoke Bomb of the Digital Age
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#fragmentation-the-smoke-bomb-of-the-digital-age&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Each wave of technology promises more power. But each wave forces you to rewrite, reintegrate, relearn. Your logic becomes disposable. Your interfaces become incompatible. Your memory becomes siloed.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;This is not a bug. It is a feature of fragmentation.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Fragmentation is the mechanism by which systems disguise the fact that they are not automating anything. They are making you repeat the same patterns in new wrappers. Rebuilding the same UI, the same logic, the same workflows.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Take the modern chat app:&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;You cannot access your own conversations programmatically.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;You cannot extract patterns, memories, or trails of thought.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;You are locked in a scroll-and-forget interface designed to make you dependent, not aware.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;It is software modeled after corporate structure, not human intent.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;The chat box is the perfect metaphor: it simulates conversation, but blocks ownership of the knowledge.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;data-ownership-is-index-ownership&amp;#34;&amp;gt;
+  Data Ownership Is Index Ownership
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#data-ownership-is-index-ownership&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;The true value of data is not in possession, but in referencing.
+If you can&amp;amp;rsquo;t traverse it, connect it, recall it—you don&amp;amp;rsquo;t own it.&amp;lt;/p&amp;gt;
+&amp;lt;blockquote&amp;gt;
+&amp;lt;p&amp;gt;Data ownership is index ownership.&amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+&amp;lt;p&amp;gt;And by design, you do not own the index.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;The index is hidden behind UX.
+The index is locked behind APIs.
+The index is reshuffled and monetized in feeds you can&amp;amp;rsquo;t control.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;But the index is the power of intelligence.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;It is what lets memory become utility.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;It is what makes pattern recognition possible.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;It is what defines reasoning.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Ownership of data without the index is a decoy. A smokescreen.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Post-Fragmentation Systems: Toward Real Control&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;To reclaim power, we must move past naming, past folders, past the app paradigm.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;We must build systems where:&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Indexing is declarative, relational, and user-centric.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Search becomes semantic, associative, and deterministic.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Memory becomes a graph, not a graveyard.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Data and instruction become one, and automation becomes aligned.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;This is not fantasy. It is architecture. And it is being built.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Even among developers—millions of us who write the indexes—we still haven’t built a unified temple of collaboration and goodwill.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Yes, we have open source. And yes, you can spin up your own chat server and inspect your own data. But even open source remains locked in the design logic of a fragmented world.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;There is no single monorepo of human collaboration.
+No shared structure of memory.
+No living index that binds our work together.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Why?&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Because even in the act of programming itself, fragmentation is embedded at the root.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;The final tool of fragmentation is not an app, nor a UX.
+It is the deepest coupling in software itself—the binding of location and reference.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Stay tuned. That fracture deserves a chapter of its own.&amp;lt;/p&amp;gt;
+</description>
+      <content:encoded>&amp;lt;h1 id=&amp;#34;automation-doesnt-work-for-you--and-thats-by-design&amp;#34;&amp;gt;
+  Automation Doesn’t Work for You – And That’s By Design
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#automation-doesnt-work-for-you--and-thats-by-design&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h1&amp;gt;
+&amp;lt;blockquote&amp;gt;
+&amp;lt;p&amp;gt;Automation is Power.&amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+&amp;lt;p&amp;gt;This truth was carved into history when Alan Turing and others turned machines into war-winning tools. Those who mastered automation during wartime gained world-scale leverage. The ability to process and act faster than your enemy became the new axis of power. Such is the scale of automation.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Fast-forward to today. You have more raw computational power in your pocket than Turing had in all of Bletchley Park. You have access to programming languages, cloud infrastructure, and libraries of logic once reserved for elite scientists.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;But power of automation doesn&amp;amp;rsquo;t work for you!&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;This is the real question. Not &amp;amp;ldquo;will AI replace us&amp;amp;rdquo; junk. Why is power of automation,
+remember, world war scale power not working for me? Even tho you have ingredients, processing power and lets say
+ability to command that power - write code.
+Do you actually think about that?&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;The automation dream was hijacked. You have the electricity but not the switchboard. The processor but not the interface. The AI but not the reasoning layer.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Again: &amp;amp;ldquo;Will AI replace us?&amp;amp;rdquo; Don&amp;amp;rsquo;t you see it? Wrong question!
+Another promise of power which will by the mechanism that is already in place, yet again not work for you.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;You work for it. How?&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;fragmentation-the-smoke-bomb-of-the-digital-age&amp;#34;&amp;gt;
+  Fragmentation: The Smoke Bomb of the Digital Age
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#fragmentation-the-smoke-bomb-of-the-digital-age&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Each wave of technology promises more power. But each wave forces you to rewrite, reintegrate, relearn. Your logic becomes disposable. Your interfaces become incompatible. Your memory becomes siloed.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;This is not a bug. It is a feature of fragmentation.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Fragmentation is the mechanism by which systems disguise the fact that they are not automating anything. They are making you repeat the same patterns in new wrappers. Rebuilding the same UI, the same logic, the same workflows.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Take the modern chat app:&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;You cannot access your own conversations programmatically.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;You cannot extract patterns, memories, or trails of thought.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;You are locked in a scroll-and-forget interface designed to make you dependent, not aware.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;It is software modeled after corporate structure, not human intent.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;The chat box is the perfect metaphor: it simulates conversation, but blocks ownership of the knowledge.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;data-ownership-is-index-ownership&amp;#34;&amp;gt;
+  Data Ownership Is Index Ownership
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#data-ownership-is-index-ownership&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;The true value of data is not in possession, but in referencing.
+If you can&amp;amp;rsquo;t traverse it, connect it, recall it—you don&amp;amp;rsquo;t own it.&amp;lt;/p&amp;gt;
+&amp;lt;blockquote&amp;gt;
+&amp;lt;p&amp;gt;Data ownership is index ownership.&amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+&amp;lt;p&amp;gt;And by design, you do not own the index.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;The index is hidden behind UX.
+The index is locked behind APIs.
+The index is reshuffled and monetized in feeds you can&amp;amp;rsquo;t control.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;But the index is the power of intelligence.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;It is what lets memory become utility.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;It is what makes pattern recognition possible.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;It is what defines reasoning.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Ownership of data without the index is a decoy. A smokescreen.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Post-Fragmentation Systems: Toward Real Control&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;To reclaim power, we must move past naming, past folders, past the app paradigm.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;We must build systems where:&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Indexing is declarative, relational, and user-centric.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Search becomes semantic, associative, and deterministic.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Memory becomes a graph, not a graveyard.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Data and instruction become one, and automation becomes aligned.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;This is not fantasy. It is architecture. And it is being built.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Even among developers—millions of us who write the indexes—we still haven’t built a unified temple of collaboration and goodwill.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Yes, we have open source. And yes, you can spin up your own chat server and inspect your own data. But even open source remains locked in the design logic of a fragmented world.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;There is no single monorepo of human collaboration.
+No shared structure of memory.
+No living index that binds our work together.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Why?&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Because even in the act of programming itself, fragmentation is embedded at the root.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;The final tool of fragmentation is not an app, nor a UX.
+It is the deepest coupling in software itself—the binding of location and reference.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Stay tuned. That fracture deserves a chapter of its own.&amp;lt;/p&amp;gt;
+</content:encoded>
+    </item><item>
+      <title>The missing development metric - UX complexity</title>
+      <link>http://localhost:1313/posts/uxmetrix/</link>
+      <guid>http://localhost:1313/posts/uxmetrix/</guid>
+      <pubDate>Sat, 17 May 2025 09:22:50 CEST</pubDate>
+      <description>&amp;lt;h1 id=&amp;#34;the-missing-development-metric---ux-complexity&amp;#34;&amp;gt;
+  The missing development metric - UX complexity
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#the-missing-development-metric---ux-complexity&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h1&amp;gt;
+&amp;lt;p&amp;gt;While everyone, ok not every one is talking about computational complexity. Especially in high level languages with accent to functional programming.Recomputation is the name of the game. So even on that
+old topic a lot could be said. But &amp;lt;strong&amp;gt;UX complexity&amp;lt;/strong&amp;gt; - the cost of interaction
+as arguably the most important metric and its not yet a termed metric.
+Let&amp;amp;rsquo;s face it, if you nailed UX complexity, you nailed computational complexity long ago.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;innovation-in-ux-is-educational-process&amp;#34;&amp;gt;
+  Innovation in UX is educational process
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#innovation-in-ux-is-educational-process&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Yes we hear designers bragging about one click less UX experience. Yet they use standardized component libraries and expected UX patterns. Not much to invent, a lot to be careful about! It’s almost like innovative design is discouraged. And if you ever payed attention how people of age of higher number use their devices
+you start to realize educating people on UX principles is driven, multiple decades long education process. First they were inspired by the idea of free
+of cost calls, now they play candy crush 🍌.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;current-state-of-ux&amp;#34;&amp;gt;
+  Current state of UX
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#current-state-of-ux&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;But if we step back even more, and see the UX of entire systems then clarity comes so easily. We do this to dig out problems and pain point I want to talk about. UX is&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;fragmented&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;locking&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;Fragmented as UX is resembling more a corporate structure than intent of the user. Instead of sending a message being designed around UX of sending a message. It is designed around who owns the platform and what is the business model. There is nothing UX focused about that. Its all encompassing fragmentation of the system called &amp;amp;ldquo;app store&amp;amp;rdquo;.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Current architecture is &amp;lt;strong&amp;gt;paas&amp;lt;/strong&amp;gt; like. You have provider of platform - infrastructure (master). Then you have app fragmentation not caring a slightest bit about the user and intent. Then you have locking experiences in form
+of feeds, scrolls, hooks, notification pings and so on.&amp;lt;/p&amp;gt;
+&amp;lt;h3 id=&amp;#34;on-ux&amp;#34;&amp;gt;
+  O(n) UX
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#on-ux&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h3&amp;gt;
+&amp;lt;p&amp;gt;Now scrolling is &amp;lt;strong&amp;gt;o(n)&amp;lt;/strong&amp;gt; experience of UX where user is compelled to scroll like that pigeon with that button. 🔘🐦 And sadly, we all know how quickly
+time is traded in that trans like state. o(n) experience is unacceptable in any
+other areas as well. We all scrolled a gallery and after scrolling few hundred
+photos overscrolled past the photo like overlooking a food pot in fridge pointed by spouse. In one word, one emoji, trash 🗑️&amp;lt;/p&amp;gt;
+&amp;lt;h3 id=&amp;#34;olog-n-ux&amp;#34;&amp;gt;
+  O(log n) UX
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#olog-n-ux&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h3&amp;gt;
+&amp;lt;p&amp;gt;Menus are &amp;lt;strong&amp;gt;o(log n)&amp;lt;/strong&amp;gt; and I must compel you they too are not good enough.
+They are obviously miles ahead of scrolling, but lets see how avoiding them
+will make your life easier.
+When I think menus I think - specialized software. Gimp, blender, and alike.
+Those kind of softwares still require specialized professional. Is that not
+all the proof we need? I mean, I can edit a photo but its like an elephant
+in glass store. To work effectively in that kind of software one must develop
+muscle memory. Productive work needs muscle memory. And this is more important
+then you think. There is subconscious aversion if time to express your self
+and time to think of what you want to express have too wide gap.
+Most accessible example is browsing on a slow connection. After 5 minutes you just
+don&amp;amp;rsquo;t want to do it. Its the exact same story when im trying to edit a photo.
+If i could just access the function (blur the damn photo)without clicking through menus and knowing particular specifics of the software,
+and developing muscle memory for all that, I too could edit a photo. Because in the end I know the result, I know what arguments to achieve it.
+The only thing preventing me is the UX. It might be seen as a skill issue, but it is not. It is a UX issue.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Another example is scrolling through a file tree if you are a coder.
+Here I proclaim.&amp;lt;/p&amp;gt;
+&amp;lt;blockquote&amp;gt;
+&amp;lt;p&amp;gt;Never scroll through a file tree. It makes you a coding monkey&amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+&amp;lt;p&amp;gt;Disable that part of the IDE. It is a bad habit. A waste of time.
+You have so many more ways to access a location then scrolling through a file tree. It is disastrous degradation of log complexity into linear.
+And it is never worth scrolling and always better using something else.
+But on this topic I will write a separate log.&amp;lt;/p&amp;gt;
+&amp;lt;h3 id=&amp;#34;o1-ux---the-dream&amp;#34;&amp;gt;
+  O(1) UX - the dream
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#o1-ux---the-dream&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h3&amp;gt;
+&amp;lt;p&amp;gt;So lets conclude this log entry by simply staying with the dream a while longer.&amp;lt;/p&amp;gt;
+&amp;lt;blockquote&amp;gt;
+&amp;lt;p&amp;gt;We want to be able to command the system in any reach of our comprehension&amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+&amp;lt;p&amp;gt;Now this is a dream envisioned in the movies and that iris episode of black mirror. AI chats kind of know what you want and they do provide wide range of
+solutions. We see more and more chat driven interfaces. But even that&amp;amp;hellip; response waits aint fun.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;So &amp;lt;strong&amp;gt;o(1)&amp;lt;/strong&amp;gt; user experience complexity. I just think and the system knows what I want. What ever I want to refer to I can in constant time of user expression.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Search engines kind of do this but you know:&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;marketing&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;third party interests&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;&amp;amp;hellip;&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;If you don&amp;amp;rsquo;t know what you are searching for, either by name or by link, you are screwed. Something is missing. Stick around for some of the next logs where I will explore this dream further.&amp;lt;/p&amp;gt;
+</description>
+      <content:encoded>&amp;lt;h1 id=&amp;#34;the-missing-development-metric---ux-complexity&amp;#34;&amp;gt;
+  The missing development metric - UX complexity
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#the-missing-development-metric---ux-complexity&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h1&amp;gt;
+&amp;lt;p&amp;gt;While everyone, ok not every one is talking about computational complexity. Especially in high level languages with accent to functional programming.Recomputation is the name of the game. So even on that
+old topic a lot could be said. But &amp;lt;strong&amp;gt;UX complexity&amp;lt;/strong&amp;gt; - the cost of interaction
+as arguably the most important metric and its not yet a termed metric.
+Let&amp;amp;rsquo;s face it, if you nailed UX complexity, you nailed computational complexity long ago.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;innovation-in-ux-is-educational-process&amp;#34;&amp;gt;
+  Innovation in UX is educational process
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#innovation-in-ux-is-educational-process&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Yes we hear designers bragging about one click less UX experience. Yet they use standardized component libraries and expected UX patterns. Not much to invent, a lot to be careful about! It’s almost like innovative design is discouraged. And if you ever payed attention how people of age of higher number use their devices
+you start to realize educating people on UX principles is driven, multiple decades long education process. First they were inspired by the idea of free
+of cost calls, now they play candy crush 🍌.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;current-state-of-ux&amp;#34;&amp;gt;
+  Current state of UX
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#current-state-of-ux&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;But if we step back even more, and see the UX of entire systems then clarity comes so easily. We do this to dig out problems and pain point I want to talk about. UX is&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;fragmented&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;locking&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;Fragmented as UX is resembling more a corporate structure than intent of the user. Instead of sending a message being designed around UX of sending a message. It is designed around who owns the platform and what is the business model. There is nothing UX focused about that. Its all encompassing fragmentation of the system called &amp;amp;ldquo;app store&amp;amp;rdquo;.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Current architecture is &amp;lt;strong&amp;gt;paas&amp;lt;/strong&amp;gt; like. You have provider of platform - infrastructure (master). Then you have app fragmentation not caring a slightest bit about the user and intent. Then you have locking experiences in form
+of feeds, scrolls, hooks, notification pings and so on.&amp;lt;/p&amp;gt;
+&amp;lt;h3 id=&amp;#34;on-ux&amp;#34;&amp;gt;
+  O(n) UX
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#on-ux&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h3&amp;gt;
+&amp;lt;p&amp;gt;Now scrolling is &amp;lt;strong&amp;gt;o(n)&amp;lt;/strong&amp;gt; experience of UX where user is compelled to scroll like that pigeon with that button. 🔘🐦 And sadly, we all know how quickly
+time is traded in that trans like state. o(n) experience is unacceptable in any
+other areas as well. We all scrolled a gallery and after scrolling few hundred
+photos overscrolled past the photo like overlooking a food pot in fridge pointed by spouse. In one word, one emoji, trash 🗑️&amp;lt;/p&amp;gt;
+&amp;lt;h3 id=&amp;#34;olog-n-ux&amp;#34;&amp;gt;
+  O(log n) UX
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#olog-n-ux&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h3&amp;gt;
+&amp;lt;p&amp;gt;Menus are &amp;lt;strong&amp;gt;o(log n)&amp;lt;/strong&amp;gt; and I must compel you they too are not good enough.
+They are obviously miles ahead of scrolling, but lets see how avoiding them
+will make your life easier.
+When I think menus I think - specialized software. Gimp, blender, and alike.
+Those kind of softwares still require specialized professional. Is that not
+all the proof we need? I mean, I can edit a photo but its like an elephant
+in glass store. To work effectively in that kind of software one must develop
+muscle memory. Productive work needs muscle memory. And this is more important
+then you think. There is subconscious aversion if time to express your self
+and time to think of what you want to express have too wide gap.
+Most accessible example is browsing on a slow connection. After 5 minutes you just
+don&amp;amp;rsquo;t want to do it. Its the exact same story when im trying to edit a photo.
+If i could just access the function (blur the damn photo)without clicking through menus and knowing particular specifics of the software,
+and developing muscle memory for all that, I too could edit a photo. Because in the end I know the result, I know what arguments to achieve it.
+The only thing preventing me is the UX. It might be seen as a skill issue, but it is not. It is a UX issue.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Another example is scrolling through a file tree if you are a coder.
+Here I proclaim.&amp;lt;/p&amp;gt;
+&amp;lt;blockquote&amp;gt;
+&amp;lt;p&amp;gt;Never scroll through a file tree. It makes you a coding monkey&amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+&amp;lt;p&amp;gt;Disable that part of the IDE. It is a bad habit. A waste of time.
+You have so many more ways to access a location then scrolling through a file tree. It is disastrous degradation of log complexity into linear.
+And it is never worth scrolling and always better using something else.
+But on this topic I will write a separate log.&amp;lt;/p&amp;gt;
+&amp;lt;h3 id=&amp;#34;o1-ux---the-dream&amp;#34;&amp;gt;
+  O(1) UX - the dream
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#o1-ux---the-dream&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h3&amp;gt;
+&amp;lt;p&amp;gt;So lets conclude this log entry by simply staying with the dream a while longer.&amp;lt;/p&amp;gt;
+&amp;lt;blockquote&amp;gt;
+&amp;lt;p&amp;gt;We want to be able to command the system in any reach of our comprehension&amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+&amp;lt;p&amp;gt;Now this is a dream envisioned in the movies and that iris episode of black mirror. AI chats kind of know what you want and they do provide wide range of
+solutions. We see more and more chat driven interfaces. But even that&amp;amp;hellip; response waits aint fun.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;So &amp;lt;strong&amp;gt;o(1)&amp;lt;/strong&amp;gt; user experience complexity. I just think and the system knows what I want. What ever I want to refer to I can in constant time of user expression.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Search engines kind of do this but you know:&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;marketing&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;third party interests&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;&amp;amp;hellip;&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;If you don&amp;amp;rsquo;t know what you are searching for, either by name or by link, you are screwed. Something is missing. Stick around for some of the next logs where I will explore this dream further.&amp;lt;/p&amp;gt;
+</content:encoded>
+    </item><item>
+      <title>FP vs IP and Microservices vs Monoliths are the same argument</title>
+      <link>http://localhost:1313/posts/recomputing-since-christ/</link>
+      <guid>http://localhost:1313/posts/recomputing-since-christ/</guid>
+      <pubDate>Thu, 15 May 2025 17:10:43 CEST</pubDate>
+      <description>&amp;lt;h1 id=&amp;#34;fp-vs-ip-and-microservices-vs-monoliths-are-the-same-argument&amp;#34;&amp;gt;
+  FP vs IP and Microservices vs Monoliths are the same argument
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#fp-vs-ip-and-microservices-vs-monoliths-are-the-same-argument&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h1&amp;gt;
+&amp;lt;p&amp;gt;There is a huge parallel between:&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;functional vs imperative programming&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;microservices vs monoliths&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;Now, the most unwelcome thing—dogma—should have no foothold in the software world. But it does.&amp;lt;br&amp;gt;
+Just like other markets, we ride waves of virality. It’s no coincidence that most beginners choose the most popular frameworks and languages.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;While this kind of marketing gives guidance, it destroys the very essence of what coding should be: &amp;lt;strong&amp;gt;sense&amp;lt;/strong&amp;gt;.&amp;lt;br&amp;gt;
+So parrots fly around and repeat things like:&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;&amp;amp;ldquo;Microservices are better than monoliths&amp;amp;rdquo;&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;&amp;amp;ldquo;Functional programming is better than imperative programming&amp;amp;rdquo;&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;But both approaches live, both are used—and that alone tells us both are good and both have their place.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Let’s draw the parallel between these two debates and expose the hype for what it is.&amp;lt;/p&amp;gt;
+&amp;lt;hr&amp;gt;
+&amp;lt;h2 id=&amp;#34;the-microservice-hype&amp;#34;&amp;gt;
+  The Microservice Hype
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#the-microservice-hype&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Every aspiring developer is told they must know how to build scalable systems before they can land a job—as if each of us is building cloud-scale infrastructure for side projects.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Buzzwords in job postings feed the hype, and so do slogans like:&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;“Your microservice team can be fed by one pizza.”&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;“Keep your services stateless.”&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;How many times have I heard the second one in interviews—only to open the source code and find a constructor call inside a &amp;lt;code&amp;gt;get&amp;lt;/code&amp;gt; method, of a class passed via dependency injection&amp;amp;hellip; in JavaScript.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Come on. Time to quit (this really happened 😅).&amp;lt;/p&amp;gt;
+&amp;lt;hr&amp;gt;
+&amp;lt;h2 id=&amp;#34;java-overengineering-in-javascript&amp;#34;&amp;gt;
+  Java Overengineering in JavaScript
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#java-overengineering-in-javascript&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Java-style overengineering doesn’t belong in JavaScript.&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;Your JS module is automatically a singleton (unless you use dynamic imports).&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;The runtime handles circular dependency resolution.&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Your module’s global-scope variables can’t be mutated from the outside without you &amp;lt;strong&amp;gt;exposing&amp;lt;/strong&amp;gt; an interface to do so.&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;And yet, people bring Java complexity patterns into JS like it&amp;amp;rsquo;s a rite of passage.&amp;lt;/p&amp;gt;
+&amp;lt;hr&amp;gt;
+&amp;lt;h2 id=&amp;#34;bitter-sweet-reality&amp;#34;&amp;gt;
+  Bitter sweet reality
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#bitter-sweet-reality&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;This brings us to the real point: most devs are beginners. This will always be true.
+Most of us are territorial (we defend our code even when it sucks), and many are driven by the desire to be &amp;lt;strong&amp;gt;right&amp;lt;/strong&amp;gt;—or at least to appear smart.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;This, combined with a general lack of experience, makes it almost a rule: &amp;lt;strong&amp;gt;large codebases will be colored with smells&amp;lt;/strong&amp;gt;.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Even &amp;amp;ldquo;stateless&amp;amp;rdquo; microservices often use stateful libraries or sessions for auth. Perspective is lacking—and that lack is guarded by dogma, which ultimately reduces to social behavior.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;And maybe that’s fine.&amp;lt;br&amp;gt;
+After all, every problem should’ve been solved yesterday. Business doesn’t wait. We must deliver. Fast.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;So there’s no time for:&amp;lt;/p&amp;gt;
+&amp;lt;blockquote&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;&amp;amp;ldquo;If you want to make pasta from scratch, you must first invent the universe.&amp;amp;rdquo;&amp;lt;/em&amp;gt;&amp;lt;br&amp;gt;
+— Carl Sagan&amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+&amp;lt;hr&amp;gt;
+&amp;lt;h2 id=&amp;#34;services-should-be-focused&amp;#34;&amp;gt;
+  Services Should Be Focused
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#services-should-be-focused&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Like modules, services should focus on &amp;lt;strong&amp;gt;one thing&amp;lt;/strong&amp;gt; and do it well.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Why? So we can scale them horizontally, reuse them, and maintain them independently.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;But here’s where inexperience hits.&amp;lt;br&amp;gt;
+Many devs—even seniors in web—have never written a proper multithreaded program. Those who have know that &amp;lt;strong&amp;gt;orchestrating multiple clones of the same thing requires overhead&amp;lt;/strong&amp;gt;.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;In microservices, this overhead is primarily the &amp;lt;strong&amp;gt;cost of statelessness&amp;lt;/strong&amp;gt;.&amp;lt;/p&amp;gt;
+&amp;lt;hr&amp;gt;
+&amp;lt;h2 id=&amp;#34;stateless-by-design--and-by-cost&amp;#34;&amp;gt;
+  Stateless by Design — and by Cost
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#stateless-by-design--and-by-cost&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Your message queues, Redis instances, and storage layers all need to be stateless (or used in a stateless way), because &amp;lt;strong&amp;gt;synchronizing across clones&amp;lt;/strong&amp;gt; goes against horizontal scaling.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Need more performance? Spin up more instances.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;The more instances you have, the harder it gets to synchronize them.&amp;lt;br&amp;gt;
+So… just don’t.&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;Don’t cache.&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Don’t store session data.&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Don’t share memory.&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;Instead: &amp;lt;strong&amp;gt;recompute everything&amp;lt;/strong&amp;gt; every time.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Just like how a server-side page is re-rendered per request.&amp;lt;/p&amp;gt;
+&amp;lt;hr&amp;gt;
+&amp;lt;h2 id=&amp;#34;example&amp;#34;&amp;gt;
+  Example
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#example&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Let’s put it in beginner-friendly terms.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Say you have a function:&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;#34;highlight&amp;#34;&amp;gt;&amp;lt;pre tabindex=&amp;#34;0&amp;#34; style=&amp;#34;color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&amp;#34;&amp;gt;&amp;lt;code class=&amp;#34;language-python&amp;#34; data-lang=&amp;#34;python&amp;#34;&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;def&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;#34;color:#d2a8ff;font-weight:bold&amp;#34;&amp;gt;fibonacci&amp;lt;/span&amp;gt;(n):
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;p&amp;gt;Now you call:&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;#34;highlight&amp;#34;&amp;gt;&amp;lt;pre tabindex=&amp;#34;0&amp;#34; style=&amp;#34;color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&amp;#34;&amp;gt;&amp;lt;code class=&amp;#34;language-python&amp;#34; data-lang=&amp;#34;python&amp;#34;&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;print(fibonacci(&amp;lt;span style=&amp;#34;color:#a5d6ff&amp;#34;&amp;gt;100&amp;lt;/span&amp;gt;))
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;print(fibonacci(&amp;lt;span style=&amp;#34;color:#a5d6ff&amp;#34;&amp;gt;101&amp;lt;/span&amp;gt;))
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;p&amp;gt;Neither functional programming nor microservices care that you just computed fibonacci(100).
+On line two, you start from scratch.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Only difference? A microservice wraps it in an HTTP request.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;So the real question becomes:&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Why is this better than a monolith?
+Why is it better than imperative code that could just cache the result—scaling vertically and holding runtime state with ease?&amp;lt;/p&amp;gt;
+&amp;lt;blockquote&amp;gt;
+&amp;lt;p&amp;gt;“Devs can think much further than they can code. Power to express oneself is lacking.”&amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+&amp;lt;p&amp;gt;This is the key.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Recomputing is obviously more expensive than caching, from the machine’s perspective. But from the developer’s perspective?&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Caching is low-level. Tedious. Demanding. Often lacking expressive power.
+So we avoid it.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Instead, we build massive CI pipelines, spin nuclear-scale infrastructure, and recompute everything since Christ—just to avoid managing memory.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;scaling-with-clones-vs-standing-on-state&amp;#34;&amp;gt;
+  Scaling with Clones vs Standing on State
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#scaling-with-clones-vs-standing-on-state&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Functional programming and microservices recompute anew—but can easily spawn 1000 instances of the same thing.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Imperative programming and monoliths tend to revolve around a single instance—but with the benefit of retained state and optimized memory usage.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Which one is better?&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;No straight answer.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;protecting-the-codebase-from-your-own-team&amp;#34;&amp;gt;
+  Protecting the Codebase from Your Own Team
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#protecting-the-codebase-from-your-own-team&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;If you have a large team, you often want to restrict expressive power.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;You narrow responsibilities so each dev works in isolation.
+This reduces risk, reduces damage, and speeds up onboarding.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Yes, expressive power is linked to production cost and complexity.
+And industry cares more about delivering features than squeezing performance.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Under one condition:&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;platforms-vs-applications&amp;#34;&amp;gt;
+  Platforms vs Applications
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#platforms-vs-applications&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;We can divide software into two rough categories:&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;Infrastructure — platforms like compilers, browsers, frameworks, and libraries&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Applications — business logic and user-facing systems&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;If you fall into the second category, you tend to value:&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Expressive power&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Fast iteration&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;High-level abstraction&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;That’s when you lean on frameworks, CI pipelines, and horizontal scaling.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;But if you&amp;amp;rsquo;re building infrastructure, you care more about:&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Precision&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Performance&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Long-term stability&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;So you optimize. You profile. You write tight, efficient code.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;the-pendulum-swings&amp;#34;&amp;gt;
+  The Pendulum Swings
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#the-pendulum-swings&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;We can’t always compute exactly when it’s time to switch paradigms.
+When is it worth optimizing that slow service? When is it better to lean into scale?&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;The pendulum will keep swinging—from monolith to microservice, from FP to imperative.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;But the ideal gap between what we can think and what we can express in code is still wide. Maybe unbridgeable.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;the-real-limitation-human-abstraction&amp;#34;&amp;gt;
+  The Real Limitation: Human Abstraction
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#the-real-limitation-human-abstraction&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;It’s not that we lack tools to build expressive languages. They exist.
+The real problem is:&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Human limitations in abstraction.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;As one of my respected colleagues once said:&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;“The more abstract you go, the more language resembles static noise.”&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;And that is something worth pondering.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;It may be the real cause behind these never-ending clashes in modern software:
+FP vs IP, MS vs monolith — and the limits of the human mind behind the keyboard.&amp;lt;/p&amp;gt;
+</description>
+      <content:encoded>&amp;lt;h1 id=&amp;#34;fp-vs-ip-and-microservices-vs-monoliths-are-the-same-argument&amp;#34;&amp;gt;
+  FP vs IP and Microservices vs Monoliths are the same argument
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#fp-vs-ip-and-microservices-vs-monoliths-are-the-same-argument&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h1&amp;gt;
+&amp;lt;p&amp;gt;There is a huge parallel between:&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;functional vs imperative programming&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;microservices vs monoliths&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;Now, the most unwelcome thing—dogma—should have no foothold in the software world. But it does.&amp;lt;br&amp;gt;
+Just like other markets, we ride waves of virality. It’s no coincidence that most beginners choose the most popular frameworks and languages.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;While this kind of marketing gives guidance, it destroys the very essence of what coding should be: &amp;lt;strong&amp;gt;sense&amp;lt;/strong&amp;gt;.&amp;lt;br&amp;gt;
+So parrots fly around and repeat things like:&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;&amp;amp;ldquo;Microservices are better than monoliths&amp;amp;rdquo;&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;&amp;amp;ldquo;Functional programming is better than imperative programming&amp;amp;rdquo;&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;But both approaches live, both are used—and that alone tells us both are good and both have their place.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Let’s draw the parallel between these two debates and expose the hype for what it is.&amp;lt;/p&amp;gt;
+&amp;lt;hr&amp;gt;
+&amp;lt;h2 id=&amp;#34;the-microservice-hype&amp;#34;&amp;gt;
+  The Microservice Hype
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#the-microservice-hype&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Every aspiring developer is told they must know how to build scalable systems before they can land a job—as if each of us is building cloud-scale infrastructure for side projects.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Buzzwords in job postings feed the hype, and so do slogans like:&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;“Your microservice team can be fed by one pizza.”&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;“Keep your services stateless.”&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;How many times have I heard the second one in interviews—only to open the source code and find a constructor call inside a &amp;lt;code&amp;gt;get&amp;lt;/code&amp;gt; method, of a class passed via dependency injection&amp;amp;hellip; in JavaScript.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Come on. Time to quit (this really happened 😅).&amp;lt;/p&amp;gt;
+&amp;lt;hr&amp;gt;
+&amp;lt;h2 id=&amp;#34;java-overengineering-in-javascript&amp;#34;&amp;gt;
+  Java Overengineering in JavaScript
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#java-overengineering-in-javascript&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Java-style overengineering doesn’t belong in JavaScript.&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;Your JS module is automatically a singleton (unless you use dynamic imports).&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;The runtime handles circular dependency resolution.&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Your module’s global-scope variables can’t be mutated from the outside without you &amp;lt;strong&amp;gt;exposing&amp;lt;/strong&amp;gt; an interface to do so.&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;And yet, people bring Java complexity patterns into JS like it&amp;amp;rsquo;s a rite of passage.&amp;lt;/p&amp;gt;
+&amp;lt;hr&amp;gt;
+&amp;lt;h2 id=&amp;#34;bitter-sweet-reality&amp;#34;&amp;gt;
+  Bitter sweet reality
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#bitter-sweet-reality&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;This brings us to the real point: most devs are beginners. This will always be true.
+Most of us are territorial (we defend our code even when it sucks), and many are driven by the desire to be &amp;lt;strong&amp;gt;right&amp;lt;/strong&amp;gt;—or at least to appear smart.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;This, combined with a general lack of experience, makes it almost a rule: &amp;lt;strong&amp;gt;large codebases will be colored with smells&amp;lt;/strong&amp;gt;.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Even &amp;amp;ldquo;stateless&amp;amp;rdquo; microservices often use stateful libraries or sessions for auth. Perspective is lacking—and that lack is guarded by dogma, which ultimately reduces to social behavior.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;And maybe that’s fine.&amp;lt;br&amp;gt;
+After all, every problem should’ve been solved yesterday. Business doesn’t wait. We must deliver. Fast.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;So there’s no time for:&amp;lt;/p&amp;gt;
+&amp;lt;blockquote&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;&amp;amp;ldquo;If you want to make pasta from scratch, you must first invent the universe.&amp;amp;rdquo;&amp;lt;/em&amp;gt;&amp;lt;br&amp;gt;
+— Carl Sagan&amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+&amp;lt;hr&amp;gt;
+&amp;lt;h2 id=&amp;#34;services-should-be-focused&amp;#34;&amp;gt;
+  Services Should Be Focused
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#services-should-be-focused&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Like modules, services should focus on &amp;lt;strong&amp;gt;one thing&amp;lt;/strong&amp;gt; and do it well.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Why? So we can scale them horizontally, reuse them, and maintain them independently.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;But here’s where inexperience hits.&amp;lt;br&amp;gt;
+Many devs—even seniors in web—have never written a proper multithreaded program. Those who have know that &amp;lt;strong&amp;gt;orchestrating multiple clones of the same thing requires overhead&amp;lt;/strong&amp;gt;.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;In microservices, this overhead is primarily the &amp;lt;strong&amp;gt;cost of statelessness&amp;lt;/strong&amp;gt;.&amp;lt;/p&amp;gt;
+&amp;lt;hr&amp;gt;
+&amp;lt;h2 id=&amp;#34;stateless-by-design--and-by-cost&amp;#34;&amp;gt;
+  Stateless by Design — and by Cost
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#stateless-by-design--and-by-cost&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Your message queues, Redis instances, and storage layers all need to be stateless (or used in a stateless way), because &amp;lt;strong&amp;gt;synchronizing across clones&amp;lt;/strong&amp;gt; goes against horizontal scaling.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Need more performance? Spin up more instances.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;The more instances you have, the harder it gets to synchronize them.&amp;lt;br&amp;gt;
+So… just don’t.&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;Don’t cache.&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Don’t store session data.&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Don’t share memory.&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;Instead: &amp;lt;strong&amp;gt;recompute everything&amp;lt;/strong&amp;gt; every time.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Just like how a server-side page is re-rendered per request.&amp;lt;/p&amp;gt;
+&amp;lt;hr&amp;gt;
+&amp;lt;h2 id=&amp;#34;example&amp;#34;&amp;gt;
+  Example
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#example&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Let’s put it in beginner-friendly terms.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Say you have a function:&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;#34;highlight&amp;#34;&amp;gt;&amp;lt;pre tabindex=&amp;#34;0&amp;#34; style=&amp;#34;color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&amp;#34;&amp;gt;&amp;lt;code class=&amp;#34;language-python&amp;#34; data-lang=&amp;#34;python&amp;#34;&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;def&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;#34;color:#d2a8ff;font-weight:bold&amp;#34;&amp;gt;fibonacci&amp;lt;/span&amp;gt;(n):
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;p&amp;gt;Now you call:&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;#34;highlight&amp;#34;&amp;gt;&amp;lt;pre tabindex=&amp;#34;0&amp;#34; style=&amp;#34;color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&amp;#34;&amp;gt;&amp;lt;code class=&amp;#34;language-python&amp;#34; data-lang=&amp;#34;python&amp;#34;&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;print(fibonacci(&amp;lt;span style=&amp;#34;color:#a5d6ff&amp;#34;&amp;gt;100&amp;lt;/span&amp;gt;))
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;print(fibonacci(&amp;lt;span style=&amp;#34;color:#a5d6ff&amp;#34;&amp;gt;101&amp;lt;/span&amp;gt;))
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;p&amp;gt;Neither functional programming nor microservices care that you just computed fibonacci(100).
+On line two, you start from scratch.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Only difference? A microservice wraps it in an HTTP request.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;So the real question becomes:&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Why is this better than a monolith?
+Why is it better than imperative code that could just cache the result—scaling vertically and holding runtime state with ease?&amp;lt;/p&amp;gt;
+&amp;lt;blockquote&amp;gt;
+&amp;lt;p&amp;gt;“Devs can think much further than they can code. Power to express oneself is lacking.”&amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+&amp;lt;p&amp;gt;This is the key.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Recomputing is obviously more expensive than caching, from the machine’s perspective. But from the developer’s perspective?&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Caching is low-level. Tedious. Demanding. Often lacking expressive power.
+So we avoid it.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Instead, we build massive CI pipelines, spin nuclear-scale infrastructure, and recompute everything since Christ—just to avoid managing memory.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;scaling-with-clones-vs-standing-on-state&amp;#34;&amp;gt;
+  Scaling with Clones vs Standing on State
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#scaling-with-clones-vs-standing-on-state&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Functional programming and microservices recompute anew—but can easily spawn 1000 instances of the same thing.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Imperative programming and monoliths tend to revolve around a single instance—but with the benefit of retained state and optimized memory usage.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Which one is better?&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;No straight answer.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;protecting-the-codebase-from-your-own-team&amp;#34;&amp;gt;
+  Protecting the Codebase from Your Own Team
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#protecting-the-codebase-from-your-own-team&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;If you have a large team, you often want to restrict expressive power.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;You narrow responsibilities so each dev works in isolation.
+This reduces risk, reduces damage, and speeds up onboarding.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Yes, expressive power is linked to production cost and complexity.
+And industry cares more about delivering features than squeezing performance.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Under one condition:&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;platforms-vs-applications&amp;#34;&amp;gt;
+  Platforms vs Applications
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#platforms-vs-applications&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;We can divide software into two rough categories:&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;Infrastructure — platforms like compilers, browsers, frameworks, and libraries&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Applications — business logic and user-facing systems&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;If you fall into the second category, you tend to value:&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Expressive power&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Fast iteration&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;High-level abstraction&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;That’s when you lean on frameworks, CI pipelines, and horizontal scaling.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;But if you&amp;amp;rsquo;re building infrastructure, you care more about:&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Precision&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Performance&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Long-term stability&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;So you optimize. You profile. You write tight, efficient code.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;the-pendulum-swings&amp;#34;&amp;gt;
+  The Pendulum Swings
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#the-pendulum-swings&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;We can’t always compute exactly when it’s time to switch paradigms.
+When is it worth optimizing that slow service? When is it better to lean into scale?&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;The pendulum will keep swinging—from monolith to microservice, from FP to imperative.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;But the ideal gap between what we can think and what we can express in code is still wide. Maybe unbridgeable.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;the-real-limitation-human-abstraction&amp;#34;&amp;gt;
+  The Real Limitation: Human Abstraction
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#the-real-limitation-human-abstraction&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;It’s not that we lack tools to build expressive languages. They exist.
+The real problem is:&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Human limitations in abstraction.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;As one of my respected colleagues once said:&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;“The more abstract you go, the more language resembles static noise.”&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;And that is something worth pondering.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;It may be the real cause behind these never-ending clashes in modern software:
+FP vs IP, MS vs monolith — and the limits of the human mind behind the keyboard.&amp;lt;/p&amp;gt;
+</content:encoded>
+    </item>
+  </channel>
+</rss>

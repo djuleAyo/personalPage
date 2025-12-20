@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+  JS spread performance ⚠️warning · djuleayo
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="djuleayo">
+<meta name="description" content="Maybe you know the spread can be costly. Maybe you don&#39;t. Maybe an example will solidify your knowledge.">
+<meta name="keywords" content="blog,developer,personal">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="JS spread performance ⚠️warning">
+  <meta name="twitter:description" content="Maybe you know the spread can be costly. Maybe you don&#39;t. Maybe an example will solidify your knowledge.">
+
+<meta property="og:url" content="http://localhost:1313/posts/spread-performance/">
+  <meta property="og:site_name" content="djuleayo">
+  <meta property="og:title" content="JS spread performance ⚠️warning">
+  <meta property="og:description" content="Maybe you know the spread can be costly. Maybe you don&#39;t. Maybe an example will solidify your knowledge.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-05-15T17:10:43+02:00">
+    <meta property="article:modified_time" content="2025-05-15T17:10:43+02:00">
+    <meta property="article:tag" content="JS">
+    <meta property="article:tag" content="Opts">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/posts/spread-performance/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/img/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/">
+      djuleayo
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">About</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://localhost:1313/posts/spread-performance/">
+              JS spread performance ⚠️warning
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2025-05-15T17:10:43&#43;02:00">
+                May 15, 2025
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              2-minute read
+            </span>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/js/">JS</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/opts/">Opts</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h1 id="js-spread-performance-warning">
+  JS spread performance ⚠️warning
+  <a class="heading-link" href="#js-spread-performance-warning">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>Us web devs, we often speculate syntax based on &ldquo;best practices&rdquo; bestowed upon
+us by the Gods of - meme lords. We praise our prettier and linters as basis of
+all success. Looping between all 22 and a half options of a drop down
+allows you to use exponential complexity implementations. In a loop.
+Because even if you have 2k entries thats a warmup for one core.
+So in all wire connections between types, runtime validators, component props,
+api responses and requests, rarely in fact implementation matters from performance standpoint. Except when it does.</p>
+<blockquote>
+<p>Spread operator can cost you performance</p>
+</blockquote>
+<p>Straight to the point. <strong>Never use it in a loop</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ff7b72">const</span> buf <span style="color:#ff7b72;font-weight:bold">=</span> {}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Object.keys(incomingData).forEach((entry) =&gt; {
+</span></span><span style="display:flex;"><span>  buf[entry] <span style="color:#ff7b72;font-weight:bold">=</span> {
+</span></span><span style="display:flex;"><span>    ...buf[entry],
+</span></span><span style="display:flex;"><span>    ...incomingData[entry],
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>})
+</span></span></code></pre></div><p>I did this recently because of <strong>&ldquo;immutable is good&rdquo;</strong> hype. And quickly found
+out it has its costs, especially in this given form.
+Each assignment there is linear complexity to object size. Meaning doing that in
+loop is <strong>O(n^2)</strong>. And if you have 2k entries, well, no need to imagine.</p>
+<p>Recently I did clean finger thick dust cover from my profiler start button
+so isn&rsquo;t that a change. Instead of speculating syntax we can actually measure</p>
+<p>Results?
+Parsing 2k lines of custom simple language yielded 2 drastically different results.</p>
+<ul>
+<li>the spread in loop way went over <strong>63 seconds</strong></li>
+<li>changing just one expression from spread to property assignment yielded <strong>0.5 seconds</strong> for the same 2k lines!!!</li>
+</ul>
+<p>One line of code. One expression and 62/0.5 = <strong><code>124x times faster</code></strong>!!!
+Be my guest, that kind of difference becomes notable even on few tens of entries!</p>
+<p>So, yeah immer is cool, and your store wants a new reference to dispatch the changes, but that doesn&rsquo;t mean you should change it n times in a loop.
+As you can see. Instead keep using regular assignment and change the reference
+only once when needed.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ff7b72">const</span> buf <span style="color:#ff7b72;font-weight:bold">=</span> {}
+</span></span><span style="display:flex;"><span>Object.keys(incomingData).forEach((entry) =&gt; {
+</span></span><span style="display:flex;"><span>  buf[entry] <span style="color:#ff7b72;font-weight:bold">=</span> incomingData[entry]
+</span></span><span style="display:flex;"><span>})
+</span></span></code></pre></div><p>Old school 👊</p>
+<p>In conclusion, spread in a loop is almost as evil as awaiting in a loop</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        <div id="disqus_thread"></div>
+<script>
+  window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "djuleayo" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+    
+    document.addEventListener('themeChanged', function (e) { 
+        if (document.readyState == 'complete') {
+          DISQUS.reset({ reload: true, config: disqus_config });
+        }
+    });
+</script>
+        
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2019 -
+    
+    2025
+     djuleayo 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <script defer data-domain="djuleayo.com" src="https://plausible.io/js/script.js"></script>
+
+</body>
+</html>

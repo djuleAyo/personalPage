@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Meta-Programming · djuleayo</title>
+    <link>http://localhost:1313/tags/meta-programming/</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/tags/meta-programming/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>TS API Spec</title>
+      <link>http://localhost:1313/posts/ts-api-spec/</link>
+      <guid>http://localhost:1313/posts/ts-api-spec/</guid>
+      <pubDate>Sat, 20 Dec 2025 11:13:48 &#43;0200</pubDate>
+      <description>&amp;lt;h1 id=&amp;#34;ts-api-spec&amp;#34;&amp;gt;
+  TS API Spec
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#ts-api-spec&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h1&amp;gt;
+&amp;lt;p&amp;gt;TS 1st api spec with superb DX&amp;lt;/p&amp;gt;
+&amp;lt;figure&amp;gt;&amp;lt;img src=&amp;#34;/tsapispec.demo.gif&amp;#34;&amp;gt;&amp;lt;figcaption&amp;gt;
+      &amp;lt;h4&amp;gt;My Caption&amp;lt;/h4&amp;gt;
+    &amp;lt;/figcaption&amp;gt;
+&amp;lt;/figure&amp;gt;
+
+&amp;lt;p&amp;gt;Everything is autocompleted and type supported.
+As soon as schema is satisfied error disappears.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Benefits:&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;maximum code sharing between nodes (assuming JS/TS)&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;fully typed end to end (including errors)&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;uniform error handling (do runtime validation in non prod everywhere)&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;generates router and apiClient and router from same spec(SSOT/contract)&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;Intended to: suboptimal code in industry/lag contract drift
+Overlap: openApi codegen RPC etc
+leverage: for js both backend and frontend ts first zero drift code sharing.
+Eliminates gen step and stale specs&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;how: parser types &amp;lt;a href=&amp;#34;http://djuleayo.com/posts/parser-types/&amp;#34;  class=&amp;#34;external-link&amp;#34; target=&amp;#34;_blank&amp;#34; rel=&amp;#34;noopener&amp;#34;&amp;gt;http://djuleayo.com/posts/parser-types/&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
+</description>
+      <content:encoded>&amp;lt;h1 id=&amp;#34;ts-api-spec&amp;#34;&amp;gt;
+  TS API Spec
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#ts-api-spec&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h1&amp;gt;
+&amp;lt;p&amp;gt;TS 1st api spec with superb DX&amp;lt;/p&amp;gt;
+&amp;lt;figure&amp;gt;&amp;lt;img src=&amp;#34;/tsapispec.demo.gif&amp;#34;&amp;gt;&amp;lt;figcaption&amp;gt;
+      &amp;lt;h4&amp;gt;My Caption&amp;lt;/h4&amp;gt;
+    &amp;lt;/figcaption&amp;gt;
+&amp;lt;/figure&amp;gt;
+
+&amp;lt;p&amp;gt;Everything is autocompleted and type supported.
+As soon as schema is satisfied error disappears.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Benefits:&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;maximum code sharing between nodes (assuming JS/TS)&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;fully typed end to end (including errors)&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;uniform error handling (do runtime validation in non prod everywhere)&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;generates router and apiClient and router from same spec(SSOT/contract)&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;Intended to: suboptimal code in industry/lag contract drift
+Overlap: openApi codegen RPC etc
+leverage: for js both backend and frontend ts first zero drift code sharing.
+Eliminates gen step and stale specs&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;how: parser types &amp;lt;a href=&amp;#34;http://djuleayo.com/posts/parser-types/&amp;#34;  class=&amp;#34;external-link&amp;#34; target=&amp;#34;_blank&amp;#34; rel=&amp;#34;noopener&amp;#34;&amp;gt;http://djuleayo.com/posts/parser-types/&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
+</content:encoded>
+    </item><item>
+      <title>Parser types</title>
+      <link>http://localhost:1313/posts/parser-types/</link>
+      <guid>http://localhost:1313/posts/parser-types/</guid>
+      <pubDate>Thu, 24 Jul 2025 11:13:48 CEST</pubDate>
+      <description>&amp;lt;h1 id=&amp;#34;parser-types&amp;#34;&amp;gt;
+  Parser types
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#parser-types&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h1&amp;gt;
+&amp;lt;h2 id=&amp;#34;intro--formal-languages-and-parsing&amp;#34;&amp;gt;
+  Intro — formal languages and parsing
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#intro--formal-languages-and-parsing&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;All programming languages are specified by a grammar. A grammar tells us whether a piece of text is a valid sentence in that language. A parser generator can take such a grammar and produce a parser. Parsing is the “front end” of compilation: it turns raw text into structure. That’s the basis of how formal languages work.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Simplistic grammar example:&amp;lt;/p&amp;gt;
+&amp;lt;pre tabindex=&amp;#34;0&amp;#34;&amp;gt;&amp;lt;code class=&amp;#34;language-bison&amp;#34; data-lang=&amp;#34;bison&amp;#34;&amp;gt;%token &amp;amp;lt;int&amp;amp;gt; NUMBER
+
+expression: expression &amp;amp;#39;&#43;&amp;amp;#39; expression
+          | expression &amp;amp;#39;-&amp;amp;#39; expression
+          | expression &amp;amp;#39;*&amp;amp;#39; expression
+          | expression &amp;amp;#39;/&amp;amp;#39; expression
+          | &amp;amp;#39;(&amp;amp;#39; expression &amp;amp;#39;)&amp;amp;#39;
+          | NUMBER
+          ;
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;p&amp;gt;This grammar can generate a parser for simple arithmetic. Before parsing, the input is just text. After parsing, we both&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;(a) know whether it’s valid under this grammar and&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;(b) obtain a structured representation of it.&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;Input:&amp;lt;/p&amp;gt;
+&amp;lt;pre tabindex=&amp;#34;0&amp;#34;&amp;gt;&amp;lt;code&amp;gt;1 &#43; 2 * (3 - 4)
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;p&amp;gt;Parsed tree:&amp;lt;/p&amp;gt;
+&amp;lt;pre tabindex=&amp;#34;0&amp;#34;&amp;gt;&amp;lt;code&amp;gt;        &#43;
+       / \
+      1   *
+         / \
+        2   -
+           / \
+          3   4
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;p&amp;gt;Operator precedence and associativity are encoded in how the tree “leans.” This is an Abstract Syntax Tree (AST). Every program you’ve ever written is, at some level, an AST.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;declarative-vs-imperative-why-we-like-trees-as-data&amp;#34;&amp;gt;
+  Declarative vs. imperative (why we like trees-as-data)
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#declarative-vs-imperative-why-we-like-trees-as-data&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;An AST is a tree, and a tree is data. Code can be seen as data laid out in a shape that captures meaning. The tree is a constant shape that other parts of the system can consume. That’s powerful.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Take an Express router:&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;#34;highlight&amp;#34;&amp;gt;&amp;lt;pre tabindex=&amp;#34;0&amp;#34; style=&amp;#34;color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&amp;#34;&amp;gt;&amp;lt;code class=&amp;#34;language-javascript&amp;#34; data-lang=&amp;#34;javascript&amp;#34;&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;router.get(&amp;lt;span style=&amp;#34;color:#a5d6ff&amp;#34;&amp;gt;&amp;amp;#39;/users&amp;amp;#39;&amp;lt;/span&amp;gt;, (req, res) =&amp;amp;gt; {
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  res.send(&amp;lt;span style=&amp;#34;color:#a5d6ff&amp;#34;&amp;gt;&amp;amp;#39;Users list&amp;amp;#39;&amp;lt;/span&amp;gt;);
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;});
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;p&amp;gt;You’re not imperatively pushing bytes through sockets; you declare what should happen on /users. The framework consumes that declaration at the right time.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Declarative style usually means: you state what you want; the machinery figures out how. The more capable the machinery, the richer the configuration language must be.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;parser-types-1&amp;#34;&amp;gt;
+  Parser types
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#parser-types-1&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Configurations aren’t always free-form; values often depend on each other. Not every config that “type-checks” at the top level is semantically valid. Think of a configuration as:&amp;lt;/p&amp;gt;
+&amp;lt;blockquote&amp;gt;
+&amp;lt;p&amp;gt;a constant value that must satisfy a language (expressed as an AST)&amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+&amp;lt;p&amp;gt;If that clicks, good. TypeScript lets us enforce such languages at compile time. I call these parser types: recursive TS types that act like a grammar. They don’t parse tokens; they constrain shape the way a grammar constrains sentences.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Consider:&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;#34;highlight&amp;#34;&amp;gt;&amp;lt;pre tabindex=&amp;#34;0&amp;#34; style=&amp;#34;color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&amp;#34;&amp;gt;&amp;lt;code class=&amp;#34;language-typescript&amp;#34; data-lang=&amp;#34;typescript&amp;#34;&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;type&amp;lt;/span&amp;gt; Test &amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;=&amp;lt;/span&amp;gt; Record&amp;amp;lt;&amp;lt;span style=&amp;#34;color:#7ee787&amp;#34;&amp;gt;string&amp;lt;/span&amp;gt;, Test&amp;amp;gt; &amp;lt;span style=&amp;#34;color:#8b949e;font-style:italic&amp;#34;&amp;gt;// ❌ can&amp;amp;#39;t do
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;p&amp;gt;TS sees a naked, non-terminating recursion and bails.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Even:&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;#34;highlight&amp;#34;&amp;gt;&amp;lt;pre tabindex=&amp;#34;0&amp;#34; style=&amp;#34;color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&amp;#34;&amp;gt;&amp;lt;code class=&amp;#34;language-typescript&amp;#34; data-lang=&amp;#34;typescript&amp;#34;&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;type&amp;lt;/span&amp;gt; Test &amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;=&amp;lt;/span&amp;gt; Record&amp;amp;lt;&amp;lt;span style=&amp;#34;color:#7ee787&amp;#34;&amp;gt;string&amp;lt;/span&amp;gt;, Test &amp;lt;span style=&amp;#34;color:#f85149&amp;#34;&amp;gt;|&amp;lt;/span&amp;gt; string&amp;amp;gt;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;p&amp;gt;still trips the checker.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;But:&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;#34;highlight&amp;#34;&amp;gt;&amp;lt;pre tabindex=&amp;#34;0&amp;#34; style=&amp;#34;color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&amp;#34;&amp;gt;&amp;lt;code class=&amp;#34;language-typescript&amp;#34; data-lang=&amp;#34;typescript&amp;#34;&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;type&amp;lt;/span&amp;gt; Test &amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;=&amp;lt;/span&amp;gt; { 
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  [key: &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;string&amp;lt;/span&amp;gt;]&amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;:&amp;lt;/span&amp;gt; Test &amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;|&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;string&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;#34;color:#8b949e;font-style:italic&amp;#34;&amp;gt;// ✅ can do
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span style=&amp;#34;color:#8b949e;font-style:italic&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;}
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;p&amp;gt;works. The index signature form delays evaluation enough for TS to accept the recursion. That’s our recursive hook. Depth is unbounded (until compiler limits), so it can “eat” arbitrarily deep objects. The remaining task is to encode your language rules with unions and recursion.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;TypeScript even nudges us syntactically—the leading pipes look exactly like grammar alternatives:&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;#34;highlight&amp;#34;&amp;gt;&amp;lt;pre tabindex=&amp;#34;0&amp;#34; style=&amp;#34;color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&amp;#34;&amp;gt;&amp;lt;code class=&amp;#34;language-typescript&amp;#34; data-lang=&amp;#34;typescript&amp;#34;&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;type&amp;lt;/span&amp;gt; Literal &amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;=&amp;lt;/span&amp;gt;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  &amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;|&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;string&amp;lt;/span&amp;gt;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  &amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;|&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;number&amp;lt;/span&amp;gt;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  &amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;|&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;boolean&amp;lt;/span&amp;gt;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  ;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;p&amp;gt;Now, your arithmetic example as a type-level grammar:&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;#34;highlight&amp;#34;&amp;gt;&amp;lt;pre tabindex=&amp;#34;0&amp;#34; style=&amp;#34;color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&amp;#34;&amp;gt;&amp;lt;code class=&amp;#34;language-typescript&amp;#34; data-lang=&amp;#34;typescript&amp;#34;&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;type&amp;lt;/span&amp;gt; Literal_t &amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;=&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;#34;color:#a5d6ff&amp;#34;&amp;gt;&amp;amp;#39;number&amp;amp;#39;&amp;lt;/span&amp;gt;;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;const&amp;lt;/span&amp;gt; ops &amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;=&amp;lt;/span&amp;gt; [&amp;lt;span style=&amp;#34;color:#a5d6ff&amp;#34;&amp;gt;&amp;amp;#39;&#43;&amp;amp;#39;&amp;lt;/span&amp;gt;, &amp;lt;span style=&amp;#34;color:#a5d6ff&amp;#34;&amp;gt;&amp;amp;#39;-&amp;amp;#39;&amp;lt;/span&amp;gt;, &amp;lt;span style=&amp;#34;color:#a5d6ff&amp;#34;&amp;gt;&amp;amp;#39;*&amp;amp;#39;&amp;lt;/span&amp;gt;, &amp;lt;span style=&amp;#34;color:#a5d6ff&amp;#34;&amp;gt;&amp;amp;#39;/&amp;amp;#39;&amp;lt;/span&amp;gt;] &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;as&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;const&amp;lt;/span&amp;gt;;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;type&amp;lt;/span&amp;gt; Op &amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;=&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;typeof&amp;lt;/span&amp;gt; ops[&amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;number&amp;lt;/span&amp;gt;];
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span style=&amp;#34;color:#8b949e;font-style:italic&amp;#34;&amp;gt;// 1) leaf
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span style=&amp;#34;color:#8b949e;font-style:italic&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;interface&amp;lt;/span&amp;gt; NumberLiteral {
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;type&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;:&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;#34;color:#a5d6ff&amp;#34;&amp;gt;&amp;amp;#39;number&amp;amp;#39;&amp;lt;/span&amp;gt;;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  value: &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;number&amp;lt;/span&amp;gt;;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;}
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span style=&amp;#34;color:#8b949e;font-style:italic&amp;#34;&amp;gt;// 2) binary
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span style=&amp;#34;color:#8b949e;font-style:italic&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;interface&amp;lt;/span&amp;gt; BinaryExpr {
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;type&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;:&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;#34;color:#a5d6ff&amp;#34;&amp;gt;&amp;amp;#39;binary&amp;amp;#39;&amp;lt;/span&amp;gt;;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  op: &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;Op&amp;lt;/span&amp;gt;;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  left: &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;Expression&amp;lt;/span&amp;gt;;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  right: &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;Expression&amp;lt;/span&amp;gt;;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;}
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span style=&amp;#34;color:#8b949e;font-style:italic&amp;#34;&amp;gt;// 3) grouping
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span style=&amp;#34;color:#8b949e;font-style:italic&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;interface&amp;lt;/span&amp;gt; ParenExpr {
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;type&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;:&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;#34;color:#a5d6ff&amp;#34;&amp;gt;&amp;amp;#39;group&amp;amp;#39;&amp;lt;/span&amp;gt;;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  expression: &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;Expression&amp;lt;/span&amp;gt;;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;}
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span style=&amp;#34;color:#8b949e;font-style:italic&amp;#34;&amp;gt;// 4) the one non-recursive alias
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span style=&amp;#34;color:#8b949e;font-style:italic&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;export&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;type&amp;lt;/span&amp;gt; Expression &amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;=&amp;lt;/span&amp;gt;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  &amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;|&amp;lt;/span&amp;gt; NumberLiteral
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  &amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;|&amp;lt;/span&amp;gt; BinaryExpr
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  &amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;|&amp;lt;/span&amp;gt; ParenExpr
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  ;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span style=&amp;#34;color:#8b949e;font-style:italic&amp;#34;&amp;gt;// type annotation assures the object matches the grammar as AST
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span style=&amp;#34;color:#8b949e;font-style:italic&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;const&amp;lt;/span&amp;gt; ast: &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;Expression&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;=&amp;lt;/span&amp;gt; {
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;type&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;:&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;#34;color:#a5d6ff&amp;#34;&amp;gt;&amp;amp;#39;binary&amp;amp;#39;&amp;lt;/span&amp;gt;,
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  op&amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;:&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;#34;color:#a5d6ff&amp;#34;&amp;gt;&amp;amp;#39;&#43;&amp;amp;#39;&amp;lt;/span&amp;gt;,
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  left&amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;:&amp;lt;/span&amp;gt; { &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;type&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;:&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;#34;color:#a5d6ff&amp;#34;&amp;gt;&amp;amp;#39;number&amp;amp;#39;&amp;lt;/span&amp;gt;, value: &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;1&amp;lt;/span&amp;gt; },
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  right&amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;:&amp;lt;/span&amp;gt; {
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;    &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;type&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;:&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;#34;color:#a5d6ff&amp;#34;&amp;gt;&amp;amp;#39;binary&amp;amp;#39;&amp;lt;/span&amp;gt;,
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;    test&amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;:&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;#34;color:#a5d6ff&amp;#34;&amp;gt;&amp;amp;#39;asdf&amp;amp;#39;&amp;lt;/span&amp;gt;, &amp;lt;span style=&amp;#34;color:#8b949e;font-style:italic&amp;#34;&amp;gt;// ❌ type error
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span style=&amp;#34;color:#8b949e;font-style:italic&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;    op&amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;:&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;#34;color:#a5d6ff&amp;#34;&amp;gt;&amp;amp;#39;*&amp;amp;#39;&amp;lt;/span&amp;gt;,
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;    left&amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;:&amp;lt;/span&amp;gt; { &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;type&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;:&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;#34;color:#a5d6ff&amp;#34;&amp;gt;&amp;amp;#39;number&amp;amp;#39;&amp;lt;/span&amp;gt;, value: &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;2&amp;lt;/span&amp;gt; },
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;    right&amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;:&amp;lt;/span&amp;gt; { &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;type&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;:&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;#34;color:#a5d6ff&amp;#34;&amp;gt;&amp;amp;#39;number&amp;amp;#39;&amp;lt;/span&amp;gt;, value: &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;3&amp;lt;/span&amp;gt; },
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  }
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;};
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;p&amp;gt;That stray test: &amp;amp;lsquo;asdf&amp;amp;rsquo; is illegal under the grammar and TypeScript tells you immediately. Bonus: editor autocomplete now “knows” exactly what belongs where in your config/AST.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;why-would-you-care&amp;#34;&amp;gt;
+  Why would you care?
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#why-would-you-care&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Already mentioned: grammar can check more then any type union can.
+But another area is COMPOSITE PATTERN constants. IE JSX is composite.
+Child of a node is again JSX node. Composite patterns are omnipresent yet
+constants of composite patterns are very error prone. Especially written by hand
+without assistance of language server. Now JSX is solved as it is. Syntax sugar
+for function calls. Thats runtime in essence and not a constant.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;I&amp;amp;rsquo;ll hint another example of composite that with some effort of defining
+proper &amp;amp;ldquo;parser type&amp;amp;rdquo;, we can declare as constants with full type support.
+Server routers. They are composable. and leafs are controllers.
+Such constant would be SSOT which is effectively shared contract between server and client.
+Out of the box both api client and controller functions would have full type support.
+You can say, well we can use open API spec for that. But such a type would
+allow full type support just out of declaration and nothing more. No generate types
+step, code gen, eventual DRY hell retyping schemas and so on.
+In next post I&amp;amp;rsquo;ll show how to do that with a real example. Stay tuned.&amp;lt;/p&amp;gt;
+</description>
+      <content:encoded>&amp;lt;h1 id=&amp;#34;parser-types&amp;#34;&amp;gt;
+  Parser types
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#parser-types&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h1&amp;gt;
+&amp;lt;h2 id=&amp;#34;intro--formal-languages-and-parsing&amp;#34;&amp;gt;
+  Intro — formal languages and parsing
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#intro--formal-languages-and-parsing&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;All programming languages are specified by a grammar. A grammar tells us whether a piece of text is a valid sentence in that language. A parser generator can take such a grammar and produce a parser. Parsing is the “front end” of compilation: it turns raw text into structure. That’s the basis of how formal languages work.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Simplistic grammar example:&amp;lt;/p&amp;gt;
+&amp;lt;pre tabindex=&amp;#34;0&amp;#34;&amp;gt;&amp;lt;code class=&amp;#34;language-bison&amp;#34; data-lang=&amp;#34;bison&amp;#34;&amp;gt;%token &amp;amp;lt;int&amp;amp;gt; NUMBER
+
+expression: expression &amp;amp;#39;&#43;&amp;amp;#39; expression
+          | expression &amp;amp;#39;-&amp;amp;#39; expression
+          | expression &amp;amp;#39;*&amp;amp;#39; expression
+          | expression &amp;amp;#39;/&amp;amp;#39; expression
+          | &amp;amp;#39;(&amp;amp;#39; expression &amp;amp;#39;)&amp;amp;#39;
+          | NUMBER
+          ;
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;p&amp;gt;This grammar can generate a parser for simple arithmetic. Before parsing, the input is just text. After parsing, we both&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;(a) know whether it’s valid under this grammar and&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;(b) obtain a structured representation of it.&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;Input:&amp;lt;/p&amp;gt;
+&amp;lt;pre tabindex=&amp;#34;0&amp;#34;&amp;gt;&amp;lt;code&amp;gt;1 &#43; 2 * (3 - 4)
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;p&amp;gt;Parsed tree:&amp;lt;/p&amp;gt;
+&amp;lt;pre tabindex=&amp;#34;0&amp;#34;&amp;gt;&amp;lt;code&amp;gt;        &#43;
+       / \
+      1   *
+         / \
+        2   -
+           / \
+          3   4
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;p&amp;gt;Operator precedence and associativity are encoded in how the tree “leans.” This is an Abstract Syntax Tree (AST). Every program you’ve ever written is, at some level, an AST.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;declarative-vs-imperative-why-we-like-trees-as-data&amp;#34;&amp;gt;
+  Declarative vs. imperative (why we like trees-as-data)
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#declarative-vs-imperative-why-we-like-trees-as-data&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;An AST is a tree, and a tree is data. Code can be seen as data laid out in a shape that captures meaning. The tree is a constant shape that other parts of the system can consume. That’s powerful.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Take an Express router:&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;#34;highlight&amp;#34;&amp;gt;&amp;lt;pre tabindex=&amp;#34;0&amp;#34; style=&amp;#34;color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&amp;#34;&amp;gt;&amp;lt;code class=&amp;#34;language-javascript&amp;#34; data-lang=&amp;#34;javascript&amp;#34;&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;router.get(&amp;lt;span style=&amp;#34;color:#a5d6ff&amp;#34;&amp;gt;&amp;amp;#39;/users&amp;amp;#39;&amp;lt;/span&amp;gt;, (req, res) =&amp;amp;gt; {
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  res.send(&amp;lt;span style=&amp;#34;color:#a5d6ff&amp;#34;&amp;gt;&amp;amp;#39;Users list&amp;amp;#39;&amp;lt;/span&amp;gt;);
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;});
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;p&amp;gt;You’re not imperatively pushing bytes through sockets; you declare what should happen on /users. The framework consumes that declaration at the right time.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Declarative style usually means: you state what you want; the machinery figures out how. The more capable the machinery, the richer the configuration language must be.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;parser-types-1&amp;#34;&amp;gt;
+  Parser types
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#parser-types-1&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Configurations aren’t always free-form; values often depend on each other. Not every config that “type-checks” at the top level is semantically valid. Think of a configuration as:&amp;lt;/p&amp;gt;
+&amp;lt;blockquote&amp;gt;
+&amp;lt;p&amp;gt;a constant value that must satisfy a language (expressed as an AST)&amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+&amp;lt;p&amp;gt;If that clicks, good. TypeScript lets us enforce such languages at compile time. I call these parser types: recursive TS types that act like a grammar. They don’t parse tokens; they constrain shape the way a grammar constrains sentences.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Consider:&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;#34;highlight&amp;#34;&amp;gt;&amp;lt;pre tabindex=&amp;#34;0&amp;#34; style=&amp;#34;color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&amp;#34;&amp;gt;&amp;lt;code class=&amp;#34;language-typescript&amp;#34; data-lang=&amp;#34;typescript&amp;#34;&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;type&amp;lt;/span&amp;gt; Test &amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;=&amp;lt;/span&amp;gt; Record&amp;amp;lt;&amp;lt;span style=&amp;#34;color:#7ee787&amp;#34;&amp;gt;string&amp;lt;/span&amp;gt;, Test&amp;amp;gt; &amp;lt;span style=&amp;#34;color:#8b949e;font-style:italic&amp;#34;&amp;gt;// ❌ can&amp;amp;#39;t do
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;p&amp;gt;TS sees a naked, non-terminating recursion and bails.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Even:&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;#34;highlight&amp;#34;&amp;gt;&amp;lt;pre tabindex=&amp;#34;0&amp;#34; style=&amp;#34;color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&amp;#34;&amp;gt;&amp;lt;code class=&amp;#34;language-typescript&amp;#34; data-lang=&amp;#34;typescript&amp;#34;&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;type&amp;lt;/span&amp;gt; Test &amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;=&amp;lt;/span&amp;gt; Record&amp;amp;lt;&amp;lt;span style=&amp;#34;color:#7ee787&amp;#34;&amp;gt;string&amp;lt;/span&amp;gt;, Test &amp;lt;span style=&amp;#34;color:#f85149&amp;#34;&amp;gt;|&amp;lt;/span&amp;gt; string&amp;amp;gt;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;p&amp;gt;still trips the checker.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;But:&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;#34;highlight&amp;#34;&amp;gt;&amp;lt;pre tabindex=&amp;#34;0&amp;#34; style=&amp;#34;color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&amp;#34;&amp;gt;&amp;lt;code class=&amp;#34;language-typescript&amp;#34; data-lang=&amp;#34;typescript&amp;#34;&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;type&amp;lt;/span&amp;gt; Test &amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;=&amp;lt;/span&amp;gt; { 
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  [key: &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;string&amp;lt;/span&amp;gt;]&amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;:&amp;lt;/span&amp;gt; Test &amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;|&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;string&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;#34;color:#8b949e;font-style:italic&amp;#34;&amp;gt;// ✅ can do
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span style=&amp;#34;color:#8b949e;font-style:italic&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;}
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;p&amp;gt;works. The index signature form delays evaluation enough for TS to accept the recursion. That’s our recursive hook. Depth is unbounded (until compiler limits), so it can “eat” arbitrarily deep objects. The remaining task is to encode your language rules with unions and recursion.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;TypeScript even nudges us syntactically—the leading pipes look exactly like grammar alternatives:&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;#34;highlight&amp;#34;&amp;gt;&amp;lt;pre tabindex=&amp;#34;0&amp;#34; style=&amp;#34;color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&amp;#34;&amp;gt;&amp;lt;code class=&amp;#34;language-typescript&amp;#34; data-lang=&amp;#34;typescript&amp;#34;&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;type&amp;lt;/span&amp;gt; Literal &amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;=&amp;lt;/span&amp;gt;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  &amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;|&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;string&amp;lt;/span&amp;gt;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  &amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;|&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;number&amp;lt;/span&amp;gt;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  &amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;|&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;boolean&amp;lt;/span&amp;gt;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  ;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;p&amp;gt;Now, your arithmetic example as a type-level grammar:&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;#34;highlight&amp;#34;&amp;gt;&amp;lt;pre tabindex=&amp;#34;0&amp;#34; style=&amp;#34;color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&amp;#34;&amp;gt;&amp;lt;code class=&amp;#34;language-typescript&amp;#34; data-lang=&amp;#34;typescript&amp;#34;&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;type&amp;lt;/span&amp;gt; Literal_t &amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;=&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;#34;color:#a5d6ff&amp;#34;&amp;gt;&amp;amp;#39;number&amp;amp;#39;&amp;lt;/span&amp;gt;;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;const&amp;lt;/span&amp;gt; ops &amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;=&amp;lt;/span&amp;gt; [&amp;lt;span style=&amp;#34;color:#a5d6ff&amp;#34;&amp;gt;&amp;amp;#39;&#43;&amp;amp;#39;&amp;lt;/span&amp;gt;, &amp;lt;span style=&amp;#34;color:#a5d6ff&amp;#34;&amp;gt;&amp;amp;#39;-&amp;amp;#39;&amp;lt;/span&amp;gt;, &amp;lt;span style=&amp;#34;color:#a5d6ff&amp;#34;&amp;gt;&amp;amp;#39;*&amp;amp;#39;&amp;lt;/span&amp;gt;, &amp;lt;span style=&amp;#34;color:#a5d6ff&amp;#34;&amp;gt;&amp;amp;#39;/&amp;amp;#39;&amp;lt;/span&amp;gt;] &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;as&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;const&amp;lt;/span&amp;gt;;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;type&amp;lt;/span&amp;gt; Op &amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;=&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;typeof&amp;lt;/span&amp;gt; ops[&amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;number&amp;lt;/span&amp;gt;];
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span style=&amp;#34;color:#8b949e;font-style:italic&amp;#34;&amp;gt;// 1) leaf
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span style=&amp;#34;color:#8b949e;font-style:italic&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;interface&amp;lt;/span&amp;gt; NumberLiteral {
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;type&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;:&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;#34;color:#a5d6ff&amp;#34;&amp;gt;&amp;amp;#39;number&amp;amp;#39;&amp;lt;/span&amp;gt;;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  value: &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;number&amp;lt;/span&amp;gt;;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;}
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span style=&amp;#34;color:#8b949e;font-style:italic&amp;#34;&amp;gt;// 2) binary
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span style=&amp;#34;color:#8b949e;font-style:italic&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;interface&amp;lt;/span&amp;gt; BinaryExpr {
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;type&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;:&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;#34;color:#a5d6ff&amp;#34;&amp;gt;&amp;amp;#39;binary&amp;amp;#39;&amp;lt;/span&amp;gt;;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  op: &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;Op&amp;lt;/span&amp;gt;;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  left: &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;Expression&amp;lt;/span&amp;gt;;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  right: &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;Expression&amp;lt;/span&amp;gt;;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;}
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span style=&amp;#34;color:#8b949e;font-style:italic&amp;#34;&amp;gt;// 3) grouping
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span style=&amp;#34;color:#8b949e;font-style:italic&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;interface&amp;lt;/span&amp;gt; ParenExpr {
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;type&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;:&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;#34;color:#a5d6ff&amp;#34;&amp;gt;&amp;amp;#39;group&amp;amp;#39;&amp;lt;/span&amp;gt;;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  expression: &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;Expression&amp;lt;/span&amp;gt;;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;}
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span style=&amp;#34;color:#8b949e;font-style:italic&amp;#34;&amp;gt;// 4) the one non-recursive alias
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span style=&amp;#34;color:#8b949e;font-style:italic&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;export&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;type&amp;lt;/span&amp;gt; Expression &amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;=&amp;lt;/span&amp;gt;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  &amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;|&amp;lt;/span&amp;gt; NumberLiteral
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  &amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;|&amp;lt;/span&amp;gt; BinaryExpr
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  &amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;|&amp;lt;/span&amp;gt; ParenExpr
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  ;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span style=&amp;#34;color:#8b949e;font-style:italic&amp;#34;&amp;gt;// type annotation assures the object matches the grammar as AST
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span style=&amp;#34;color:#8b949e;font-style:italic&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;const&amp;lt;/span&amp;gt; ast: &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;Expression&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;=&amp;lt;/span&amp;gt; {
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;type&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;:&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;#34;color:#a5d6ff&amp;#34;&amp;gt;&amp;amp;#39;binary&amp;amp;#39;&amp;lt;/span&amp;gt;,
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  op&amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;:&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;#34;color:#a5d6ff&amp;#34;&amp;gt;&amp;amp;#39;&#43;&amp;amp;#39;&amp;lt;/span&amp;gt;,
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  left&amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;:&amp;lt;/span&amp;gt; { &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;type&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;:&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;#34;color:#a5d6ff&amp;#34;&amp;gt;&amp;amp;#39;number&amp;amp;#39;&amp;lt;/span&amp;gt;, value: &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;1&amp;lt;/span&amp;gt; },
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  right&amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;:&amp;lt;/span&amp;gt; {
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;    &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;type&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;:&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;#34;color:#a5d6ff&amp;#34;&amp;gt;&amp;amp;#39;binary&amp;amp;#39;&amp;lt;/span&amp;gt;,
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;    test&amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;:&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;#34;color:#a5d6ff&amp;#34;&amp;gt;&amp;amp;#39;asdf&amp;amp;#39;&amp;lt;/span&amp;gt;, &amp;lt;span style=&amp;#34;color:#8b949e;font-style:italic&amp;#34;&amp;gt;// ❌ type error
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span style=&amp;#34;color:#8b949e;font-style:italic&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;    op&amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;:&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;#34;color:#a5d6ff&amp;#34;&amp;gt;&amp;amp;#39;*&amp;amp;#39;&amp;lt;/span&amp;gt;,
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;    left&amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;:&amp;lt;/span&amp;gt; { &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;type&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;:&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;#34;color:#a5d6ff&amp;#34;&amp;gt;&amp;amp;#39;number&amp;amp;#39;&amp;lt;/span&amp;gt;, value: &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;2&amp;lt;/span&amp;gt; },
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;    right&amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;:&amp;lt;/span&amp;gt; { &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;type&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;:&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;#34;color:#a5d6ff&amp;#34;&amp;gt;&amp;amp;#39;number&amp;amp;#39;&amp;lt;/span&amp;gt;, value: &amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;3&amp;lt;/span&amp;gt; },
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  }
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;};
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;p&amp;gt;That stray test: &amp;amp;lsquo;asdf&amp;amp;rsquo; is illegal under the grammar and TypeScript tells you immediately. Bonus: editor autocomplete now “knows” exactly what belongs where in your config/AST.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;why-would-you-care&amp;#34;&amp;gt;
+  Why would you care?
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#why-would-you-care&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Already mentioned: grammar can check more then any type union can.
+But another area is COMPOSITE PATTERN constants. IE JSX is composite.
+Child of a node is again JSX node. Composite patterns are omnipresent yet
+constants of composite patterns are very error prone. Especially written by hand
+without assistance of language server. Now JSX is solved as it is. Syntax sugar
+for function calls. Thats runtime in essence and not a constant.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;I&amp;amp;rsquo;ll hint another example of composite that with some effort of defining
+proper &amp;amp;ldquo;parser type&amp;amp;rdquo;, we can declare as constants with full type support.
+Server routers. They are composable. and leafs are controllers.
+Such constant would be SSOT which is effectively shared contract between server and client.
+Out of the box both api client and controller functions would have full type support.
+You can say, well we can use open API spec for that. But such a type would
+allow full type support just out of declaration and nothing more. No generate types
+step, code gen, eventual DRY hell retyping schemas and so on.
+In next post I&amp;amp;rsquo;ll show how to do that with a real example. Stay tuned.&amp;lt;/p&amp;gt;
+</content:encoded>
+    </item>
+  </channel>
+</rss>

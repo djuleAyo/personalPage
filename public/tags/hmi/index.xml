@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Hmi · djuleayo</title>
+    <link>http://localhost:1313/tags/hmi/</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/tags/hmi/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Language agnostic steno theory</title>
+      <link>http://localhost:1313/posts/lang-agnostic-steno/</link>
+      <guid>http://localhost:1313/posts/lang-agnostic-steno/</guid>
+      <pubDate>Sat, 31 May 2025 14:31:18 CEST</pubDate>
+      <description>&amp;lt;p&amp;gt;What a glorious weekend. What a joy.
+In two days I implemented&amp;lt;/p&amp;gt;
+&amp;lt;blockquote&amp;gt;
+&amp;lt;p&amp;gt;language agnostic steno theory&amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+&amp;lt;p&amp;gt;There is code at the bottom but lets focus on the theory first.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;my-take-on-why-steno-is-appealing&amp;#34;&amp;gt;
+  My take on why steno is appealing
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#my-take-on-why-steno-is-appealing&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;200 wpm non invasive hmi.
+Full words: 200 words per minute without a chip and usb port in your head
+interface for commanding a machine.  Basically thought speed interface.
+Appealing. As short as that!
+A chip in your heard has r/w and idea of w in my head already creeps me out
+even without a chip so no thank you. So demanding muscle memory training it is.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;theory-is-why-existing-suck&amp;#34;&amp;gt;
+  Theory is? Why existing suck
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#theory-is-why-existing-suck&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;There are multiple theories. And learning them is a pain. Theory is basically how you map chords to words.&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;steno is optimized for english&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;they take years to learn&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;That effort is wasted if it can’t generalize to other languages. (now it can, so those of you who wanted this, welcome home)&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;So learning it and having results in just one language is disaster.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;And as if language agnostic steno theory is not enough to hype,
+this theory is so much superior in theory metrix compared to existing
+its simply a question why it wasn&amp;amp;rsquo;t like this from the beginning.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;But step by step. Let&amp;amp;rsquo;s first see what are characteristics of a theory&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;theory-characteristics&amp;#34;&amp;gt;
+  Theory characteristics
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#theory-characteristics&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;is it free of cost&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;chords per word metric&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;consistency&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;memorization&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;Since there are billions of chords you need a system.
+Now the more you stay inside single system the more is consistent and easier to
+remember but staying in a system without exceptions leads to suboptimal solutions
+from time to time. So a theory trades consistency for less chords per word
+and with that requires more memorization.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;And showing this in practice existing theories exactly manifest these tradeoffs.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;And still whatever you choose you&amp;amp;rsquo;ll need to memorize thousands (literally) of
+entries, besides muscle memory, to be effective.&amp;lt;/p&amp;gt;
+&amp;lt;blockquote&amp;gt;
+&amp;lt;p&amp;gt;Before completing this read you will learn entire new theory with
+better chord per word frequency then existing theories and with perfect consistency&amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+&amp;lt;h2 id=&amp;#34;requirements&amp;#34;&amp;gt;
+  Requirements
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#requirements&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Sounds too good to be true, as as it is often a case with things that sound too
+good, there is a catch. So what is it? Let&amp;amp;rsquo;s not postpone the hit.
+You must know IPA - international phonetic alphabet. Not all of it
+30 bloody letters covers most languages with almost 1 to 1 correspondence.
+Thats it.  And some hardware requirements. Nothing else.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Now I&amp;amp;rsquo;m going to be offensive, and intentionally so.
+Non phonetic writing languages&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;french&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;english&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;etc&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;This writing is broken. Yes it shows the history of word and its origin
+from a different language, ok, but writing should be defined and correlated to,
+well reading my dear friends. If this idea alone is too much for your molded
+brain to grasp get out of my sight. Now I get it, English is kind of dominant
+and dominance doesn&amp;amp;rsquo;t play nice. It is the one saying my way or the high way.
+But with trade off as this one? Again:&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Language agnostic maximally consistent, fastest theory&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;you can forgo your stupid writing ways. I hope so
+And still, even existing theories go into IPA, so nothing new, just go all the way
+for that language agnostic truth.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;And Germans, Russians, sanskrit indian languages and clearly pure glory of south slav
+language aligned with IPA 100% will be at home with almost no gap.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;new-theory---design&amp;#34;&amp;gt;
+  New theory - Design
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#new-theory---design&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;h3 id=&amp;#34;existing-hardware-analysis&amp;#34;&amp;gt;
+  Existing hardware analysis
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#existing-hardware-analysis&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h3&amp;gt;
+&amp;lt;p&amp;gt;When I started investigating steno, 200 wpm hmi glowed in intersection of
+my subconscious and conscious mind as Sun itself. But me being European,
+speaking 3 natural languages and many formal ones, fact of such gigantic effort
+being useless in ANY area of my machine interaction was out of question.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;So I didn&amp;amp;rsquo;t learn any existing theory. I invented new one. What I did 1st?
+Investigated existing hardware. Last decade was kind of giving in sense of
+ergonomic programmable keyboards opening entire new market to gracefully sink money overflows of coding monkeys. And it was devastating likewise, because bloody
+piece of plastic and &amp;amp;ldquo;whatever switch&amp;amp;rdquo; shouldn&amp;amp;rsquo;t be $500. Where the f is this world going.
+Anyhow&amp;amp;hellip; Diversity of hardware is nice, and i do enjoy it for long array of years now.
+I will cover truth of keyboard ergonomics on its own, but for now lets just say
+the core principle of ergonomics that defines the input hardware itself.&amp;lt;/p&amp;gt;
+&amp;lt;h3 id=&amp;#34;ergonomics&amp;#34;&amp;gt;
+  Ergonomics
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#ergonomics&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h3&amp;gt;
+&amp;lt;p&amp;gt;Independence of movement. So those so called 3d switches can move any direction
+but if you spend some time watching your hand move you will notice there is no
+total independence of movement between fingers. To keep things short
+your index, thumb and pinky can move independently, both x and y axis meaning
+you can cover 4 buttons with each, but middle and ring finger are not independent
+on x axis only on y axis. Its simply hard to extend index and pinky and contract
+middle and ring at the same time.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;So to sum up, 4 bits for 3 fingers and 2 bits for 2 fingers.
+Ah yes, thumb explanation. Thumb clusters are example of overpriced engineering shame.
+Stamp it as ergonomic and set that high price, meanwhile it takes a decade
+for manufacturers to figure out what a good thumb cluster is. Just as i said it.
+Shame. Anyhow that radial thumb cluster is good, and it should have 3 or 4 buttons.
+As easy as that.  Since we need bits give us 4 please. Thank you.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;img src=&amp;#34;https://www.zsa.io/cdn-cgi/image/width=769,quality=80,format=auto/@moonlander/images/legacy/22-blink-beep-0.webp&amp;#34; alt=&amp;#34;&amp;#34;&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Moonlander thumb cluster - approved ✅ Assuming button marked as arrow right is pressed with thumb also and far right  button is far and ignored.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;img src=&amp;#34;https://cdn.shopify.com/s/files/1/0374/9448/9228/files/dygma-defy-showcase-compress.jpg?v=1678183523&amp;#34; alt=&amp;#34;&amp;#34;&amp;gt;
+While defy is not optimal to hit those 8 buttons individually with thumb, pairs are wonderful. approved ✅&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;img src=&amp;#34;https://kyrremann.no/keebs/assets/images/elephant42.png&amp;#34; alt=&amp;#34;&amp;#34;&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Even something cheaper like this &amp;amp;ldquo;elephant&amp;amp;rdquo; baby works well. approved ✅&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;In some of following posts I will explain why you may need more then 42 buttons so it may lack in that regard, but thats another story.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Now lets proceed. So far we have 16 bits for one hand.
+pinky 4 and ring 2, thats 6
+Now wait a minute. Can you press diagonals with pinky, or 3 button combinations?
+Maybe, but we will not use those. So this reduces our bandwidth.
+Pinky has 8 realistic positions, 4 independent buttons, 2 verticals and 2 horizontals&amp;lt;/p&amp;gt;
+&amp;lt;h3 id=&amp;#34;result&amp;#34;&amp;gt;
+  Result
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#result&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h3&amp;gt;
+&amp;lt;p&amp;gt;8 * 4 = 32 positions for 2 fingers. We can map all letters there! IPA letters
+not trash joker letters like y. Sometimes reads this way, other times other way.
+Spare me.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;So here, example mapping. Straight into the gold mine:&amp;lt;/p&amp;gt;
+&amp;lt;pre tabindex=&amp;#34;0&amp;#34;&amp;gt;&amp;lt;code&amp;gt;` :     `:    , :     ,:       t    k    d     c    // : means ring finger does nothing
+` `     ``    , `     ,`       v    b    f     p 
+` ,     `,    , ,     ,,       r    m    n     s
+` |     `|    , |     ,|       l    k    dz    z   // | means vertical pressed
+
+--:    __:    | :     |:       j    ch   dj    cj
+--`    __`    | `     |`       a    e    i     o
+--,    __,    | ,     |,       h    sh   nj    sj
+--|    __|    | |     ||       u   zh   lj    
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;p&amp;gt;There is a thing of building new letters by attaching j (ipa j) or h on them.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;english:&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;c &#43; h,&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;z &#43; h (like french jolie)&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;s &#43; h (ie show)&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;n &#43; j (new)&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;non english examples:
+d &#43; j, t &#43; j, l &#43; j, s &#43; j&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;This concrete mapping is kind of easy to remember as it takes into account
+how letters are built by appending j or h, so s &#43; h  is same bits as s and vertical
+above, and similar for others. Modified letter is adjacent to the original&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Also, vowels are dense, often requiring 3 bits. This is because you are not supposed
+to type them in this manner. You will understand soon.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;If pinky and ring can type any letter,
+so do index and middle finger in exact same way just reflected in the mirror!&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;So any 2 letters with 4 fingers. So far so good.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Now thumb with 4 bits, not fully independent as not every combination can be pressed
+can cover 7 positions, 4 individual bits and 3 pairs. Sadly 5 vowels so 2 are useless.
+Not full bit remains. So pack vowels there.&amp;lt;/p&amp;gt;
+&amp;lt;h3 id=&amp;#34;palm-bits&amp;#34;&amp;gt;
+  Palm bits
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#palm-bits&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h3&amp;gt;
+&amp;lt;p&amp;gt;Back to hardware. Model1 io is a nice board. It has that palm button. That is good
+Even on moonlander i use palm to press corner button of the board instead of pinky.
+Palm is independent from fingers too! 2 Independent bits!&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;img src=&amp;#34;https://shop.keyboard.io/cdn/shop/files/m100-for-web.jpg?v=1706306369&amp;amp;amp;width=360&amp;#34; alt=&amp;#34;&amp;#34;&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Just imagine that palm button on outer side as well.
+Those I built alone using a cheap membrane keyboard monkey patching some cherries 🍒 on top. Can drop a guide if needed. For now this bit as all the guide you need.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;img src=&amp;#34;http://109.92.26.132/pic/palmButtons.gif&amp;#34; alt=&amp;#34;&amp;#34;&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Now obviously I didn&amp;amp;rsquo;t ducktape that thing on and  with little cable management redistribute start record buttons across my home. Not at all.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Twist hand inward a bit,
+or outward. Now we are up to 18!
+We will use those as vowel positioning bits.&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;Left hand outer palm = vowel left&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;left hand inner palm = vowel right&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;And this allows us to make any 2 consonant 1 vowel trio. With one hand.
+Same but mirrored with other hand. That is any 6 letter 4 consonant 2 vowel combination.
+Most of the time there are not 3 consonants adjacent and even if there are
+we can process our input further without mandating memorization.&amp;lt;/p&amp;gt;
+&amp;lt;h3 id=&amp;#34;independence-bit&amp;#34;&amp;gt;
+  Independence bit
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#independence-bit&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h3&amp;gt;
+&amp;lt;p&amp;gt;Last piece. If you press both palm positions this is chord independence flag.
+Meaning that chord is taken as word. Meaning you can type two short words at once
+Meaning chord frequency is awesome.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;So what i promised I delivered. No memorization (beyond 30 letters and muscle memory)
+no language locking, as input is taken as ipa and then mapped to a word however it is
+spelled (i don&amp;amp;rsquo;t really care &amp;amp;ldquo;oui je veux&amp;amp;rdquo; looking at you )&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;IPA required, hardware required.&amp;lt;/p&amp;gt;
+&amp;lt;pre tabindex=&amp;#34;0&amp;#34;&amp;gt;&amp;lt;code&amp;gt;` : |`  .,,.  ,,.. || ` `
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;p&amp;gt;is a chord notation and lets not go into whats mapped onto it.
+If you are interested decipher it using the map above :)&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Guides for hardware coming soon&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;tease&amp;#34;&amp;gt;
+  Tease
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#tease&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Now that I just dropped this on you, trust me when I tell you.
+Typing is currently least of bottleneck for thought speed HMI.
+As I described here in &amp;lt;a href=&amp;#34;http://www.djuleayo.com/posts/uxmetrix&amp;#34;  class=&amp;#34;external-link&amp;#34; target=&amp;#34;_blank&amp;#34; rel=&amp;#34;noopener&amp;#34;&amp;gt;UX metrix&amp;lt;/a&amp;gt;.
+But I have solution for that too! It is much more exiting then lang agnostic steno
+as it enables you so much further. True R.A.H.M.I
+random access human machine interface. Stay tuned.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;code&amp;#34;&amp;gt;
+  Code
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#code&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;As promised here is the code. Its a small js driver basically
+that runs on linux but porting it to windows or mac should be really straightforward. Do note if you decide to run it
+how beautiful low level event driven JS in fact is. Such a treat after framework land.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;a href=&amp;#34;https://github.com/djuleAyo/lang-agnostic-steno&amp;#34;  class=&amp;#34;external-link&amp;#34; target=&amp;#34;_blank&amp;#34; rel=&amp;#34;noopener&amp;#34;&amp;gt;GitHub repo&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Don&amp;amp;rsquo;t forget to install dependencies outside of npm (xdotool)&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;whats-missing&amp;#34;&amp;gt;
+  Whats missing
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#whats-missing&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Translating IPA into spellings layer is not there. I need to pull IPA data from somewhere. This is a POC and requires tweaking.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;meta-bracelet&amp;#34;&amp;gt;
+  Meta bracelet
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#meta-bracelet&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;I expect this kind of steno could be fully ported to &amp;lt;a href=&amp;#34;https://www.meta.com/en-gb/blog/surface-emg-wrist-white-paper-reality-labs/?srsltid=AfmBOoq1PwhcfmmWF1M3D995oefoVIIK-Sdb89sAWqKBbYif6zKmOIgc&amp;#34;  class=&amp;#34;external-link&amp;#34; target=&amp;#34;_blank&amp;#34; rel=&amp;#34;noopener&amp;#34;&amp;gt;meta input bracelet&amp;lt;/a&amp;gt; as each button press is distinct muscle movement.
+So even in that manner this training shouldn&amp;amp;rsquo;t go wasted.&amp;lt;/p&amp;gt;
+</description>
+      <content:encoded>&amp;lt;p&amp;gt;What a glorious weekend. What a joy.
+In two days I implemented&amp;lt;/p&amp;gt;
+&amp;lt;blockquote&amp;gt;
+&amp;lt;p&amp;gt;language agnostic steno theory&amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+&amp;lt;p&amp;gt;There is code at the bottom but lets focus on the theory first.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;my-take-on-why-steno-is-appealing&amp;#34;&amp;gt;
+  My take on why steno is appealing
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#my-take-on-why-steno-is-appealing&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;200 wpm non invasive hmi.
+Full words: 200 words per minute without a chip and usb port in your head
+interface for commanding a machine.  Basically thought speed interface.
+Appealing. As short as that!
+A chip in your heard has r/w and idea of w in my head already creeps me out
+even without a chip so no thank you. So demanding muscle memory training it is.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;theory-is-why-existing-suck&amp;#34;&amp;gt;
+  Theory is? Why existing suck
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#theory-is-why-existing-suck&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;There are multiple theories. And learning them is a pain. Theory is basically how you map chords to words.&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;steno is optimized for english&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;they take years to learn&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;That effort is wasted if it can’t generalize to other languages. (now it can, so those of you who wanted this, welcome home)&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;So learning it and having results in just one language is disaster.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;And as if language agnostic steno theory is not enough to hype,
+this theory is so much superior in theory metrix compared to existing
+its simply a question why it wasn&amp;amp;rsquo;t like this from the beginning.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;But step by step. Let&amp;amp;rsquo;s first see what are characteristics of a theory&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;theory-characteristics&amp;#34;&amp;gt;
+  Theory characteristics
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#theory-characteristics&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;is it free of cost&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;chords per word metric&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;consistency&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;memorization&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;Since there are billions of chords you need a system.
+Now the more you stay inside single system the more is consistent and easier to
+remember but staying in a system without exceptions leads to suboptimal solutions
+from time to time. So a theory trades consistency for less chords per word
+and with that requires more memorization.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;And showing this in practice existing theories exactly manifest these tradeoffs.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;And still whatever you choose you&amp;amp;rsquo;ll need to memorize thousands (literally) of
+entries, besides muscle memory, to be effective.&amp;lt;/p&amp;gt;
+&amp;lt;blockquote&amp;gt;
+&amp;lt;p&amp;gt;Before completing this read you will learn entire new theory with
+better chord per word frequency then existing theories and with perfect consistency&amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+&amp;lt;h2 id=&amp;#34;requirements&amp;#34;&amp;gt;
+  Requirements
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#requirements&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Sounds too good to be true, as as it is often a case with things that sound too
+good, there is a catch. So what is it? Let&amp;amp;rsquo;s not postpone the hit.
+You must know IPA - international phonetic alphabet. Not all of it
+30 bloody letters covers most languages with almost 1 to 1 correspondence.
+Thats it.  And some hardware requirements. Nothing else.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Now I&amp;amp;rsquo;m going to be offensive, and intentionally so.
+Non phonetic writing languages&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;french&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;english&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;etc&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;This writing is broken. Yes it shows the history of word and its origin
+from a different language, ok, but writing should be defined and correlated to,
+well reading my dear friends. If this idea alone is too much for your molded
+brain to grasp get out of my sight. Now I get it, English is kind of dominant
+and dominance doesn&amp;amp;rsquo;t play nice. It is the one saying my way or the high way.
+But with trade off as this one? Again:&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Language agnostic maximally consistent, fastest theory&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;you can forgo your stupid writing ways. I hope so
+And still, even existing theories go into IPA, so nothing new, just go all the way
+for that language agnostic truth.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;And Germans, Russians, sanskrit indian languages and clearly pure glory of south slav
+language aligned with IPA 100% will be at home with almost no gap.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;new-theory---design&amp;#34;&amp;gt;
+  New theory - Design
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#new-theory---design&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;h3 id=&amp;#34;existing-hardware-analysis&amp;#34;&amp;gt;
+  Existing hardware analysis
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#existing-hardware-analysis&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h3&amp;gt;
+&amp;lt;p&amp;gt;When I started investigating steno, 200 wpm hmi glowed in intersection of
+my subconscious and conscious mind as Sun itself. But me being European,
+speaking 3 natural languages and many formal ones, fact of such gigantic effort
+being useless in ANY area of my machine interaction was out of question.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;So I didn&amp;amp;rsquo;t learn any existing theory. I invented new one. What I did 1st?
+Investigated existing hardware. Last decade was kind of giving in sense of
+ergonomic programmable keyboards opening entire new market to gracefully sink money overflows of coding monkeys. And it was devastating likewise, because bloody
+piece of plastic and &amp;amp;ldquo;whatever switch&amp;amp;rdquo; shouldn&amp;amp;rsquo;t be $500. Where the f is this world going.
+Anyhow&amp;amp;hellip; Diversity of hardware is nice, and i do enjoy it for long array of years now.
+I will cover truth of keyboard ergonomics on its own, but for now lets just say
+the core principle of ergonomics that defines the input hardware itself.&amp;lt;/p&amp;gt;
+&amp;lt;h3 id=&amp;#34;ergonomics&amp;#34;&amp;gt;
+  Ergonomics
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#ergonomics&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h3&amp;gt;
+&amp;lt;p&amp;gt;Independence of movement. So those so called 3d switches can move any direction
+but if you spend some time watching your hand move you will notice there is no
+total independence of movement between fingers. To keep things short
+your index, thumb and pinky can move independently, both x and y axis meaning
+you can cover 4 buttons with each, but middle and ring finger are not independent
+on x axis only on y axis. Its simply hard to extend index and pinky and contract
+middle and ring at the same time.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;So to sum up, 4 bits for 3 fingers and 2 bits for 2 fingers.
+Ah yes, thumb explanation. Thumb clusters are example of overpriced engineering shame.
+Stamp it as ergonomic and set that high price, meanwhile it takes a decade
+for manufacturers to figure out what a good thumb cluster is. Just as i said it.
+Shame. Anyhow that radial thumb cluster is good, and it should have 3 or 4 buttons.
+As easy as that.  Since we need bits give us 4 please. Thank you.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;img src=&amp;#34;https://www.zsa.io/cdn-cgi/image/width=769,quality=80,format=auto/@moonlander/images/legacy/22-blink-beep-0.webp&amp;#34; alt=&amp;#34;&amp;#34;&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Moonlander thumb cluster - approved ✅ Assuming button marked as arrow right is pressed with thumb also and far right  button is far and ignored.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;img src=&amp;#34;https://cdn.shopify.com/s/files/1/0374/9448/9228/files/dygma-defy-showcase-compress.jpg?v=1678183523&amp;#34; alt=&amp;#34;&amp;#34;&amp;gt;
+While defy is not optimal to hit those 8 buttons individually with thumb, pairs are wonderful. approved ✅&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;img src=&amp;#34;https://kyrremann.no/keebs/assets/images/elephant42.png&amp;#34; alt=&amp;#34;&amp;#34;&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Even something cheaper like this &amp;amp;ldquo;elephant&amp;amp;rdquo; baby works well. approved ✅&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;In some of following posts I will explain why you may need more then 42 buttons so it may lack in that regard, but thats another story.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Now lets proceed. So far we have 16 bits for one hand.
+pinky 4 and ring 2, thats 6
+Now wait a minute. Can you press diagonals with pinky, or 3 button combinations?
+Maybe, but we will not use those. So this reduces our bandwidth.
+Pinky has 8 realistic positions, 4 independent buttons, 2 verticals and 2 horizontals&amp;lt;/p&amp;gt;
+&amp;lt;h3 id=&amp;#34;result&amp;#34;&amp;gt;
+  Result
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#result&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h3&amp;gt;
+&amp;lt;p&amp;gt;8 * 4 = 32 positions for 2 fingers. We can map all letters there! IPA letters
+not trash joker letters like y. Sometimes reads this way, other times other way.
+Spare me.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;So here, example mapping. Straight into the gold mine:&amp;lt;/p&amp;gt;
+&amp;lt;pre tabindex=&amp;#34;0&amp;#34;&amp;gt;&amp;lt;code&amp;gt;` :     `:    , :     ,:       t    k    d     c    // : means ring finger does nothing
+` `     ``    , `     ,`       v    b    f     p 
+` ,     `,    , ,     ,,       r    m    n     s
+` |     `|    , |     ,|       l    k    dz    z   // | means vertical pressed
+
+--:    __:    | :     |:       j    ch   dj    cj
+--`    __`    | `     |`       a    e    i     o
+--,    __,    | ,     |,       h    sh   nj    sj
+--|    __|    | |     ||       u   zh   lj    
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;p&amp;gt;There is a thing of building new letters by attaching j (ipa j) or h on them.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;english:&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;c &#43; h,&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;z &#43; h (like french jolie)&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;s &#43; h (ie show)&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;n &#43; j (new)&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;non english examples:
+d &#43; j, t &#43; j, l &#43; j, s &#43; j&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;This concrete mapping is kind of easy to remember as it takes into account
+how letters are built by appending j or h, so s &#43; h  is same bits as s and vertical
+above, and similar for others. Modified letter is adjacent to the original&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Also, vowels are dense, often requiring 3 bits. This is because you are not supposed
+to type them in this manner. You will understand soon.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;If pinky and ring can type any letter,
+so do index and middle finger in exact same way just reflected in the mirror!&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;So any 2 letters with 4 fingers. So far so good.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Now thumb with 4 bits, not fully independent as not every combination can be pressed
+can cover 7 positions, 4 individual bits and 3 pairs. Sadly 5 vowels so 2 are useless.
+Not full bit remains. So pack vowels there.&amp;lt;/p&amp;gt;
+&amp;lt;h3 id=&amp;#34;palm-bits&amp;#34;&amp;gt;
+  Palm bits
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#palm-bits&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h3&amp;gt;
+&amp;lt;p&amp;gt;Back to hardware. Model1 io is a nice board. It has that palm button. That is good
+Even on moonlander i use palm to press corner button of the board instead of pinky.
+Palm is independent from fingers too! 2 Independent bits!&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;img src=&amp;#34;https://shop.keyboard.io/cdn/shop/files/m100-for-web.jpg?v=1706306369&amp;amp;amp;width=360&amp;#34; alt=&amp;#34;&amp;#34;&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Just imagine that palm button on outer side as well.
+Those I built alone using a cheap membrane keyboard monkey patching some cherries 🍒 on top. Can drop a guide if needed. For now this bit as all the guide you need.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;img src=&amp;#34;http://109.92.26.132/pic/palmButtons.gif&amp;#34; alt=&amp;#34;&amp;#34;&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Now obviously I didn&amp;amp;rsquo;t ducktape that thing on and  with little cable management redistribute start record buttons across my home. Not at all.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Twist hand inward a bit,
+or outward. Now we are up to 18!
+We will use those as vowel positioning bits.&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;Left hand outer palm = vowel left&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;left hand inner palm = vowel right&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;And this allows us to make any 2 consonant 1 vowel trio. With one hand.
+Same but mirrored with other hand. That is any 6 letter 4 consonant 2 vowel combination.
+Most of the time there are not 3 consonants adjacent and even if there are
+we can process our input further without mandating memorization.&amp;lt;/p&amp;gt;
+&amp;lt;h3 id=&amp;#34;independence-bit&amp;#34;&amp;gt;
+  Independence bit
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#independence-bit&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h3&amp;gt;
+&amp;lt;p&amp;gt;Last piece. If you press both palm positions this is chord independence flag.
+Meaning that chord is taken as word. Meaning you can type two short words at once
+Meaning chord frequency is awesome.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;So what i promised I delivered. No memorization (beyond 30 letters and muscle memory)
+no language locking, as input is taken as ipa and then mapped to a word however it is
+spelled (i don&amp;amp;rsquo;t really care &amp;amp;ldquo;oui je veux&amp;amp;rdquo; looking at you )&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;IPA required, hardware required.&amp;lt;/p&amp;gt;
+&amp;lt;pre tabindex=&amp;#34;0&amp;#34;&amp;gt;&amp;lt;code&amp;gt;` : |`  .,,.  ,,.. || ` `
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;p&amp;gt;is a chord notation and lets not go into whats mapped onto it.
+If you are interested decipher it using the map above :)&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Guides for hardware coming soon&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;tease&amp;#34;&amp;gt;
+  Tease
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#tease&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Now that I just dropped this on you, trust me when I tell you.
+Typing is currently least of bottleneck for thought speed HMI.
+As I described here in &amp;lt;a href=&amp;#34;http://www.djuleayo.com/posts/uxmetrix&amp;#34;  class=&amp;#34;external-link&amp;#34; target=&amp;#34;_blank&amp;#34; rel=&amp;#34;noopener&amp;#34;&amp;gt;UX metrix&amp;lt;/a&amp;gt;.
+But I have solution for that too! It is much more exiting then lang agnostic steno
+as it enables you so much further. True R.A.H.M.I
+random access human machine interface. Stay tuned.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;code&amp;#34;&amp;gt;
+  Code
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#code&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;As promised here is the code. Its a small js driver basically
+that runs on linux but porting it to windows or mac should be really straightforward. Do note if you decide to run it
+how beautiful low level event driven JS in fact is. Such a treat after framework land.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;a href=&amp;#34;https://github.com/djuleAyo/lang-agnostic-steno&amp;#34;  class=&amp;#34;external-link&amp;#34; target=&amp;#34;_blank&amp;#34; rel=&amp;#34;noopener&amp;#34;&amp;gt;GitHub repo&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Don&amp;amp;rsquo;t forget to install dependencies outside of npm (xdotool)&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;whats-missing&amp;#34;&amp;gt;
+  Whats missing
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#whats-missing&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Translating IPA into spellings layer is not there. I need to pull IPA data from somewhere. This is a POC and requires tweaking.&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;#34;meta-bracelet&amp;#34;&amp;gt;
+  Meta bracelet
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#meta-bracelet&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;I expect this kind of steno could be fully ported to &amp;lt;a href=&amp;#34;https://www.meta.com/en-gb/blog/surface-emg-wrist-white-paper-reality-labs/?srsltid=AfmBOoq1PwhcfmmWF1M3D995oefoVIIK-Sdb89sAWqKBbYif6zKmOIgc&amp;#34;  class=&amp;#34;external-link&amp;#34; target=&amp;#34;_blank&amp;#34; rel=&amp;#34;noopener&amp;#34;&amp;gt;meta input bracelet&amp;lt;/a&amp;gt; as each button press is distinct muscle movement.
+So even in that manner this training shouldn&amp;amp;rsquo;t go wasted.&amp;lt;/p&amp;gt;
+</content:encoded>
+    </item>
+  </channel>
+</rss>

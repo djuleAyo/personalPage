@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>JS · djuleayo</title>
+    <link>http://localhost:1313/tags/js/</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/tags/js/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>JS spread performance ⚠️warning</title>
+      <link>http://localhost:1313/posts/spread-performance/</link>
+      <guid>http://localhost:1313/posts/spread-performance/</guid>
+      <pubDate>Thu, 15 May 2025 17:10:43 CEST</pubDate>
+      <description>&amp;lt;h1 id=&amp;#34;js-spread-performance-warning&amp;#34;&amp;gt;
+  JS spread performance ⚠️warning
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#js-spread-performance-warning&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h1&amp;gt;
+&amp;lt;p&amp;gt;Us web devs, we often speculate syntax based on &amp;amp;ldquo;best practices&amp;amp;rdquo; bestowed upon
+us by the Gods of - meme lords. We praise our prettier and linters as basis of
+all success. Looping between all 22 and a half options of a drop down
+allows you to use exponential complexity implementations. In a loop.
+Because even if you have 2k entries thats a warmup for one core.
+So in all wire connections between types, runtime validators, component props,
+api responses and requests, rarely in fact implementation matters from performance standpoint. Except when it does.&amp;lt;/p&amp;gt;
+&amp;lt;blockquote&amp;gt;
+&amp;lt;p&amp;gt;Spread operator can cost you performance&amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+&amp;lt;p&amp;gt;Straight to the point. &amp;lt;strong&amp;gt;Never use it in a loop&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;#34;highlight&amp;#34;&amp;gt;&amp;lt;pre tabindex=&amp;#34;0&amp;#34; style=&amp;#34;color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&amp;#34;&amp;gt;&amp;lt;code class=&amp;#34;language-js&amp;#34; data-lang=&amp;#34;js&amp;#34;&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;const&amp;lt;/span&amp;gt; buf &amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;=&amp;lt;/span&amp;gt; {}
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;Object.keys(incomingData).forEach((entry) =&amp;amp;gt; {
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  buf[entry] &amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;=&amp;lt;/span&amp;gt; {
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;    ...buf[entry],
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;    ...incomingData[entry],
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  }
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;})
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;p&amp;gt;I did this recently because of &amp;lt;strong&amp;gt;&amp;amp;ldquo;immutable is good&amp;amp;rdquo;&amp;lt;/strong&amp;gt; hype. And quickly found
+out it has its costs, especially in this given form.
+Each assignment there is linear complexity to object size. Meaning doing that in
+loop is &amp;lt;strong&amp;gt;O(n^2)&amp;lt;/strong&amp;gt;. And if you have 2k entries, well, no need to imagine.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Recently I did clean finger thick dust cover from my profiler start button
+so isn&amp;amp;rsquo;t that a change. Instead of speculating syntax we can actually measure&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Results?
+Parsing 2k lines of custom simple language yielded 2 drastically different results.&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;the spread in loop way went over &amp;lt;strong&amp;gt;63 seconds&amp;lt;/strong&amp;gt;&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;changing just one expression from spread to property assignment yielded &amp;lt;strong&amp;gt;0.5 seconds&amp;lt;/strong&amp;gt; for the same 2k lines!!!&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;One line of code. One expression and 62/0.5 = &amp;lt;strong&amp;gt;&amp;lt;code&amp;gt;124x times faster&amp;lt;/code&amp;gt;&amp;lt;/strong&amp;gt;!!!
+Be my guest, that kind of difference becomes notable even on few tens of entries!&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;So, yeah immer is cool, and your store wants a new reference to dispatch the changes, but that doesn&amp;amp;rsquo;t mean you should change it n times in a loop.
+As you can see. Instead keep using regular assignment and change the reference
+only once when needed.&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;#34;highlight&amp;#34;&amp;gt;&amp;lt;pre tabindex=&amp;#34;0&amp;#34; style=&amp;#34;color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&amp;#34;&amp;gt;&amp;lt;code class=&amp;#34;language-js&amp;#34; data-lang=&amp;#34;js&amp;#34;&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;const&amp;lt;/span&amp;gt; buf &amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;=&amp;lt;/span&amp;gt; {}
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;Object.keys(incomingData).forEach((entry) =&amp;amp;gt; {
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  buf[entry] &amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;=&amp;lt;/span&amp;gt; incomingData[entry]
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;})
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;p&amp;gt;Old school 👊&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;In conclusion, spread in a loop is almost as evil as awaiting in a loop&amp;lt;/p&amp;gt;
+</description>
+      <content:encoded>&amp;lt;h1 id=&amp;#34;js-spread-performance-warning&amp;#34;&amp;gt;
+  JS spread performance ⚠️warning
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#js-spread-performance-warning&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h1&amp;gt;
+&amp;lt;p&amp;gt;Us web devs, we often speculate syntax based on &amp;amp;ldquo;best practices&amp;amp;rdquo; bestowed upon
+us by the Gods of - meme lords. We praise our prettier and linters as basis of
+all success. Looping between all 22 and a half options of a drop down
+allows you to use exponential complexity implementations. In a loop.
+Because even if you have 2k entries thats a warmup for one core.
+So in all wire connections between types, runtime validators, component props,
+api responses and requests, rarely in fact implementation matters from performance standpoint. Except when it does.&amp;lt;/p&amp;gt;
+&amp;lt;blockquote&amp;gt;
+&amp;lt;p&amp;gt;Spread operator can cost you performance&amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+&amp;lt;p&amp;gt;Straight to the point. &amp;lt;strong&amp;gt;Never use it in a loop&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;#34;highlight&amp;#34;&amp;gt;&amp;lt;pre tabindex=&amp;#34;0&amp;#34; style=&amp;#34;color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&amp;#34;&amp;gt;&amp;lt;code class=&amp;#34;language-js&amp;#34; data-lang=&amp;#34;js&amp;#34;&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;const&amp;lt;/span&amp;gt; buf &amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;=&amp;lt;/span&amp;gt; {}
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;Object.keys(incomingData).forEach((entry) =&amp;amp;gt; {
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  buf[entry] &amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;=&amp;lt;/span&amp;gt; {
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;    ...buf[entry],
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;    ...incomingData[entry],
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  }
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;})
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;p&amp;gt;I did this recently because of &amp;lt;strong&amp;gt;&amp;amp;ldquo;immutable is good&amp;amp;rdquo;&amp;lt;/strong&amp;gt; hype. And quickly found
+out it has its costs, especially in this given form.
+Each assignment there is linear complexity to object size. Meaning doing that in
+loop is &amp;lt;strong&amp;gt;O(n^2)&amp;lt;/strong&amp;gt;. And if you have 2k entries, well, no need to imagine.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Recently I did clean finger thick dust cover from my profiler start button
+so isn&amp;amp;rsquo;t that a change. Instead of speculating syntax we can actually measure&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Results?
+Parsing 2k lines of custom simple language yielded 2 drastically different results.&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;the spread in loop way went over &amp;lt;strong&amp;gt;63 seconds&amp;lt;/strong&amp;gt;&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;changing just one expression from spread to property assignment yielded &amp;lt;strong&amp;gt;0.5 seconds&amp;lt;/strong&amp;gt; for the same 2k lines!!!&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;One line of code. One expression and 62/0.5 = &amp;lt;strong&amp;gt;&amp;lt;code&amp;gt;124x times faster&amp;lt;/code&amp;gt;&amp;lt;/strong&amp;gt;!!!
+Be my guest, that kind of difference becomes notable even on few tens of entries!&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;So, yeah immer is cool, and your store wants a new reference to dispatch the changes, but that doesn&amp;amp;rsquo;t mean you should change it n times in a loop.
+As you can see. Instead keep using regular assignment and change the reference
+only once when needed.&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;#34;highlight&amp;#34;&amp;gt;&amp;lt;pre tabindex=&amp;#34;0&amp;#34; style=&amp;#34;color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&amp;#34;&amp;gt;&amp;lt;code class=&amp;#34;language-js&amp;#34; data-lang=&amp;#34;js&amp;#34;&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span style=&amp;#34;color:#ff7b72&amp;#34;&amp;gt;const&amp;lt;/span&amp;gt; buf &amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;=&amp;lt;/span&amp;gt; {}
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;Object.keys(incomingData).forEach((entry) =&amp;amp;gt; {
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;  buf[entry] &amp;lt;span style=&amp;#34;color:#ff7b72;font-weight:bold&amp;#34;&amp;gt;=&amp;lt;/span&amp;gt; incomingData[entry]
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;#34;display:flex;&amp;#34;&amp;gt;&amp;lt;span&amp;gt;})
+&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;p&amp;gt;Old school 👊&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;In conclusion, spread in a loop is almost as evil as awaiting in a loop&amp;lt;/p&amp;gt;
+</content:encoded>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Schemas · djuleayo</title>
+    <link>http://localhost:1313/tags/schemas/</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/tags/schemas/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>TS API Spec</title>
+      <link>http://localhost:1313/posts/ts-api-spec/</link>
+      <guid>http://localhost:1313/posts/ts-api-spec/</guid>
+      <pubDate>Sat, 20 Dec 2025 11:13:48 &#43;0200</pubDate>
+      <description>&amp;lt;h1 id=&amp;#34;ts-api-spec&amp;#34;&amp;gt;
+  TS API Spec
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#ts-api-spec&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h1&amp;gt;
+&amp;lt;p&amp;gt;TS 1st api spec with superb DX&amp;lt;/p&amp;gt;
+&amp;lt;figure&amp;gt;&amp;lt;img src=&amp;#34;/tsapispec.demo.gif&amp;#34;&amp;gt;&amp;lt;figcaption&amp;gt;
+      &amp;lt;h4&amp;gt;My Caption&amp;lt;/h4&amp;gt;
+    &amp;lt;/figcaption&amp;gt;
+&amp;lt;/figure&amp;gt;
+
+&amp;lt;p&amp;gt;Everything is autocompleted and type supported.
+As soon as schema is satisfied error disappears.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Benefits:&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;maximum code sharing between nodes (assuming JS/TS)&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;fully typed end to end (including errors)&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;uniform error handling (do runtime validation in non prod everywhere)&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;generates router and apiClient and router from same spec(SSOT/contract)&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;Intended to: suboptimal code in industry/lag contract drift
+Overlap: openApi codegen RPC etc
+leverage: for js both backend and frontend ts first zero drift code sharing.
+Eliminates gen step and stale specs&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;how: parser types &amp;lt;a href=&amp;#34;http://djuleayo.com/posts/parser-types/&amp;#34;  class=&amp;#34;external-link&amp;#34; target=&amp;#34;_blank&amp;#34; rel=&amp;#34;noopener&amp;#34;&amp;gt;http://djuleayo.com/posts/parser-types/&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
+</description>
+      <content:encoded>&amp;lt;h1 id=&amp;#34;ts-api-spec&amp;#34;&amp;gt;
+  TS API Spec
+  &amp;lt;a class=&amp;#34;heading-link&amp;#34; href=&amp;#34;#ts-api-spec&amp;#34;&amp;gt;
+    &amp;lt;i class=&amp;#34;fa-solid fa-link&amp;#34; aria-hidden=&amp;#34;true&amp;#34; title=&amp;#34;Link to heading&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Link to heading&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/h1&amp;gt;
+&amp;lt;p&amp;gt;TS 1st api spec with superb DX&amp;lt;/p&amp;gt;
+&amp;lt;figure&amp;gt;&amp;lt;img src=&amp;#34;/tsapispec.demo.gif&amp;#34;&amp;gt;&amp;lt;figcaption&amp;gt;
+      &amp;lt;h4&amp;gt;My Caption&amp;lt;/h4&amp;gt;
+    &amp;lt;/figcaption&amp;gt;
+&amp;lt;/figure&amp;gt;
+
+&amp;lt;p&amp;gt;Everything is autocompleted and type supported.
+As soon as schema is satisfied error disappears.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Benefits:&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;maximum code sharing between nodes (assuming JS/TS)&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;fully typed end to end (including errors)&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;uniform error handling (do runtime validation in non prod everywhere)&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;generates router and apiClient and router from same spec(SSOT/contract)&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;Intended to: suboptimal code in industry/lag contract drift
+Overlap: openApi codegen RPC etc
+leverage: for js both backend and frontend ts first zero drift code sharing.
+Eliminates gen step and stale specs&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;how: parser types &amp;lt;a href=&amp;#34;http://djuleayo.com/posts/parser-types/&amp;#34;  class=&amp;#34;external-link&amp;#34; target=&amp;#34;_blank&amp;#34; rel=&amp;#34;noopener&amp;#34;&amp;gt;http://djuleayo.com/posts/parser-types/&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
+</content:encoded>
+    </item>
+  </channel>
+</rss>
