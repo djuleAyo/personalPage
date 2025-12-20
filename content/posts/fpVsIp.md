@@ -1,7 +1,7 @@
 +++
 draft = false
 date = 2025-05-15T17:10:43+02:00
-title = "Hype Debunking: FP vs IP, Microservices vs Monoliths"
+title = "FP vs IP and Microservices vs Monoliths are the same argument"
 description = "Through two highly hyped clashes of modern development—functional vs imperative programming and microservices vs monoliths—we share insights and offer perspective."
 slug = "recomputing-since-christ"
 authors = []
@@ -11,7 +11,7 @@ externalLink = ""
 series = ["series A"]
 +++
 
-# Hype Debunking: FP vs IP, Microservices vs Monoliths
+# FP vs IP and Microservices vs Monoliths are the same argument
 
 There is a huge parallel between:
 
