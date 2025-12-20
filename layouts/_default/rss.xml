@@ -1,0 +1,41 @@
+{{- /* Custom RSS template that outputs full content instead of summaries. */ -}}
+{{- $ctx := . -}}
+{{- if .IsHome -}}
+  {{- $ctx = .Site -}}
+{{- end -}}
+
+{{- $pages := slice -}}
+{{- if eq $ctx.Kind "page" -}}
+  {{- $pages = $ctx.Pages -}}
+{{- else -}}
+  {{- $pages = $ctx.RegularPages -}}
+{{- end -}}
+
+{{- $limit := .Site.Config.Services.RSS.Limit -}}
+{{- if and (ge $limit 1) (le $limit (len $pages)) -}}
+  {{- $pages = first $limit $pages -}}
+{{- end -}}
+
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\"?>" | safeHTML }}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>{{ if eq $ctx.Kind "home" }}{{ .Site.Title }}{{ else }}{{ $ctx.Title }} · {{ .Site.Title }}{{ end }}</title>
+    <link>{{ $ctx.Permalink }}</link>
+    <description>{{ if eq $ctx.Kind "home" }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ else }}{{ with $ctx.Description }}{{ . }}{{ end }}{{ end }}</description>
+    <generator>Hugo</generator>
+    <language>{{ site.Language.Lang }}</language>
+    {{- with .OutputFormats.Get "RSS" }}
+    <atom:link href="{{ .Permalink }}" rel="self" type="application/rss+xml" />
+    {{- end }}
+    {{- range $pages }}
+    <item>
+      <title>{{ .Title }}</title>
+      <link>{{ .Permalink }}</link>
+      <guid>{{ .Permalink }}</guid>
+      <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 MST" }}</pubDate>
+      <description><![CDATA[{{ .Content | safeHTML }}]]></description>
+      <content:encoded><![CDATA[{{ .Content | safeHTML }}]]></content:encoded>
+    </item>
+    {{- end }}
+  </channel>
+</rss>
