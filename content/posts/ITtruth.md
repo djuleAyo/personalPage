@@ -15,7 +15,7 @@ series = []
 
 ## IT Is Power
 
-Automation has been world-scale power since World War II.
+[Automation has been world-scale power since World War II.](https://www.djuleayo.com/posts/power-of-automation/)
 AI does not change that. It only changes who can access it.
 
 Automation has never worked “for you” by default.
@@ -94,7 +94,7 @@ local capability erodes, and sovereignty shifts to external platforms delivered 
 
 Even technical people lose power.
 
-UX that is not o(1) is not automation.
+[UX that is not o(1) is not automation.](https://www.djuleayo.com/posts/uxmetrix/)
 It is control through friction.
 
 ## AI Power Redistribution
