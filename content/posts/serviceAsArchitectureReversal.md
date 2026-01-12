@@ -1,6 +1,6 @@
 +++ 
 draft = false
-date = 2025-09-14T09:22:50+02:00
+date = 2026-01-12T09:22:50+02:00
 title = "Service as Architecture Reversal"
 description = "Exploring how Software as a Service has inverted the original client–server architecture, shifting control from users to services."
 slug = "service-as-architecture-reversal"
