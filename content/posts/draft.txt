@@ -1,0 +1,54 @@
+i dealt with nlp recently in my own conquests
+after investigating a graph modeling approach 
+which i used as internal representation for a language that i wrote
+i can tell about some findings
+even though findings on how relational properties are reflected in linguistics
+properties like reflection, transitivity, symmetry and so on
+are very interesting
+i would say the main property of natural languages that i find out about is
+what i call
+
+> contextual minimization
+
+this is basically that natural languages tend to form semantics
+represented with a shortest unique word unambiguously identifiable in given context
+for example
+
+if you call for nikola and there is only one nikola
+the label the name, nicola is uniquely identifiable
+if there are multiple nicolas in a given context
+we usually specify by surname or an adjective
+
+and this property is extremely promising
+it basically says what is the core of what we consider natural
+if i have to specify in any other way than an unambiguously identifiable label
+then it is not natural
+god forbid i have to specify in a location as i do need to specify in computer systems and programs
+specifying things by location seems very robotic and not human friendly
+
+and contextual minimization proves my point
+it is an operation on language
+and this elevates languages in dynamic level
+if languages are in dynamic level, then you can do operations on them
+so if i set the context i can do contextual minimization
+this means if second nikola is not present then nikola is sufficient to reference the only person named nikola
+this is where mcp drawbacks come in
+while mcp server allows you to reference a capability by natural language
+for it to be safe, you need elaborate formal systems
+primarily authorization
+if you can easily invoke a capability and there is no friction in user experience
+then you better have very detailed authorizations
+and authorization is as i said formal system
+
+do you know what else is a formal system?
+formal language. so we have core criteria for what feels natural
+and that is contextual minimization
+if we dare to elevate languages in dynamic level and do operations on themselves,
+then we can do exactly what mcp server does in formal and controlled manner
+
+formal languages in dynamic level seems a lot like graph cursors
+with human in loop. the user can visualize a graph from a given perspective
+and if we are talking about capability graph, then user interaction may be inspired by
+spatial, relational and topological insights related to current state
+
+
