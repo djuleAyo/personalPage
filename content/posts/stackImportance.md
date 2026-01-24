@@ -1,6 +1,6 @@
 +++ 
 draft = false
-date = 2025-09-14T09:22:50+02:00
+date = 2026-01-24T09:22:50+02:00
 title = "Why You Must Revisit the Stack Data Structure in the Age of AI"
 description = "With the rise of AI-assisted coding, execution has become cheap. You can let the AI do the wiring. What you cannot delegate is the choice of abstractions. And that changes everything."
 slug = "stack-importance"
