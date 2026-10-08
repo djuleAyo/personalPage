@@ -1,4 +1,4 @@
-baseurl = "http://www.example.com"
+baseurl = "https://www.djuleayo.com"
 title = "djuleayo"
 theme = "hugo-coder"
 languagecode = "en"
@@ -18,9 +18,9 @@ style = "github-dark"
 [params]
   author = "djuleayo"
   info = "Scribe in Digital Domain"
-  description = "John Doe's personal website"
+  description = "djuleayo's personal website"
   keywords = "blog,developer,personal"
-  avatarurl = "/avatar.jpg"
+  avatarurl = "/avatar.png"
   #gravatar = "john.doe@example.com"
 
   faviconSVG = "/img/favicon.svg"
@@ -49,17 +49,17 @@ style = "github-dark"
   name = "Github"
   icon = "fa-brands fa-github fa-2x"
   weight = 1
-  url = "https://github.com/johndoe/"
+  url = "https://github.com/djuleAyo"
 [[params.social]]
-  name = "Gitlab"
-  icon = "fa-brands fa-gitlab fa-2x"
+  name = "LinkedIn"
+  icon = "fa-brands fa-linkedin fa-2x"
   weight = 2
-  url = "https://gitlab.com/johndoe/"
+  url = "https://www.linkedin.com/in/andrej-jovanovic-618b231a3/"
 [[params.social]]
-  name = "Twitter"
+  name = "X"
   icon = "fa-brands fa-x-twitter fa-2x"
   weight = 3
-  url = "https://twitter.com/johndoe/"
+  url = "https://x.com/djuleayo"
 
 # Menu links
 [[menu.main]]
