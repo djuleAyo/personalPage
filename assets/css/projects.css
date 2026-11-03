@@ -212,6 +212,65 @@ body.colorscheme-dark .projects {
   color: var(--project-accent);
 }
 
+.contract-source {
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1.6rem 2rem;
+}
+
+.contract-source::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  height: 1.6rem;
+  border-left: 1px solid var(--project-border);
+}
+
+.projects .contract-consumers {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 3.2rem;
+  list-style: none;
+  padding: 3.2rem 0 0;
+  margin: 0;
+}
+
+.contract-consumers::before {
+  content: "";
+  position: absolute;
+  top: 1.6rem;
+  left: calc(25% - 0.8rem);
+  right: calc(25% - 0.8rem);
+  border-top: 1px solid var(--project-border);
+}
+
+.contract-consumers > li::before {
+  content: "";
+  position: absolute;
+  top: -1.6rem;
+  left: 50%;
+  height: 1.6rem;
+  border-left: 1px solid var(--project-border);
+}
+
+.api-editor-demo > a {
+  display: block;
+  overflow: hidden;
+  border: 1px solid var(--project-border);
+  border-radius: 0.6rem;
+  background: #101218;
+}
+
+.api-editor-demo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
 .flow-restricted {
   background: var(--project-restricted-bg);
   border-color: var(--project-restricted-border);

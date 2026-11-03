@@ -1,0 +1,20 @@
+<figure class="project-diagram api-contract" aria-labelledby="apispects-contract-caption">
+  <div class="project-diagram-body">
+    <p class="diagram-label">One contract connects both sides <span>Routes · Inputs · Responses · Business errors</span></p>
+    <div class="project-node flow-positive contract-source">
+      <strong>Shared TypeScript contract</strong>
+      <span>Zod schemas + <code>ApiSpec</code></span>
+    </div>
+    <ul class="contract-consumers" role="list">
+      <li class="project-node">
+        <strong>Backend</strong>
+        <span>Express router and typed handlers</span>
+      </li>
+      <li class="project-node">
+        <strong>Frontend</strong>
+        <span>Typed calls, results, and business errors</span>
+      </li>
+    </ul>
+  </div>
+  <figcaption id="apispects-contract-caption">Both interfaces derive from the same contract version. Teams keep ownership of their business logic and user experience.</figcaption>
+</figure>
