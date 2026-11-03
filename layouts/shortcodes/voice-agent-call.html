@@ -1,0 +1,20 @@
+<figure class="project-diagram voice-call" aria-labelledby="voice-agent-call-caption">
+  <div class="project-diagram-body">
+    <p class="diagram-label">A question becomes a detour, then the task continues <span>Illustrative call and execution</span></p>
+    <ol class="call-steps" role="list">
+      <li>
+        <div><strong>Ask</strong><p>The agent requests the caller's first name.</p></div>
+        <p class="call-execution"><code>collectGivenName(...)</code> waits for an accepted answer.</p>
+      </li>
+      <li>
+        <div><strong>Explain</strong><p>Caller: “Why do you need my name?” The agent explains its declared purpose.</p></div>
+        <p class="call-execution">Navigation visits the explanation goal; collection stays pending.</p>
+      </li>
+      <li>
+        <div><strong>Resume</strong><p>The caller supplies a name. The agent accepts the validated answer and continues the task.</p></div>
+        <p class="call-execution">The collector returns. The parent resumes and invokes <code>inform(...)</code>, which checks its remaining requirements.</p>
+      </li>
+    </ol>
+  </div>
+  <figcaption id="voice-agent-call-caption">A child goal can handle several turns while the parent's await remains suspended.</figcaption>
+</figure>

@@ -1,0 +1,436 @@
+.projects {
+  --project-surface: #f1f3f5;
+  --project-border: #c9ced5;
+  --project-muted: #525b66;
+  --project-accent: #176544;
+  --project-positive-bg: #e5f2ea;
+  --project-positive-border: #69a584;
+  --project-restricted: #934126;
+  --project-restricted-bg: #fbede7;
+  --project-restricted-border: #cb967f;
+}
+
+body.colorscheme-dark .projects {
+  --project-surface: #292d32;
+  --project-border: #59616c;
+  --project-muted: #b4bdc9;
+  --project-accent: #a2dfbc;
+  --project-positive-bg: #233c30;
+  --project-positive-border: #548969;
+  --project-restricted: #f5bb9e;
+  --project-restricted-bg: #402e27;
+  --project-restricted-border: #9c6c52;
+}
+
+@media (prefers-color-scheme: dark) {
+  body.colorscheme-auto .projects {
+    --project-surface: #292d32;
+    --project-border: #59616c;
+    --project-muted: #b4bdc9;
+    --project-accent: #a2dfbc;
+    --project-positive-bg: #233c30;
+    --project-positive-border: #548969;
+    --project-restricted: #f5bb9e;
+    --project-restricted-bg: #402e27;
+    --project-restricted-border: #9c6c52;
+  }
+}
+
+.projects article p {
+  text-align: left;
+  hyphens: none;
+}
+
+.projects .project-context {
+  color: var(--project-muted);
+  font-size: 1.4rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.project-list {
+  margin-top: 4rem;
+}
+
+.project-entry {
+  border-top: 1px solid var(--project-border);
+  padding: 2rem 0 3rem;
+}
+
+.project-entry h2 {
+  margin-top: 0.8rem;
+  margin-bottom: 1.6rem;
+}
+
+.project-entry .project-context {
+  margin-bottom: 0;
+}
+
+.project-read-more {
+  display: inline-block;
+}
+
+.project-jumps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.8rem;
+  margin: 2rem 0 3.2rem;
+  font-size: 1.4rem;
+  line-height: 1.8;
+}
+
+.project-jumps a {
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
+
+.projects .call-steps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.call-steps > li {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 1.4rem 0;
+  border-top: 1px solid var(--project-border);
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+.projects .call-steps p {
+  margin: 0.4rem 0 0;
+}
+
+.call-execution {
+  align-self: center;
+  color: var(--project-muted);
+}
+
+.call-execution code {
+  font-size: 1.3rem;
+}
+
+.project-back {
+  display: inline-block;
+  margin-bottom: 0.8rem;
+  font-size: 1.6rem;
+}
+
+.projects > article > header {
+  margin-top: 3.2rem;
+  margin-bottom: 2.4rem;
+}
+
+.projects > article > header .project-context {
+  margin: 0.8rem 0;
+}
+
+.projects .project-diagram {
+  margin: 3.2rem 0;
+}
+
+.project-diagram-body {
+  padding: 2.4rem;
+  border: 1px solid var(--project-border);
+  border-radius: 0.6rem;
+}
+
+.projects .diagram-label {
+  margin: 0 0 2rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.diagram-label > span {
+  display: block;
+  color: var(--project-muted);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.projects .project-flow {
+  display: grid;
+  gap: 2.8rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project-flow-four {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.project-flow-three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.project-flow > li,
+.project-node,
+.trust-result {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.8rem;
+  padding: 1.6rem 1rem;
+  min-width: 0;
+  border: 1px solid var(--project-border);
+  border-radius: 0.4rem;
+  background: var(--project-surface);
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.project-flow > li > span,
+.project-node > span,
+.trust-result > span {
+  color: var(--project-muted);
+  font-size: 1.4rem;
+}
+
+.project-flow > li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -2rem;
+  top: calc(50% - 0.4rem);
+  width: 0.8rem;
+  height: 0.8rem;
+  border-top: 2px solid var(--project-muted);
+  border-right: 2px solid var(--project-muted);
+  transform: rotate(45deg);
+}
+
+.project-flow > .flow-positive,
+.flow-positive {
+  background: var(--project-positive-bg);
+  border-color: var(--project-positive-border);
+  color: var(--project-accent);
+}
+
+.flow-restricted {
+  background: var(--project-restricted-bg);
+  border-color: var(--project-restricted-border);
+  color: var(--project-restricted);
+}
+
+.journey-divider {
+  margin: 2.8rem 0;
+  border-top: 1px dashed var(--project-border);
+}
+
+.project-diagram figcaption {
+  margin-top: 1.2rem;
+  color: var(--project-muted);
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+.trust-root {
+  position: relative;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1.2rem 2rem;
+  border: 1px solid var(--project-border);
+  border-radius: 0.4rem;
+  background: var(--project-surface);
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.trust-root::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  height: 2rem;
+  border-left: 1px solid var(--project-border);
+}
+
+.trust-branches {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 3.2rem;
+  padding-top: 2rem;
+}
+
+.trust-branch {
+  position: relative;
+  min-width: 0;
+  padding-top: 2rem;
+}
+
+.trust-branch::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: calc(50% + 1.6rem);
+  height: 1.5rem;
+  border-top: 1px solid var(--project-border);
+}
+
+.trust-branch:first-child::before {
+  left: 50%;
+  border-left: 1px solid var(--project-border);
+}
+
+.trust-branch:last-child::before {
+  right: 50%;
+  border-right: 1px solid var(--project-border);
+}
+
+.projects .trust-event {
+  margin: 0 0 1.2rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.projects .trust-check,
+.projects .diagram-note {
+  margin: 2.4rem 0 0;
+  color: var(--project-muted);
+  font-size: 1.4rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.project-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.project-flow-bidirectional > li:not(:last-child)::after {
+  content: "↔";
+  right: -2.5rem;
+  top: calc(50% - 1rem);
+  width: 2rem;
+  height: 2rem;
+  border: 0;
+  transform: none;
+  font-size: 2rem;
+  line-height: 1;
+  color: var(--project-muted);
+}
+
+.projects .infra-services,
+.projects .semantic-examples {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.6rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.voice-infrastructure .project-diagram-body,
+.voice-rsi .project-diagram-body {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+}
+
+.voice-infrastructure .project-node {
+  padding: 0.8rem 0;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  justify-content: flex-start;
+}
+
+.voice-performance {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  padding: 0.8rem 0 0.8rem 1.8rem;
+  margin: 2.4rem 0;
+  border-left: 3px solid var(--project-positive-border);
+}
+
+.projects .voice-performance-score {
+  flex: none;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.voice-performance-score strong {
+  display: block;
+  color: var(--project-accent);
+  font-size: 3.2rem;
+  line-height: 1.2;
+}
+
+.voice-performance-score span,
+.projects .voice-performance-context {
+  color: var(--project-muted);
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+.projects .voice-performance-context {
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .call-steps > li {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+  }
+
+  .project-diagram-body {
+    padding: 1.6rem;
+  }
+
+  .projects .project-flow {
+    grid-template-columns: 1fr;
+    gap: 2.4rem;
+  }
+
+  .project-flow > li:not(:last-child)::after {
+    right: calc(50% - 0.4rem);
+    top: auto;
+    bottom: -1.7rem;
+    transform: rotate(135deg);
+  }
+
+  .project-flow-bidirectional > li:not(:last-child)::after {
+    content: "↕";
+    right: calc(50% - 1rem);
+    bottom: -2.2rem;
+    transform: none;
+  }
+
+  .projects .semantic-examples {
+    grid-template-columns: 1fr;
+  }
+
+  .voice-performance {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  .trust-branches {
+    gap: 1.6rem;
+  }
+
+  .trust-branch::before {
+    width: calc(50% + 0.8rem);
+  }
+
+  .trust-result {
+    font-size: 1.3rem;
+    padding: 1.2rem 0.6rem;
+  }
+}

@@ -1,0 +1,4 @@
+{{ if eq .Section "projects" }}
+  {{ $styles := resources.Get "css/projects.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous">
+{{ end }}

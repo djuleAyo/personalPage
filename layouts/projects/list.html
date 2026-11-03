@@ -1,0 +1,19 @@
+{{ define "title" }}{{ .Title }} · {{ .Site.Title }}{{ end }}
+{{ define "content" }}
+<section class="container page projects">
+  <header>
+    <h1 class="title">{{ .Title }}</h1>
+  </header>
+  {{ .Content }}
+  <div class="project-list">
+    {{ range .RegularPages.ByWeight }}
+    <article class="project-entry">
+      {{ with .Params.context }}<p class="project-context">{{ . }}</p>{{ end }}
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      <p>{{ .Summary }}</p>
+      <a class="project-read-more" href="{{ .RelPermalink }}">Explore the project <span aria-hidden="true">→</span><span class="project-sr-only">: {{ .Title }}</span></a>
+    </article>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

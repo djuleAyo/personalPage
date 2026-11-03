@@ -1,0 +1,18 @@
+<figure class="project-diagram" aria-labelledby="telephony-integration-caption">
+  <div class="project-diagram-body">
+    <p class="diagram-label">Inbound call <span>Bring the user's web context into the conversation</span></p>
+    <ol class="project-flow project-flow-three">
+      <li><strong>User calls</strong><span>From their phone</span></li>
+      <li><strong>Asterisk/GSM gateway</strong><span>Authenticated call webhook</span></li>
+      <li class="flow-positive"><strong>Web application</strong><span>Match caller to saved intent</span></li>
+    </ol>
+    <div class="journey-divider" aria-hidden="true"></div>
+    <p class="diagram-label">Outbound SMS <span>Connect the phone to a remembered browser session</span></p>
+    <ol class="project-flow project-flow-three">
+      <li><strong>Web application</strong><span>Queue activation code</span></li>
+      <li><strong>GSM gateway</strong><span>Deliver SMS</span></li>
+      <li class="flow-positive"><strong>User's phone</strong><span>Code activates browser session</span></li>
+    </ol>
+  </div>
+  <figcaption id="telephony-integration-caption">Calls carry context into the app; SMS connects the user back to it.</figcaption>
+</figure>

@@ -1,0 +1,24 @@
+<figure class="project-diagram" aria-labelledby="trust-outcomes-caption">
+  <div class="project-diagram-body">
+    <p class="diagram-label">Trust updates <span>Real outcomes determine permission</span></p>
+    <div class="trust-root">Operator confirms the outcome</div>
+    <div class="trust-branches">
+      <div class="trust-branch">
+        <p class="trust-event">Fulfillment confirmed</p>
+        <div class="trust-result flow-positive">
+          <strong>TRUSTED</strong>
+          <span>Direct access allowed</span>
+        </div>
+      </div>
+      <div class="trust-branch">
+        <p class="trust-event">No-show recorded</p>
+        <div class="trust-result flow-restricted">
+          <strong>NOT_TRUSTED</strong>
+          <span>Direct checkout blocked</span>
+        </div>
+      </div>
+    </div>
+    <p class="trust-check">Every direct checkout checks the current trust state and the phone-linked session.</p>
+  </div>
+  <figcaption id="trust-outcomes-caption">Operator-confirmed outcomes update trust. An existing browser session cannot bypass the permission check.</figcaption>
+</figure>

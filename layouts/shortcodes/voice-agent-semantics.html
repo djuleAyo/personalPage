@@ -1,0 +1,16 @@
+<figure class="project-diagram" aria-labelledby="voice-agent-semantics-caption">
+  <div class="project-diagram-body">
+    <p class="diagram-label">Meaning before the transition <span>The same requested field can carry different intentions</span></p>
+    <ul class="semantic-examples" role="list">
+      <li class="project-node"><strong>“Why do you need my number?”</strong><span>Explanation request → explain and resume</span></li>
+      <li class="project-node"><strong>“I won't give you my number.”</strong><span>Refusal → apply the declared refusal policy</span></li>
+    </ul>
+    <div class="journey-divider" aria-hidden="true"></div>
+    <ol class="project-flow project-flow-three" role="list">
+      <li><strong>Caller evidence</strong><span>Words in conversation context</span></li>
+      <li><strong>Semantic decision</strong><span>Relevant goal and applicable case</span></li>
+      <li class="flow-positive"><strong>Controlled transition</strong><span>Code applies the declared behavior</span></li>
+    </ol>
+  </div>
+  <figcaption id="voice-agent-semantics-caption">A field name or extracted token is insufficient to choose the next behavior. The caller's meaning determines which branch applies.</figcaption>
+</figure>

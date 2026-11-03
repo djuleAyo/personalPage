@@ -1,0 +1,13 @@
+{{ define "title" }}{{ .Title }} · {{ .Site.Title }}{{ end }}
+{{ define "content" }}
+<section class="container page projects">
+  <article>
+    <header>
+      <a class="project-back" href="{{ .Parent.RelPermalink }}"><span aria-hidden="true">←</span> All projects</a>
+      {{ with .Params.context }}<p class="project-context">{{ . }}</p>{{ end }}
+      <h1 class="title">{{ .Title }}</h1>
+    </header>
+    {{ .Content }}
+  </article>
+</section>
+{{ end }}
