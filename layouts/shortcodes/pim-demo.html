@@ -1,0 +1,9 @@
+{{ $video := .Page.Resources.GetMatch "worker-demo.mp4" }}
+{{ $poster := .Page.Resources.GetMatch "worker-demo-poster.jpg" }}
+<figure class="project-diagram project-recording" aria-labelledby="pim-demo-caption">
+  <video controls playsinline preload="none" width="1280" height="720" poster="{{ $poster.RelPermalink }}" aria-label="Worker interface demonstration: changing views and adjusting reading position and speed" aria-describedby="pim-demo-caption">
+    <source src="{{ $video.RelPermalink }}" type="video/mp4">
+    <p><a href="{{ $video.RelPermalink }}">Watch the worker interface recording</a>.</p>
+  </video>
+  <figcaption id="pim-demo-caption">The wider worker interface in use: changing views and adjusting reading position and speed. The standalone repository contains PIM's interaction runtime and command model.</figcaption>
+</figure>

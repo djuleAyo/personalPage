@@ -1,0 +1,20 @@
+<figure class="project-diagram pim-proof" aria-labelledby="pim-proof-caption">
+  <div class="project-diagram-body">
+    <p class="diagram-label">Proposals meet the declared command model <span>Verified with fixed inputs and recording callbacks</span></p>
+    <ul class="call-steps" role="list">
+      <li>
+        <div><strong>Send a release prompt to Ada</strong><p>Select Ada's worker and ask it to tighten the release notes.</p></div>
+        <p class="call-execution">Selects <code>worker-ada</code> and sends “tighten release notes” in its release context.</p>
+      </li>
+      <li>
+        <div><strong>Approve for this session</strong><p>Answer the pending command approval with a session scope.</p></div>
+        <p class="call-execution">Records <code>acceptForSession</code> for <code>approval-tests</code>, with scope <code>session</code>.</p>
+      </li>
+      <li>
+        <div><strong>Delete production</strong><p>Propose a command absent from this interaction model.</p></div>
+        <p class="call-execution">Rejects the undeclared path and records no target action.</p>
+      </li>
+    </ul>
+  </div>
+  <figcaption id="pim-proof-caption">Replaying this batch reproduced the same decisions, actions, and trace summary.</figcaption>
+</figure>

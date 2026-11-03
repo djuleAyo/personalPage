@@ -1,0 +1,12 @@
+<figure class="project-diagram pim-boundary" aria-labelledby="pim-boundary-caption">
+  <div class="project-diagram-body">
+    <p class="diagram-label">Language enters; application callbacks act</p>
+    <ol class="project-flow project-flow-three" role="list">
+      <li><strong>Incoming words</strong><span>Speech recognizer, model proposal, or script</span></li>
+      <li class="flow-positive"><strong>Declared model + runtime</strong><span>Resolve a path in the current interaction context</span></li>
+      <li><strong>Application callback</strong><span>Invoked through a resolved, declared action</span></li>
+    </ol>
+    <p class="diagram-note">Processing events expose matches, continuations, and rejections for inspection and replay.</p>
+  </div>
+  <figcaption id="pim-boundary-caption">The host owns input adapters and application effects. PIM owns interaction resolution and its observable execution.</figcaption>
+</figure>
