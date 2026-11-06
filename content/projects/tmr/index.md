@@ -116,7 +116,7 @@ The same structure is intended to support **2D, 3D and hyperbolic views**: a scr
 
 **Nodes can be “emotionally overloaded.”** A node can carry video, a reel, sound, motion and visual associations alongside its structured meaning. The aim is maximum expressive density: a medium that conveys narrative, atmosphere and recognizable context within the object’s presentation. A compact peripheral node could unfold into a playable scene, a document or an editor as it receives attention. Its media is a presentation of the same object, with its references and relationships intact.
 
-**Why “Throne”?** I imagined the unified interface and drew it. Only afterward did I recognize the same form in imagery of a Throne angel I had seen before. That coincidence gave the interface its name.
+{{< platform-throne-origin >}}
 
 ## Harnesses, data and metadata ownership
 
