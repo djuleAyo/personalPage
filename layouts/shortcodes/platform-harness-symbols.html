@@ -1,0 +1,19 @@
+<div class="platform-harness-symbols">
+  {{ $symbols := slice
+    (dict "file" "tower-of-babel.png" "title" "Tower of Babel" "alt" "An immense unfinished stone Tower of Babel, with arched tiers, scaffolding and builders beneath towering clouds")
+    (dict "file" "fire-of-olympus.png" "title" "Fire of Olympus" "alt" "A hand carrying a blazing bronze torch, with a temple on Mount Olympus rising above the clouds behind it")
+    (dict "file" "staff-scepter.png" "title" "Staff / scepter" "subtitle" "Mage · Developer · Ruler" "alt" "A hand holding a wooden and bronze staff crowned by a glowing openwork sphere, with fine luminous connections extending outward")
+  }}
+  {{ range $symbols }}
+    {{ $image := $.Page.Resources.GetMatch .file }}
+    {{ $small := $image.Resize "480x webp q85" }}
+    {{ $large := $image.Resize "960x webp q85" }}
+    <figure>
+      <img src="{{ $large.RelPermalink }}" srcset="{{ $small.RelPermalink }} 480w, {{ $large.RelPermalink }} 960w" sizes="(max-width: 760px) calc(100vw - 40px), (max-width: 1360px) 32vw, 416px" width="{{ $large.Width }}" height="{{ $large.Height }}" loading="lazy" decoding="async" alt="{{ .alt }}">
+      <figcaption>
+        <span class="platform-symbol-title">{{ .title }}</span>
+        {{ with .subtitle }}<span class="platform-symbol-subtitle">{{ . }}</span>{{ end }}
+      </figcaption>
+    </figure>
+  {{ end }}
+</div>

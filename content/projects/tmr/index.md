@@ -120,6 +120,8 @@ The same structure is intended to support **2D, 3D and hyperbolic views**: a scr
 
 ## Harnesses, data and metadata ownership
 
+{{< platform-harness-symbols >}}
+
 **Molecule / Chant is designed as a general-purpose substrate for harnesses.** Tasks, tool contracts, execution state and results share an explicit language and graph. Different harnesses can coordinate models and tools around that representation.
 
 **An additional capability advantage over existing harnesses remains unproven.** The stronger motivation is ownership of the information produced and accumulated through their use.

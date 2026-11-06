@@ -1,0 +1,19 @@
+{
+  "generation": "Built-in image_gen tool",
+  "date": "2026-11-06",
+  "assets": [
+    {
+      "file": "tower-of-babel.png",
+      "prompt": "Use case: illustration-story. Asset type: square editorial illustration for the TMR experimental computing environment project page, one of three mythology-inspired images shown side by side. Primary request: the Tower of Babel. An immense unfinished spiraling stone tower with many arched tiers rising into the clouds, the whole recognizable tower visible; tiny builders and scaffolding establish its scale. Painterly classical illustration with tactile stone, restrained dramatic light, rich shadows and warm highlights. Strong simple composition readable as a small web image; detailed but not cluttered. No text, no labels, no border, no watermark. Square image, opaque background."
+    },
+    {
+      "file": "fire-of-olympus.png",
+      "prompt": "Use case: illustration-story. Asset type: square editorial illustration for the TMR experimental computing environment project page, one of three mythology-inspired images shown side by side. Primary request: the fire of Olympus, a Promethean flame. A human hand carries a blazing ancient torch in the foreground; a distant classical temple on the summit of Mount Olympus emerges through clouds behind it. The fire is the central luminous subject, a tangible gift of power and craft. Painterly classical illustration with tactile bronze and stone, restrained dramatic light, rich shadows and warm highlights. Strong simple composition readable as a small web image; detailed but not cluttered. No text, no labels, no Olympic rings, no modern objects, no border, no watermark. Square image, opaque background."
+    },
+    {
+      "file": "staff-scepter.png",
+      "prompt": "Use case: illustration-story. Asset type: square editorial illustration for the TMR experimental computing environment project page, one of three mythology-inspired images shown side by side. Primary request: a single staff / scepter that evokes mage, developer and ruler. A finely crafted wood and bronze staff topped by an intricate openwork sphere, held upright by a human hand; a few delicate luminous geometric threads radiate from its head, evoking shaping and directing a system. The staff is the sole focal object, clearly readable and shown with enough length to feel like a staff rather than a short wand. Painterly classical illustration with tactile materials, restrained dramatic light, rich shadows and warm highlights. Strong simple composition readable as a small web image; detailed but not cluttered. No legible text, no letters, no computer screen, no crown, no border, no watermark. Square image, opaque background."
+    }
+  ],
+  "presentation": "Original generated PNGs retained; Hugo produces WebP copies for page delivery."
+}
