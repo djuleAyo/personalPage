@@ -72,3 +72,13 @@ The diagram takes a three-dimensional slice: **Readable, Editable and Navigable*
 **Hyperbolic geometry gives branching structure room around the focus.** In a bounded 3D view, distant context compresses toward the boundary; bringing a region into focus reveals its local detail. A hierarchy can guide spatial placement while shared nodes and cross-links retain the graph's richer structure. [H3's 3D hyperbolic graph layout](https://graphics.stanford.edu/papers/h3/html/h3.htm) is a reference for this focus-and-context approach.
 
 The language dimensions remain in the model. The renderer chooses a spatial view of them, with continuous transitions as the focus moves. Compass and the recording above show graph interaction and rendering; the hyperbolic layout describes the wider visualization architecture.
+
+## Harnesses, data and metadata ownership
+
+**Molecule / Chant is designed as a general-purpose substrate for harnesses.** Tasks, tool contracts, execution state and results share an explicit language and graph. Different harnesses can coordinate models and tools around that representation.
+
+**An additional capability advantage over existing harnesses remains unproven.** The stronger motivation is ownership of the information produced and accumulated through their use.
+
+That includes both **data**—inputs, documents, generated artifacts and results—and **metadata**: stable identities, types, relationships, provenance and execution context. The aim is to retain these together in storage the user controls, with representations that remain inspectable and usable across applications, models and harnesses.
+
+Ownership therefore becomes an architectural requirement: inspectable definitions, portable serialization and control over persistence and access. Changing a model or execution framework should preserve the accumulated information and the structure needed to interpret it.
