@@ -1,29 +1,65 @@
-<figure class="platform-lattice" aria-labelledby="lattice-title" aria-describedby="lattice-caption">
-  <div class="platform-lattice-heading"><div><p class="platform-eyebrow">ILLUSTRATIVE BOOLEAN LATTICE / SPECIALIZATION ORDER</p><h3 id="lattice-title">Capability groups &amp; UI polymorphism</h3></div><span class="platform-map-badge">3 predicates · 8 requirement sets</span></div>
-  <div class="platform-lattice-drawing" tabindex="0" role="region" aria-label="Capability inclusion lattice. Scroll horizontally if needed.">
-    <svg viewBox="0 0 1080 650" role="img" aria-labelledby="lattice-svg-title lattice-svg-desc">
-      <title id="lattice-svg-title">Overlapping capability groups and compatible UI presentations</title>
-      <desc id="lattice-svg-desc">Each point is a capability requirement set. Object at the top requires none; moving down adds requirements. Meet combines requirements and join keeps only shared requirements. The bottom requires all three, with Document shown as an example member. The same document identity can have Reader, Editor and Compass presentations. This illustrates the interface model rather than an automatic cast registry.</desc>
-      <g class="lattice-links">
-        <path d="M540 75 L180 135 M540 75 V135 M540 75 L900 135" />
-        <path d="M180 185 V255 M540 185 L180 255 M180 185 L540 255 M900 185 L540 255 M540 185 L900 255 M900 185 V255" />
-        <path d="M180 305 L540 375 M540 305 V375 M900 305 L540 375" />
+<figure class="platform-relations" data-relational-example data-membership="atlas" aria-labelledby="relations-title" aria-describedby="relations-caption">
+  <div class="platform-relations-heading">
+    <div><p class="platform-eyebrow">LATTICE GROUPS / IDENTITY AND ORGANIZATION</p><h3 id="relations-title">Four routes. One document.</h3></div>
+    <span class="platform-map-badge">Interactive architecture example</span>
+  </div>
+  <div class="platform-relations-controls" role="group" aria-label="Change the example document's project membership" hidden>
+    <button type="button" data-membership-choice="atlas" aria-pressed="true">Before: Project Atlas</button>
+    <button type="button" data-membership-choice="boreal" aria-pressed="false">After: Project Boreal</button>
+  </div>
+  <p class="platform-relations-state" role="status" aria-live="polite" aria-atomic="true" data-relations-status>Release notes belongs to Atlas. Its identity is doc:42.</p>
+  <div class="platform-relations-drawing" tabindex="0" role="region" aria-label="Four relational routes to one document. Scroll horizontally if needed.">
+    <svg viewBox="0 0 1160 480" role="img" aria-labelledby="relations-svg-title relations-svg-desc">
+      <title id="relations-svg-title">Several relations reach the same document</title>
+      <desc id="relations-svg-desc" data-relations-description>Project Atlas includes Release notes. Mira authored it, Task 17 produced it, and Review memo references it. Every route reaches the same object, doc:42. Project Boreal currently has no membership edge to this document.</desc>
+      <defs>
+        <marker id="relation-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" /></marker>
+        <marker id="membership-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" /></marker>
+      </defs>
+      <g class="relation-edge relation-membership" data-project-edge="atlas">
+        <path d="M274 75 H352 V215 H430"/><text x="388" y="203">includes</text>
       </g>
-      <g class="lattice-node"><rect x="430" y="25" width="220" height="50" rx="7"/><text x="540" y="57">Object · ∅</text></g>
-      <g class="lattice-node"><rect x="60" y="135" width="240" height="50" rx="7"/><text x="180" y="167">Readable</text></g>
-      <g class="lattice-node"><rect x="420" y="135" width="240" height="50" rx="7"/><text x="540" y="167">Editable</text></g>
-      <g class="lattice-node"><rect x="780" y="135" width="240" height="50" rx="7"/><text x="900" y="167">Navigable</text></g>
-      <g class="lattice-node"><rect x="60" y="255" width="240" height="50" rx="7"/><text x="180" y="287">Readable ∩ Editable</text></g>
-      <g class="lattice-node"><rect x="420" y="255" width="240" height="50" rx="7"/><text x="540" y="287">Readable ∩ Navigable</text></g>
-      <g class="lattice-node"><rect x="780" y="255" width="240" height="50" rx="7"/><text x="900" y="287">Editable ∩ Navigable</text></g>
-      <g class="lattice-node lattice-document"><rect x="315" y="375" width="450" height="95" rx="9"/><text x="540" y="408" class="lattice-document-title">Readable ∩ Editable ∩ Navigable</text><text x="540" y="439" class="lattice-detail">Example member: Document · id: document</text></g>
-      <g class="lattice-presentation-links"><path d="M540 470 V510 M180 550 V510 H900 V550 M540 510 V550" /></g>
-      <g class="lattice-view"><rect x="60" y="550" width="240" height="76" rx="7"/><text x="180" y="582">Reader</text><text x="180" y="608" class="lattice-detail">reading / speech</text></g>
-      <g class="lattice-view"><rect x="420" y="550" width="240" height="76" rx="7"/><text x="540" y="582">Editor</text><text x="540" y="608" class="lattice-detail">editing / selection</text></g>
-      <g class="lattice-view"><rect x="780" y="550" width="240" height="76" rx="7"/><text x="900" y="582">Compass</text><text x="900" y="608" class="lattice-detail">semantic navigation</text></g>
-      <text x="540" y="531" class="lattice-caption">compatible presentations of the same object</text>
+      <g class="relation-edge relation-membership" data-project-edge="boreal" style="display:none">
+        <path d="M274 175 H322 V245 H430"/><text x="376" y="233">includes</text>
+      </g>
+      <g class="relation-edge" data-stable-relation="author"><path d="M274 390 H350 V295 H430"/><text x="350" y="343">authored</text></g>
+      <g class="relation-edge" data-stable-relation="task"><path d="M886 100 H810 V235 H730"/><text x="780" y="223">produced</text></g>
+      <g class="relation-edge" data-stable-relation="reference"><path d="M886 390 H790 V290 H730"/><text x="790" y="336">references</text></g>
+      <g class="relation-node relation-project" data-project-node="atlas" data-current="true"><rect x="24" y="40" width="250" height="70" rx="8"/><text x="149" y="69">Project Atlas</text><text x="149" y="92" class="relation-detail">project:atlas</text></g>
+      <g class="relation-node relation-project" data-project-node="boreal" data-current="false"><rect x="24" y="140" width="250" height="70" rx="8"/><text x="149" y="169">Project Boreal</text><text x="149" y="192" class="relation-detail">project:boreal</text></g>
+      <g class="relation-node"><rect x="24" y="350" width="250" height="80" rx="8"/><text x="149" y="383">Mira</text><text x="149" y="409" class="relation-detail">person:mira</text></g>
+      <g class="relation-node"><rect x="886" y="60" width="250" height="80" rx="8"/><text x="1011" y="93">Task 17</text><text x="1011" y="119" class="relation-detail">task:17</text></g>
+      <g class="relation-node"><rect x="886" y="350" width="250" height="80" rx="8"/><text x="1011" y="383">Review memo</text><text x="1011" y="409" class="relation-detail">doc:7</text></g>
+      <g class="relation-node relation-document" data-shared-object="doc:42"><rect x="430" y="195" width="300" height="132" rx="10"/><text x="580" y="235" class="relation-document-title">Release notes</text><text x="580" y="270" class="relation-identity">doc:42</text><text x="580" y="303" class="relation-detail">ONE SHARED OBJECT</text></g>
+      <text x="580" y="454" class="relation-graph-caption">Change one membership edge; preserve the object and unrelated relations.</text>
     </svg>
   </div>
-  <figcaption id="lattice-caption">The eight requirement sets for three Boolean capability predicates, ordered with more specific sets below. The ∩ labels describe intersections of matching object groups. Meet combines requirements; join keeps common requirements. The lower branch illustrates compatible presentations of one example member.</figcaption>
-  <details class="platform-map-details"><summary>Read the lattice</summary><p>Object is the top requirement set, ∅: it imposes none of these capabilities. The bottom requires all three. Readable and Editable meet at the requirement set {Readable, Editable}; their matching objects satisfy both predicates. Their join is Object, because they share no requirement. This join is not the union of the two object populations. Document is an example member of the all-three group and keeps its identity across Reader, Editor and Compass presentations.</p></details>
+  <div class="relation-mobile-graph" role="group" aria-label="Four relations to one shared document">
+    <div class="relation-mobile-object"><strong>Release notes</strong><code>doc:42</code><span>ONE SHARED OBJECT</span></div>
+    <ul class="relation-mobile-routes">
+      <li><strong data-mobile-project>Project Atlas</strong><span>includes → <code>doc:42</code></span></li>
+      <li><strong>Mira</strong><span>authored → <code>doc:42</code></span></li>
+      <li><strong>Task 17</strong><span>produced → <code>doc:42</code></span></li>
+      <li><strong>Review memo</strong><span>references → <code>doc:42</code></span></li>
+    </ul>
+    <p>Every route reaches the object above.</p>
+  </div>
+  <div class="platform-relations-views">
+    <p class="platform-eyebrow">DERIVED HIERARCHICAL VIEWS / SEVERAL APPEARANCES OF THE SAME OBJECT</p>
+    <ul class="relation-view-list">
+      <li><span>By project</span><strong data-project-view>Project Atlas</strong><span class="relation-view-object" data-object-reference="doc:42">↳ Release notes <code>doc:42</code></span></li>
+      <li><span>By author</span><strong>Mira</strong><span class="relation-view-object" data-object-reference="doc:42">↳ Release notes <code>doc:42</code></span></li>
+      <li><span>By producing task</span><strong>Task 17</strong><span class="relation-view-object" data-object-reference="doc:42">↳ Release notes <code>doc:42</code></span></li>
+      <li><span>By incoming reference</span><strong>Review memo</strong><span class="relation-view-object" data-object-reference="doc:42">↳ Release notes <code>doc:42</code></span></li>
+    </ul>
+  </div>
+  <div class="relation-lookups">
+    <div class="relation-persistent"><span>Persistent reference to <code>doc:42</code></span><strong data-reference-result>Release notes · doc:42</strong><small>Unaffected by the project move</small></div>
+    <div><span>Query: documents in Atlas</span><strong data-query-atlas>doc:42</strong><small>Follows current project membership</small></div>
+    <div><span>Query: documents in Boreal</span><strong data-query-boreal>No matching document</strong><small>Follows current project membership</small></div>
+  </div>
+  <noscript><p>After moving the document to Boreal, the Atlas query returns no document and the Boreal query returns doc:42. The persistent reference, author, task and reference from Review memo remain unchanged.</p></noscript>
+  <figcaption id="relations-caption">Illustrative reference contract: four relational routes and four view occurrences identify one document. Switching project membership changes the project view and the two membership queries. Its identity and the three unrelated relations remain unchanged. This diagram edits an example in the page.</figcaption>
 </figure>
+{{ $script := resources.Get "js/platform-relations.js" | minify | fingerprint }}
+<script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}" crossorigin="anonymous" defer></script>

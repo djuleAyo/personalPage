@@ -105,36 +105,14 @@ body.colorscheme-dark .projects-platform { --platform-blue: #87b5eb; --platform-
 
 .platform-app > rect { fill: var(--platform-blue-bg); stroke: var(--platform-blue); }
 
-/* Compass showcase and capability model. */
+/* Compass showcase. */
 .projects .platform-compass-demo { max-width: 128rem; margin: 3rem auto 4rem; text-align: left; }
 .platform-compass-demo iframe { display: block; width: 100%; height: 82rem; border: 1px solid var(--project-border); border-radius: 1rem; background: #080c13; }
 .platform-compass-demo figcaption { margin-top: 1.4rem; font-size: 1.4rem; line-height: 1.7; color: var(--project-muted); }
 .platform-compass-demo a { white-space: normal; }
 .platform-compass-node > rect { fill: var(--project-positive-bg); stroke: var(--project-positive-border); }
 .platform-compass-node > text { font-size: 15px; fill: var(--project-accent); }
-.projects .platform-lattice { max-width: 112rem; margin: 3rem auto 4rem; padding: 2.4rem; border: 1px solid var(--project-border); border-radius: 1rem; background: var(--platform-paper); text-align: left; }
-.platform-lattice-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 2rem; }
-.projects .platform-lattice h3 { margin: 0; font-size: 2.5rem; text-align: left; }
-.platform-lattice-drawing { overflow-x: auto; margin: 2rem 0; }
-.platform-lattice-drawing:focus-visible { outline: 3px solid var(--platform-blue); outline-offset: 3px; }
-.platform-lattice svg { width: 100%; min-width: 78rem; display: block; font-family: inherit; }
-.lattice-links path { fill: none; stroke: var(--project-border); stroke-width: 1.8px; }
-.lattice-node rect { fill: var(--project-surface); stroke: var(--project-border); }
-.lattice-node text, .lattice-view text { text-anchor: middle; fill: currentColor; font-size: 18px; }
-.lattice-document rect { fill: var(--project-positive-bg); stroke: var(--project-positive-border); stroke-width: 1.8px; }
-.lattice-node .lattice-document-title { font-size: 23px; font-weight: 600; }
-.lattice-node .lattice-detail, .lattice-view .lattice-detail { font-size: 15px; fill: var(--project-muted); }
-.lattice-presentation-links path { fill: none; stroke: var(--platform-blue); stroke-width: 1.8px; }
-.lattice-view rect { fill: var(--platform-blue-bg); stroke: var(--platform-blue); }
-.lattice-caption { text-anchor: middle; font-size: 14px; fill: var(--project-muted); paint-order: stroke; stroke: var(--platform-paper); stroke-width: 6px; }
-.platform-lattice figcaption { color: var(--project-muted); font-size: 1.4rem; line-height: 1.7; }
-.platform-lattice details p { font-size: 1.5rem; line-height: 1.7; }
-@media (max-width: 760px) {
- .platform-compass-demo iframe { height: 84rem; }
- .projects .platform-lattice { padding: 1.6rem; }
- .platform-lattice-heading { display: block; }
- .platform-lattice svg { min-width: 90rem; }
-}
+@media (max-width: 760px) { .platform-compass-demo iframe { height: 84rem; } }
 
 .platform-compass-demo img { display: block; width: 100%; height: auto; border-radius: 1rem; }
 
@@ -182,4 +160,69 @@ body.colorscheme-dark .projects-platform { --platform-blue: #87b5eb; --platform-
   .platform-language-function { font-size: 1.75rem; }
   .projects .platform-view-pipeline { grid-template-columns: 1fr; gap: 3rem; }
   .platform-view-pipeline li:not(:last-child)::after { content: "↓"; top: 100%; left: 0; right: auto; transform: none; height: 3rem; line-height: 3rem; }
+}
+
+/* Shared identities, relational routes and derived views. */
+.projects .platform-relations { max-width: 128rem; margin: 3rem auto 4rem; padding: 2.6rem; border: 1px solid var(--project-border); border-radius: 1rem; background: var(--platform-paper); text-align: left; }
+.platform-relations-heading { display: flex; justify-content: space-between; align-items: flex-start; gap: 2rem; }
+.projects .platform-relations h3 { margin: 0; font-size: 2.8rem; text-align: left; }
+.platform-relations-controls { display: flex; flex-wrap: wrap; gap: 1rem; margin: 2.4rem 0 1.4rem; }
+.platform-relations-controls[hidden] { display: none; }
+.platform-relations-controls button { appearance: none; cursor: pointer; min-height: 4.4rem; padding: .9rem 1.4rem; border: 1px solid var(--project-border); border-radius: .5rem; background: var(--project-surface); color: inherit; font: inherit; font-size: 1.4rem; }
+.platform-relations-controls button[aria-pressed="true"] { background: var(--platform-amber-bg); border-color: var(--platform-amber); color: var(--platform-amber); }
+.platform-relations-controls button:focus-visible, .platform-relations-drawing:focus-visible { outline: 3px solid var(--platform-blue); outline-offset: 3px; }
+.projects .platform-relations-state { margin: 1.4rem 0 0; min-height: 4.8rem; font-size: 1.5rem; line-height: 1.6; }
+.platform-relations-drawing { overflow-x: auto; margin: .4rem 0 2rem; }
+.platform-relations-drawing svg { display: block; width: 100%; min-width: 88rem; font-family: inherit; }
+.relation-edge path { fill: none; stroke: var(--platform-blue); stroke-width: 2px; marker-end: url(#relation-arrow); }
+#relation-arrow path { fill: var(--platform-blue); }
+#membership-arrow path { fill: var(--platform-amber); }
+.relation-edge.relation-membership path { stroke: var(--platform-amber); stroke-width: 2.5px; marker-end: url(#membership-arrow); }
+.relation-edge text { fill: var(--project-muted); text-anchor: middle; font-size: 15px; paint-order: stroke; stroke: var(--platform-paper); stroke-width: 7px; stroke-linejoin: round; }
+.relation-node rect { fill: var(--project-surface); stroke: var(--project-border); stroke-width: 1.2px; }
+.relation-node text { fill: currentColor; text-anchor: middle; font-size: 21px; }
+.relation-node .relation-detail { fill: var(--project-muted); font-size: 14px; }
+.relation-project[data-current="true"] rect { fill: var(--platform-amber-bg); stroke: var(--platform-amber); stroke-width: 2px; }
+.relation-document rect { fill: var(--project-positive-bg); stroke: var(--project-positive-border); stroke-width: 2px; }
+.relation-document .relation-document-title { font-size: 27px; font-weight: 600; }
+.relation-document .relation-identity { font-family: ui-monospace, monospace; font-size: 23px; fill: var(--project-accent); }
+.relation-graph-caption { text-anchor: middle; fill: var(--project-muted); font-size: 16px; }
+.relation-mobile-graph { display: none; }
+.relation-mobile-object { display: grid; gap: .8rem; text-align: center; padding: 2rem; border: 2px solid var(--project-positive-border); border-radius: .7rem; background: var(--project-positive-bg); }
+.relation-mobile-object strong { font-size: 2.2rem; }
+.relation-mobile-object code { width: fit-content; margin: 0 auto; font-size: 1.8rem; color: var(--project-accent); }
+.relation-mobile-object span { font-size: 1.1rem; color: var(--project-muted); letter-spacing: .05em; }
+.projects .relation-mobile-routes { margin: 1.6rem 0 0; padding: 0; list-style: none; }
+.relation-mobile-routes li { display: grid; grid-template-columns: 1fr 1.2fr; gap: .8rem; padding: 1.2rem 0; border-bottom: 1px solid var(--project-border); font-size: 1.4rem; line-height: 1.65; }
+.relation-mobile-routes code { white-space: nowrap; color: var(--project-accent); font-size: 1.2rem; }
+.projects .relation-mobile-graph p { margin: 1rem 0 2.2rem; font-size: 1.3rem; line-height: 1.6; color: var(--project-muted); }
+.platform-relations-views { padding-top: 2rem; border-top: 1px solid var(--project-border); }
+.projects .relation-view-list { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 1.2rem; margin: 1.6rem 0 2.4rem; padding: 0; list-style: none; }
+.relation-view-list li { padding: 1.4rem; border: 1px solid var(--project-border); border-radius: .6rem; background: var(--project-surface); }
+.relation-view-list li > span:first-child { display: block; color: var(--project-muted); font-size: 1.2rem; }
+.relation-view-list strong { display: block; margin: .7rem 0 1.2rem; font-size: 1.6rem; }
+.relation-view-object { display: block; font-size: 1.4rem; line-height: 1.65; }
+.relation-view-object code { display: block; margin-left: 1.8rem; width: fit-content; color: var(--project-accent); font-size: 1.2rem; }
+.relation-lookups { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1.2rem; margin-bottom: 2rem; }
+.relation-lookups > div { padding: 1.6rem; border: 1px solid var(--project-border); border-radius: .6rem; }
+.relation-lookups .relation-persistent { border-color: var(--project-positive-border); background: var(--project-positive-bg); }
+.relation-lookups span, .relation-lookups small { display: block; color: var(--project-muted); font-size: 1.25rem; line-height: 1.6; }
+.relation-lookups strong { display: block; margin: .9rem 0; font-size: 1.6rem; line-height: 1.5; }
+.platform-relations figcaption, .platform-relations noscript p { color: var(--project-muted); font-size: 1.4rem; line-height: 1.7; }
+@media (max-width: 1000px) {
+ .projects .relation-view-list { grid-template-columns: repeat(2,minmax(0,1fr)); }
+}
+@media (max-width: 760px) {
+ .projects .platform-relations { padding: 1.6rem; }
+ .platform-relations-heading { display: block; }
+ .projects .platform-relations h3 { font-size: 2.5rem; }
+ .platform-relations-controls { display: grid; grid-template-columns: 1fr 1fr; }
+ .platform-relations-controls button { padding: .9rem .6rem; }
+ .projects .platform-relations-state { min-height: 9.6rem; }
+ .platform-relations-drawing { display: none; }
+ .relation-mobile-graph { display: block; margin: 1rem 0 2rem; }
+ .relation-lookups { grid-template-columns: 1fr; }
+}
+@media (max-width: 420px) {
+ .projects .relation-view-list { grid-template-columns: 1fr; }
 }
