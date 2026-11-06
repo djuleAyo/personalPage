@@ -1,0 +1,48 @@
+{
+  "source": "theMonoRepo/throne",
+  "adaptation": "Standalone portfolio copy. Original runtime source and controls retained; HTML metadata and canvas description improved, with a collapsed-by-default accessible controls toggle and viewport-contained panel.",
+  "files": [
+    {
+      "source": "throne/index.html",
+      "destination": "index.html",
+      "source_sha256": "ecbc77db828bd4c30f52d35ad353c1a586eda402358b9e411d0b4a1adb59243f",
+      "distributed_sha256": "0e1953ca8762b378de86baf03156136951cab726ff6d01fd1c9999946bb5825e"
+    },
+    {
+      "source": "throne/src/main.js",
+      "destination": "src/main.js",
+      "source_sha256": "e5c5050160d165cc5ce83b80c2d353913d0f6ca1ce73d104e1929256da7651fb",
+      "distributed_sha256": "e5c5050160d165cc5ce83b80c2d353913d0f6ca1ce73d104e1929256da7651fb"
+    },
+    {
+      "source": "throne/src/model.mjs",
+      "destination": "src/model.mjs",
+      "source_sha256": "1991a3c1e5fefe93a31b24700aae9c597d133ffceb6bf5455fb54251119da958",
+      "distributed_sha256": "1991a3c1e5fefe93a31b24700aae9c597d133ffceb6bf5455fb54251119da958"
+    },
+    {
+      "source": "throne/src/treeParser.mjs",
+      "destination": "src/treeParser.mjs",
+      "source_sha256": "d4046360cb31d0686e7c1bd0215ce09ba3363b0eee164c23e6c465dafeeacf4c",
+      "distributed_sha256": "d4046360cb31d0686e7c1bd0215ce09ba3363b0eee164c23e6c465dafeeacf4c"
+    },
+    {
+      "source": "throne/src/styles.css",
+      "destination": "src/styles.css",
+      "source_sha256": "cac0ba4b63e5a77b5b684a720aafa91594bb5d21783c66a1d05859573963e489",
+      "distributed_sha256": "58981bcd3ef8380fe62ae02eef2d2374a81a513e16bcc06d7aabbbb3b934b531"
+    }
+  ],
+  "portfolio_files": [
+    {
+      "destination": "src/portfolio.js",
+      "description": "Presentation-only controls visibility wrapper",
+      "distributed_sha256": "fd62f131a4fe76d317826fae4bae10817f4037096ba29fcb868ec38c7bcc2143"
+    },
+    {
+      "destination": "poster.png",
+      "description": "Headless Chromium capture of the original default scene at 1280 by 800 CSS pixels, with portfolio controls toggle hidden for the capture. No raster editing.",
+      "distributed_sha256": "2440a3e5e596b7dbfb53174b3143c85393e63b830d0b0f5263190676f7976dac"
+    }
+  ]
+}

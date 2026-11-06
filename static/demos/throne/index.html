@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Throne — interface geometry prototype</title>
+    <meta name="description" content="An interactive Throne prototype exploring recursive circles, near and far ring surfaces, and animated perspective through an editable scene model.">
+    <link rel="stylesheet" href="./src/styles.css">
+    <script src="./src/main.js" type="module"></script>
+    <script src="./src/portfolio.js" defer></script>
+  </head>
+  <body>
+    <button class="controls-toggle" type="button" aria-controls="scene-controls" aria-expanded="false">Scene controls</button>
+    <div class="controls" id="scene-controls" aria-label="Scene controls" hidden>
+      <section class="model-settings" aria-labelledby="model-settings">
+        <div class="ring-heading" id="model-settings">Model</div>
+        <div class="model-buttons" data-scene-models></div>
+        <div class="model-summary" data-scene-model-summary></div>
+      </section>
+      <label class="toggle-row">
+        <span>16:9 squeeze</span>
+        <input data-ellipse-toggle type="checkbox">
+      </label>
+      <label class="toggle-row">
+        <span>Weather</span>
+        <input data-weather-toggle type="checkbox" checked>
+      </label>
+      <section class="ring-settings" aria-labelledby="scene-settings">
+        <div class="ring-heading" id="scene-settings">Scene tree</div>
+        <textarea class="scene-source" data-scene-source spellcheck="false"></textarea>
+        <button class="apply-button" type="button" data-apply-scene>Apply tree</button>
+        <div class="parse-error" data-scene-error hidden></div>
+      </section>
+      <section class="ring-settings" aria-labelledby="center-settings">
+        <div class="ring-heading" id="center-settings">Center</div>
+        <label class="slider-row">
+          <span>Width</span>
+          <input data-center-width type="range" min="80" max="5000" value="300" step="10">
+        </label>
+      </section>
+      <div class="ring-list" data-ring-controls></div>
+    </div>
+    <canvas id="throne-canvas" role="img" aria-label="Throne interface geometry prototype: a central disc surrounded by recursive circles and rings. Scene controls change the model, ring width, near and far surfaces, and rotation."></canvas>
+  </body>
+</html>
