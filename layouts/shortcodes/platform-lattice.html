@@ -1,0 +1,29 @@
+<figure class="platform-lattice" aria-labelledby="lattice-title" aria-describedby="lattice-caption">
+  <div class="platform-lattice-heading"><div><p class="platform-eyebrow">LANGUAGE STRUCTURE / A THREE-DIMENSIONAL SLICE</p><h3 id="lattice-title">Lattice groups &amp; UI polymorphism</h3></div><span class="platform-map-badge">3 capability dimensions</span></div>
+  <div class="platform-lattice-drawing" tabindex="0" role="region" aria-label="Capability inclusion lattice. Scroll horizontally if needed.">
+    <svg viewBox="0 0 1080 650" role="img" aria-labelledby="lattice-svg-title lattice-svg-desc">
+      <title id="lattice-svg-title">Overlapping capability groups and compatible UI presentations</title>
+      <desc id="lattice-svg-desc">The lattice orders groups by capability inclusion: Object, then Readable, Editable and Navigable; their pairwise combinations; and a Document satisfying all three. The same document identity can have Reader, Editor and Compass presentations. This illustrates the interface model rather than an automatic cast registry.</desc>
+      <g class="lattice-links">
+        <path d="M540 75 L180 135 M540 75 V135 M540 75 L900 135" />
+        <path d="M180 185 V255 M540 185 L180 255 M180 185 L540 255 M900 185 L540 255 M540 185 L900 255 M900 185 V255" />
+        <path d="M180 305 L540 375 M540 305 V375 M900 305 L540 375" />
+      </g>
+      <g class="lattice-node"><rect x="430" y="25" width="220" height="50" rx="7"/><text x="540" y="57">Object</text></g>
+      <g class="lattice-node"><rect x="60" y="135" width="240" height="50" rx="7"/><text x="180" y="167">Readable</text></g>
+      <g class="lattice-node"><rect x="420" y="135" width="240" height="50" rx="7"/><text x="540" y="167">Editable</text></g>
+      <g class="lattice-node"><rect x="780" y="135" width="240" height="50" rx="7"/><text x="900" y="167">Navigable</text></g>
+      <g class="lattice-node"><rect x="60" y="255" width="240" height="50" rx="7"/><text x="180" y="287">Readable ∩ Editable</text></g>
+      <g class="lattice-node"><rect x="420" y="255" width="240" height="50" rx="7"/><text x="540" y="287">Readable ∩ Navigable</text></g>
+      <g class="lattice-node"><rect x="780" y="255" width="240" height="50" rx="7"/><text x="900" y="287">Editable ∩ Navigable</text></g>
+      <g class="lattice-node lattice-document"><rect x="315" y="375" width="450" height="95" rx="9"/><text x="540" y="408" class="lattice-document-title">Readable ∩ Editable ∩ Navigable</text><text x="540" y="439" class="lattice-detail">Example member: Document · id: document</text></g>
+      <g class="lattice-presentation-links"><path d="M540 470 V510 M180 550 V510 H900 V550 M540 510 V550" /></g>
+      <g class="lattice-view"><rect x="60" y="550" width="240" height="76" rx="7"/><text x="180" y="582">Reader</text><text x="180" y="608" class="lattice-detail">reading / speech</text></g>
+      <g class="lattice-view"><rect x="420" y="550" width="240" height="76" rx="7"/><text x="540" y="582">Editor</text><text x="540" y="608" class="lattice-detail">editing / selection</text></g>
+      <g class="lattice-view"><rect x="780" y="550" width="240" height="76" rx="7"/><text x="900" y="582">Compass</text><text x="900" y="608" class="lattice-detail">semantic navigation</text></g>
+      <text x="540" y="531" class="lattice-caption">compatible presentations of the same object</text>
+    </svg>
+  </div>
+  <figcaption id="lattice-caption">Three capability dimensions within the wider language structure. Moving down adds constraints; intersections form more specific groups. The lower branch shows compatible presentations of the same object.</figcaption>
+  <details class="platform-map-details"><summary>Read the lattice</summary><p>Readable, Editable and Navigable form overlapping groups. Their pairwise intersections and the three-way intersection are more specific groups. A Document at the three-way intersection retains its identity when presented through a Reader, Editor or Compass. The broader UI model uses capabilities to determine applicable operations and presentations.</p></details>
+</figure>

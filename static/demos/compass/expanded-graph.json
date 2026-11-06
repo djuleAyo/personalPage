@@ -1,0 +1,1531 @@
+{
+  "focusId": "document",
+  "gap": 4,
+  "maxDepth": 8,
+  "maxOccurrences": 512,
+  "nodes": [
+    {
+      "id": "document",
+      "label": "Document",
+      "description": "One object, several relationships"
+    },
+    {
+      "id": "readable",
+      "label": "Readable",
+      "kind": "interface",
+      "castId": "reader"
+    },
+    {
+      "id": "navigable",
+      "label": "Navigable",
+      "kind": "interface",
+      "castId": "navigator"
+    },
+    {
+      "id": "entity",
+      "label": "Entity",
+      "kind": "interface"
+    },
+    {
+      "id": "worker-reply",
+      "label": "Worker reply"
+    },
+    {
+      "id": "article",
+      "label": "Article"
+    },
+    {
+      "id": "text-store",
+      "label": "Text store"
+    },
+    {
+      "id": "voice-service",
+      "label": "Voice service"
+    },
+    {
+      "id": "storage",
+      "label": "Storage"
+    },
+    {
+      "id": "reader-session",
+      "label": "Reader session"
+    },
+    {
+      "id": "thread-view",
+      "label": "Thread view"
+    },
+    {
+      "id": "text",
+      "label": "Text"
+    },
+    {
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "id": "paragraphs",
+      "label": "Paragraphs"
+    },
+    {
+      "id": "workspace",
+      "label": "Workspace"
+    },
+    {
+      "id": "project",
+      "label": "Project"
+    },
+    {
+      "id": "selectable",
+      "label": "Selectable",
+      "kind": "interface"
+    },
+    {
+      "id": "editable",
+      "label": "Editable",
+      "kind": "interface",
+      "castId": "editor"
+    },
+    {
+      "id": "persistable",
+      "label": "Persistable",
+      "kind": "interface"
+    },
+    {
+      "id": "observable",
+      "label": "Observable",
+      "kind": "interface"
+    },
+    {
+      "id": "searchable",
+      "label": "Searchable",
+      "kind": "interface"
+    },
+    {
+      "id": "versioned",
+      "label": "Versioned",
+      "kind": "interface"
+    },
+    {
+      "id": "exportable",
+      "label": "Exportable",
+      "kind": "interface",
+      "castId": "export"
+    },
+    {
+      "id": "identifiable",
+      "label": "Identifiable",
+      "kind": "interface"
+    },
+    {
+      "id": "serializable",
+      "label": "Serializable",
+      "kind": "interface"
+    },
+    {
+      "id": "disposable",
+      "label": "Disposable",
+      "kind": "interface"
+    },
+    {
+      "id": "focusable",
+      "label": "Focusable",
+      "kind": "interface"
+    },
+    {
+      "id": "seekable",
+      "label": "Seekable",
+      "kind": "interface"
+    },
+    {
+      "id": "notebook",
+      "label": "Notebook",
+      "kind": "document-type"
+    },
+    {
+      "id": "code-document",
+      "label": "Source code",
+      "kind": "document-type"
+    },
+    {
+      "id": "transcript",
+      "label": "Transcript",
+      "kind": "document-type"
+    },
+    {
+      "id": "pdf-document",
+      "label": "PDF document",
+      "kind": "document-type"
+    },
+    {
+      "id": "canvas-document",
+      "label": "Canvas document",
+      "kind": "document-type"
+    },
+    {
+      "id": "report",
+      "label": "Report",
+      "kind": "document-type"
+    },
+    {
+      "id": "chat-message",
+      "label": "Chat message",
+      "kind": "document-type"
+    },
+    {
+      "id": "annotation",
+      "label": "Annotation",
+      "kind": "document-type"
+    },
+    {
+      "id": "typescript-module",
+      "label": "TypeScript source module",
+      "kind": "document-type"
+    },
+    {
+      "id": "react-component",
+      "label": "React component",
+      "kind": "document-type"
+    },
+    {
+      "id": "documentation-page",
+      "label": "Documentation page",
+      "kind": "document-type"
+    },
+    {
+      "id": "release-notes",
+      "label": "Release notes",
+      "kind": "document-type"
+    },
+    {
+      "id": "meeting-transcript",
+      "label": "Meeting transcript",
+      "kind": "document-type"
+    },
+    {
+      "id": "voice-note",
+      "label": "Voice note",
+      "kind": "document-type"
+    },
+    {
+      "id": "tool-result",
+      "label": "Tool result",
+      "kind": "document-type"
+    },
+    {
+      "id": "assistant-reply",
+      "label": "Assistant reply",
+      "kind": "document-type"
+    },
+    {
+      "id": "research-notebook",
+      "label": "Research notebook",
+      "kind": "document-type"
+    },
+    {
+      "id": "studio",
+      "label": "Studio",
+      "kind": "container"
+    },
+    {
+      "id": "organization",
+      "label": "Organization",
+      "kind": "container"
+    },
+    {
+      "id": "library",
+      "label": "Library",
+      "kind": "container"
+    },
+    {
+      "id": "collection",
+      "label": "Collection",
+      "kind": "container"
+    },
+    {
+      "id": "reading-queue",
+      "label": "Reading queue",
+      "kind": "container"
+    },
+    {
+      "id": "workspace-tab",
+      "label": "Workspace tab",
+      "kind": "container"
+    },
+    {
+      "id": "parser",
+      "label": "Parser",
+      "kind": "service"
+    },
+    {
+      "id": "formatter",
+      "label": "Formatter",
+      "kind": "service"
+    },
+    {
+      "id": "search-index",
+      "label": "Search index",
+      "kind": "service"
+    },
+    {
+      "id": "event-bus",
+      "label": "Event bus",
+      "kind": "service"
+    },
+    {
+      "id": "permissions",
+      "label": "Permissions",
+      "kind": "service"
+    },
+    {
+      "id": "revision-store",
+      "label": "Revision store",
+      "kind": "service"
+    },
+    {
+      "id": "history-store",
+      "label": "History store",
+      "kind": "service"
+    },
+    {
+      "id": "asset-cache",
+      "label": "Asset cache",
+      "kind": "service"
+    },
+    {
+      "id": "media-service",
+      "label": "Media service",
+      "kind": "service"
+    },
+    {
+      "id": "file-system",
+      "label": "File system",
+      "kind": "service"
+    },
+    {
+      "id": "network-transport",
+      "label": "Network transport",
+      "kind": "service"
+    },
+    {
+      "id": "audio-output",
+      "label": "Audio output",
+      "kind": "service"
+    },
+    {
+      "id": "language-detector",
+      "label": "Language detector",
+      "kind": "service"
+    },
+    {
+      "id": "tokenizer",
+      "label": "Tokenizer",
+      "kind": "service"
+    },
+    {
+      "id": "syntax-highlighter",
+      "label": "Syntax highlighter",
+      "kind": "service"
+    },
+    {
+      "id": "annotation-store",
+      "label": "Annotation persistence service",
+      "kind": "service"
+    },
+    {
+      "id": "selection-store",
+      "label": "Selection store",
+      "kind": "service"
+    },
+    {
+      "id": "focus-service",
+      "label": "Focus service",
+      "kind": "service"
+    },
+    {
+      "id": "cast-registry",
+      "label": "Cast registry",
+      "kind": "service"
+    },
+    {
+      "id": "renderer-registry",
+      "label": "Renderer registry",
+      "kind": "service"
+    },
+    {
+      "id": "compass-view",
+      "label": "Compass view",
+      "kind": "service"
+    },
+    {
+      "id": "editor-view",
+      "label": "Editor view",
+      "kind": "service"
+    },
+    {
+      "id": "reader-view",
+      "label": "Reader view",
+      "kind": "service"
+    },
+    {
+      "id": "export-service",
+      "label": "Export service",
+      "kind": "service"
+    },
+    {
+      "id": "sync-service",
+      "label": "Incremental synchronization coordinator",
+      "kind": "service",
+      "description": "Intentional dependency cycle: revision store ↔ synchronization. Not an inheritance cycle."
+    },
+    {
+      "id": "import-service",
+      "label": "Import service",
+      "kind": "service"
+    },
+    {
+      "id": "hand-input",
+      "label": "Hand input",
+      "kind": "service"
+    },
+    {
+      "id": "keyboard-input",
+      "label": "Keyboard input",
+      "kind": "service"
+    },
+    {
+      "id": "voice-input",
+      "label": "Voice input",
+      "kind": "service"
+    },
+    {
+      "id": "id",
+      "label": "ID",
+      "kind": "property"
+    },
+    {
+      "id": "metadata",
+      "label": "Metadata",
+      "kind": "property"
+    },
+    {
+      "id": "author",
+      "label": "Author",
+      "kind": "property"
+    },
+    {
+      "id": "timestamps",
+      "label": "Timestamps",
+      "kind": "property"
+    },
+    {
+      "id": "created-at",
+      "label": "Created at",
+      "kind": "property"
+    },
+    {
+      "id": "modified-at",
+      "label": "Modified at",
+      "kind": "property"
+    },
+    {
+      "id": "revision",
+      "label": "Revision",
+      "kind": "property"
+    },
+    {
+      "id": "language",
+      "label": "Language",
+      "kind": "property"
+    },
+    {
+      "id": "mime-type",
+      "label": "MIME type",
+      "kind": "property"
+    },
+    {
+      "id": "attachments",
+      "label": "Attachments",
+      "kind": "property"
+    },
+    {
+      "id": "attachment",
+      "label": "Attachment",
+      "kind": "property"
+    },
+    {
+      "id": "uri",
+      "label": "URI",
+      "kind": "property"
+    },
+    {
+      "id": "dimensions",
+      "label": "Dimensions",
+      "kind": "property"
+    },
+    {
+      "id": "width",
+      "label": "Width",
+      "kind": "property"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "kind": "property"
+    },
+    {
+      "id": "annotations",
+      "label": "Annotations",
+      "kind": "property"
+    },
+    {
+      "id": "range",
+      "label": "Range",
+      "kind": "property"
+    },
+    {
+      "id": "start",
+      "label": "Start",
+      "kind": "property"
+    },
+    {
+      "id": "end",
+      "label": "End",
+      "kind": "property"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "kind": "property"
+    },
+    {
+      "id": "selection",
+      "label": "Selection",
+      "kind": "property"
+    },
+    {
+      "id": "caret",
+      "label": "Caret",
+      "kind": "property"
+    },
+    {
+      "id": "position",
+      "label": "Position",
+      "kind": "property"
+    },
+    {
+      "id": "x",
+      "label": "X",
+      "kind": "property"
+    },
+    {
+      "id": "y",
+      "label": "Y",
+      "kind": "property"
+    },
+    {
+      "id": "z",
+      "label": "Z",
+      "kind": "property"
+    },
+    {
+      "id": "capabilities",
+      "label": "Capabilities",
+      "kind": "property"
+    },
+    {
+      "id": "read-state",
+      "label": "Read state",
+      "kind": "property"
+    },
+    {
+      "id": "playback-rate",
+      "label": "Playback rate",
+      "kind": "property"
+    },
+    {
+      "id": "word-offset",
+      "label": "Word offset",
+      "kind": "property"
+    },
+    {
+      "id": "progress",
+      "label": "Progress",
+      "kind": "property"
+    },
+    {
+      "id": "sections",
+      "label": "Sections",
+      "kind": "property"
+    },
+    {
+      "id": "section",
+      "label": "Section",
+      "kind": "property"
+    },
+    {
+      "id": "blocks",
+      "label": "Blocks",
+      "kind": "property"
+    },
+    {
+      "id": "block",
+      "label": "Block",
+      "kind": "property"
+    },
+    {
+      "id": "tokens",
+      "label": "Tokens",
+      "kind": "property"
+    },
+    {
+      "id": "token",
+      "label": "Token",
+      "kind": "property"
+    },
+    {
+      "id": "span",
+      "label": "Span",
+      "kind": "property"
+    },
+    {
+      "id": "value",
+      "label": "Value",
+      "kind": "property"
+    },
+    {
+      "id": "render-options",
+      "label": "Render options",
+      "kind": "property"
+    },
+    {
+      "id": "input-bindings",
+      "label": "Input bindings",
+      "kind": "property"
+    }
+  ],
+  "relations": [
+    {
+      "id": "inheritance",
+      "label": "Inheritance",
+      "color": "#facc15",
+      "edges": [
+        {
+          "from": "document",
+          "to": "readable"
+        },
+        {
+          "from": "document",
+          "to": "navigable"
+        },
+        {
+          "from": "readable",
+          "to": "entity"
+        },
+        {
+          "from": "navigable",
+          "to": "entity"
+        },
+        {
+          "from": "worker-reply",
+          "to": "document"
+        },
+        {
+          "from": "article",
+          "to": "document"
+        },
+        {
+          "from": "document",
+          "to": "selectable"
+        },
+        {
+          "from": "document",
+          "to": "editable"
+        },
+        {
+          "from": "document",
+          "to": "persistable"
+        },
+        {
+          "from": "document",
+          "to": "observable"
+        },
+        {
+          "from": "document",
+          "to": "searchable"
+        },
+        {
+          "from": "document",
+          "to": "versioned"
+        },
+        {
+          "from": "document",
+          "to": "exportable"
+        },
+        {
+          "from": "readable",
+          "to": "seekable"
+        },
+        {
+          "from": "navigable",
+          "to": "focusable"
+        },
+        {
+          "from": "editable",
+          "to": "selectable"
+        },
+        {
+          "from": "editable",
+          "to": "observable"
+        },
+        {
+          "from": "persistable",
+          "to": "serializable"
+        },
+        {
+          "from": "versioned",
+          "to": "persistable"
+        },
+        {
+          "from": "searchable",
+          "to": "identifiable"
+        },
+        {
+          "from": "exportable",
+          "to": "serializable"
+        },
+        {
+          "from": "observable",
+          "to": "disposable"
+        },
+        {
+          "from": "selectable",
+          "to": "focusable"
+        },
+        {
+          "from": "focusable",
+          "to": "identifiable"
+        },
+        {
+          "from": "identifiable",
+          "to": "entity"
+        },
+        {
+          "from": "serializable",
+          "to": "entity"
+        },
+        {
+          "from": "disposable",
+          "to": "entity"
+        },
+        {
+          "from": "seekable",
+          "to": "navigable"
+        },
+        {
+          "from": "notebook",
+          "to": "document"
+        },
+        {
+          "from": "code-document",
+          "to": "document"
+        },
+        {
+          "from": "transcript",
+          "to": "document"
+        },
+        {
+          "from": "pdf-document",
+          "to": "document"
+        },
+        {
+          "from": "canvas-document",
+          "to": "document"
+        },
+        {
+          "from": "report",
+          "to": "document"
+        },
+        {
+          "from": "chat-message",
+          "to": "document"
+        },
+        {
+          "from": "annotation",
+          "to": "document"
+        },
+        {
+          "from": "typescript-module",
+          "to": "code-document"
+        },
+        {
+          "from": "typescript-module",
+          "to": "versioned"
+        },
+        {
+          "from": "react-component",
+          "to": "typescript-module"
+        },
+        {
+          "from": "react-component",
+          "to": "observable"
+        },
+        {
+          "from": "documentation-page",
+          "to": "article"
+        },
+        {
+          "from": "documentation-page",
+          "to": "versioned"
+        },
+        {
+          "from": "release-notes",
+          "to": "article"
+        },
+        {
+          "from": "meeting-transcript",
+          "to": "transcript"
+        },
+        {
+          "from": "meeting-transcript",
+          "to": "searchable"
+        },
+        {
+          "from": "voice-note",
+          "to": "transcript"
+        },
+        {
+          "from": "tool-result",
+          "to": "worker-reply"
+        },
+        {
+          "from": "tool-result",
+          "to": "serializable"
+        },
+        {
+          "from": "assistant-reply",
+          "to": "worker-reply"
+        },
+        {
+          "from": "research-notebook",
+          "to": "notebook"
+        },
+        {
+          "from": "research-notebook",
+          "to": "searchable"
+        }
+      ]
+    },
+    {
+      "id": "dependency",
+      "label": "Dependency",
+      "color": "#ef4444",
+      "edges": [
+        {
+          "from": "document",
+          "to": "text-store"
+        },
+        {
+          "from": "document",
+          "to": "voice-service"
+        },
+        {
+          "from": "text-store",
+          "to": "storage"
+        },
+        {
+          "from": "reader-session",
+          "to": "document"
+        },
+        {
+          "from": "thread-view",
+          "to": "document"
+        },
+        {
+          "from": "document",
+          "to": "parser"
+        },
+        {
+          "from": "document",
+          "to": "search-index"
+        },
+        {
+          "from": "document",
+          "to": "permissions"
+        },
+        {
+          "from": "document",
+          "to": "revision-store"
+        },
+        {
+          "from": "document",
+          "to": "asset-cache"
+        },
+        {
+          "from": "document",
+          "to": "annotation-store"
+        },
+        {
+          "from": "document",
+          "to": "language-detector"
+        },
+        {
+          "from": "text-store",
+          "to": "event-bus"
+        },
+        {
+          "from": "text-store",
+          "to": "tokenizer"
+        },
+        {
+          "from": "voice-service",
+          "to": "audio-output"
+        },
+        {
+          "from": "voice-service",
+          "to": "language-detector"
+        },
+        {
+          "from": "storage",
+          "to": "file-system"
+        },
+        {
+          "from": "parser",
+          "to": "tokenizer"
+        },
+        {
+          "from": "parser",
+          "to": "language-detector"
+        },
+        {
+          "from": "formatter",
+          "to": "parser"
+        },
+        {
+          "from": "search-index",
+          "to": "tokenizer"
+        },
+        {
+          "from": "search-index",
+          "to": "storage"
+        },
+        {
+          "from": "revision-store",
+          "to": "storage"
+        },
+        {
+          "from": "revision-store",
+          "to": "event-bus"
+        },
+        {
+          "from": "revision-store",
+          "to": "sync-service"
+        },
+        {
+          "from": "sync-service",
+          "to": "revision-store"
+        },
+        {
+          "from": "sync-service",
+          "to": "network-transport"
+        },
+        {
+          "from": "history-store",
+          "to": "revision-store"
+        },
+        {
+          "from": "asset-cache",
+          "to": "storage"
+        },
+        {
+          "from": "asset-cache",
+          "to": "network-transport"
+        },
+        {
+          "from": "media-service",
+          "to": "asset-cache"
+        },
+        {
+          "from": "media-service",
+          "to": "audio-output"
+        },
+        {
+          "from": "annotation-store",
+          "to": "storage"
+        },
+        {
+          "from": "annotation-store",
+          "to": "event-bus"
+        },
+        {
+          "from": "selection-store",
+          "to": "event-bus"
+        },
+        {
+          "from": "focus-service",
+          "to": "selection-store"
+        },
+        {
+          "from": "cast-registry",
+          "to": "renderer-registry"
+        },
+        {
+          "from": "cast-registry",
+          "to": "permissions"
+        },
+        {
+          "from": "renderer-registry",
+          "to": "event-bus"
+        },
+        {
+          "from": "compass-view",
+          "to": "document"
+        },
+        {
+          "from": "compass-view",
+          "to": "cast-registry"
+        },
+        {
+          "from": "compass-view",
+          "to": "focus-service"
+        },
+        {
+          "from": "editor-view",
+          "to": "document"
+        },
+        {
+          "from": "editor-view",
+          "to": "formatter"
+        },
+        {
+          "from": "editor-view",
+          "to": "syntax-highlighter"
+        },
+        {
+          "from": "editor-view",
+          "to": "selection-store"
+        },
+        {
+          "from": "reader-view",
+          "to": "document"
+        },
+        {
+          "from": "reader-view",
+          "to": "voice-service"
+        },
+        {
+          "from": "reader-view",
+          "to": "selection-store"
+        },
+        {
+          "from": "export-service",
+          "to": "document"
+        },
+        {
+          "from": "export-service",
+          "to": "formatter"
+        },
+        {
+          "from": "export-service",
+          "to": "file-system"
+        },
+        {
+          "from": "import-service",
+          "to": "document"
+        },
+        {
+          "from": "import-service",
+          "to": "parser"
+        },
+        {
+          "from": "import-service",
+          "to": "media-service"
+        },
+        {
+          "from": "reader-session",
+          "to": "voice-service"
+        },
+        {
+          "from": "reader-session",
+          "to": "history-store"
+        },
+        {
+          "from": "thread-view",
+          "to": "history-store"
+        },
+        {
+          "from": "thread-view",
+          "to": "focus-service"
+        },
+        {
+          "from": "syntax-highlighter",
+          "to": "parser"
+        },
+        {
+          "from": "hand-input",
+          "to": "focus-service"
+        },
+        {
+          "from": "hand-input",
+          "to": "selection-store"
+        },
+        {
+          "from": "keyboard-input",
+          "to": "focus-service"
+        },
+        {
+          "from": "voice-input",
+          "to": "focus-service"
+        },
+        {
+          "from": "voice-input",
+          "to": "language-detector"
+        },
+        {
+          "from": "code-document",
+          "to": "document"
+        },
+        {
+          "from": "code-document",
+          "to": "parser"
+        },
+        {
+          "from": "code-document",
+          "to": "syntax-highlighter"
+        },
+        {
+          "from": "notebook",
+          "to": "document"
+        },
+        {
+          "from": "notebook",
+          "to": "search-index"
+        },
+        {
+          "from": "transcript",
+          "to": "document"
+        },
+        {
+          "from": "transcript",
+          "to": "voice-service"
+        },
+        {
+          "from": "pdf-document",
+          "to": "document"
+        },
+        {
+          "from": "pdf-document",
+          "to": "asset-cache"
+        },
+        {
+          "from": "canvas-document",
+          "to": "document"
+        },
+        {
+          "from": "canvas-document",
+          "to": "media-service"
+        },
+        {
+          "from": "report",
+          "to": "document"
+        },
+        {
+          "from": "report",
+          "to": "export-service"
+        }
+      ]
+    },
+    {
+      "id": "properties",
+      "label": "Properties",
+      "color": "#22c55e",
+      "edges": [
+        {
+          "from": "document",
+          "to": "text"
+        },
+        {
+          "from": "document",
+          "to": "title"
+        },
+        {
+          "from": "text",
+          "to": "paragraphs"
+        },
+        {
+          "from": "workspace",
+          "to": "document"
+        },
+        {
+          "from": "project",
+          "to": "workspace"
+        },
+        {
+          "from": "document",
+          "to": "id"
+        },
+        {
+          "from": "document",
+          "to": "metadata"
+        },
+        {
+          "from": "document",
+          "to": "revision"
+        },
+        {
+          "from": "document",
+          "to": "attachments"
+        },
+        {
+          "from": "document",
+          "to": "annotations"
+        },
+        {
+          "from": "document",
+          "to": "selection"
+        },
+        {
+          "from": "document",
+          "to": "capabilities"
+        },
+        {
+          "from": "metadata",
+          "to": "author"
+        },
+        {
+          "from": "metadata",
+          "to": "timestamps"
+        },
+        {
+          "from": "metadata",
+          "to": "language"
+        },
+        {
+          "from": "metadata",
+          "to": "mime-type"
+        },
+        {
+          "from": "timestamps",
+          "to": "created-at"
+        },
+        {
+          "from": "timestamps",
+          "to": "modified-at"
+        },
+        {
+          "from": "text",
+          "to": "sections"
+        },
+        {
+          "from": "text",
+          "to": "language"
+        },
+        {
+          "from": "sections",
+          "to": "section"
+        },
+        {
+          "from": "section",
+          "to": "title"
+        },
+        {
+          "from": "section",
+          "to": "blocks"
+        },
+        {
+          "from": "blocks",
+          "to": "block"
+        },
+        {
+          "from": "block",
+          "to": "paragraphs"
+        },
+        {
+          "from": "block",
+          "to": "tokens"
+        },
+        {
+          "from": "paragraphs",
+          "to": "tokens"
+        },
+        {
+          "from": "tokens",
+          "to": "token"
+        },
+        {
+          "from": "token",
+          "to": "span"
+        },
+        {
+          "from": "token",
+          "to": "value"
+        },
+        {
+          "from": "span",
+          "to": "start"
+        },
+        {
+          "from": "span",
+          "to": "end"
+        },
+        {
+          "from": "attachments",
+          "to": "attachment"
+        },
+        {
+          "from": "attachment",
+          "to": "uri"
+        },
+        {
+          "from": "attachment",
+          "to": "mime-type"
+        },
+        {
+          "from": "attachment",
+          "to": "dimensions"
+        },
+        {
+          "from": "dimensions",
+          "to": "width"
+        },
+        {
+          "from": "dimensions",
+          "to": "height"
+        },
+        {
+          "from": "annotations",
+          "to": "annotation"
+        },
+        {
+          "from": "annotation",
+          "to": "range"
+        },
+        {
+          "from": "annotation",
+          "to": "color"
+        },
+        {
+          "from": "annotation",
+          "to": "author"
+        },
+        {
+          "from": "range",
+          "to": "start"
+        },
+        {
+          "from": "range",
+          "to": "end"
+        },
+        {
+          "from": "selection",
+          "to": "range"
+        },
+        {
+          "from": "selection",
+          "to": "caret"
+        },
+        {
+          "from": "caret",
+          "to": "position"
+        },
+        {
+          "from": "position",
+          "to": "x"
+        },
+        {
+          "from": "position",
+          "to": "y"
+        },
+        {
+          "from": "position",
+          "to": "z"
+        },
+        {
+          "from": "capabilities",
+          "to": "readable"
+        },
+        {
+          "from": "capabilities",
+          "to": "editable"
+        },
+        {
+          "from": "capabilities",
+          "to": "exportable"
+        },
+        {
+          "from": "reader-session",
+          "to": "document"
+        },
+        {
+          "from": "reader-session",
+          "to": "read-state"
+        },
+        {
+          "from": "read-state",
+          "to": "playback-rate"
+        },
+        {
+          "from": "read-state",
+          "to": "word-offset"
+        },
+        {
+          "from": "read-state",
+          "to": "progress"
+        },
+        {
+          "from": "editor-view",
+          "to": "document"
+        },
+        {
+          "from": "editor-view",
+          "to": "selection"
+        },
+        {
+          "from": "editor-view",
+          "to": "render-options"
+        },
+        {
+          "from": "compass-view",
+          "to": "document"
+        },
+        {
+          "from": "compass-view",
+          "to": "render-options"
+        },
+        {
+          "from": "compass-view",
+          "to": "input-bindings"
+        },
+        {
+          "from": "render-options",
+          "to": "color"
+        },
+        {
+          "from": "render-options",
+          "to": "dimensions"
+        },
+        {
+          "from": "input-bindings",
+          "to": "hand-input"
+        },
+        {
+          "from": "input-bindings",
+          "to": "keyboard-input"
+        },
+        {
+          "from": "input-bindings",
+          "to": "voice-input"
+        },
+        {
+          "from": "workspace",
+          "to": "library"
+        },
+        {
+          "from": "workspace",
+          "to": "workspace-tab"
+        },
+        {
+          "from": "library",
+          "to": "collection"
+        },
+        {
+          "from": "collection",
+          "to": "document"
+        },
+        {
+          "from": "collection",
+          "to": "notebook"
+        },
+        {
+          "from": "reading-queue",
+          "to": "document"
+        },
+        {
+          "from": "reading-queue",
+          "to": "article"
+        },
+        {
+          "from": "workspace-tab",
+          "to": "document"
+        },
+        {
+          "from": "workspace-tab",
+          "to": "compass-view"
+        },
+        {
+          "from": "workspace-tab",
+          "to": "editor-view"
+        },
+        {
+          "from": "studio",
+          "to": "workspace"
+        },
+        {
+          "from": "studio",
+          "to": "reading-queue"
+        },
+        {
+          "from": "organization",
+          "to": "project"
+        },
+        {
+          "from": "project",
+          "to": "title"
+        },
+        {
+          "from": "project",
+          "to": "author"
+        }
+      ]
+    }
+  ],
+  "partitions": [
+    {
+      "id": "inheritance-up",
+      "relationId": "inheritance",
+      "direction": "outgoing",
+      "label": "Inherits from",
+      "orientation": 0,
+      "angle": 56
+    },
+    {
+      "id": "dependency-out",
+      "relationId": "dependency",
+      "direction": "outgoing",
+      "label": "Depends on",
+      "orientation": 60,
+      "angle": 56
+    },
+    {
+      "id": "properties-out",
+      "relationId": "properties",
+      "direction": "outgoing",
+      "label": "Properties",
+      "orientation": 120,
+      "angle": 56
+    },
+    {
+      "id": "inheritance-down",
+      "relationId": "inheritance",
+      "direction": "incoming",
+      "label": "Derived types",
+      "oppositeOf": "inheritance-up",
+      "angle": 56
+    },
+    {
+      "id": "dependency-in",
+      "relationId": "dependency",
+      "direction": "incoming",
+      "label": "Used by",
+      "oppositeOf": "dependency-out",
+      "angle": 56
+    },
+    {
+      "id": "properties-in",
+      "relationId": "properties",
+      "direction": "incoming",
+      "label": "Property of",
+      "oppositeOf": "properties-out",
+      "angle": 56
+    }
+  ]
+}

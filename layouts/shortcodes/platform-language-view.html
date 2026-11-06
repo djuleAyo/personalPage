@@ -1,0 +1,15 @@
+<figure class="platform-language-view" aria-labelledby="language-view-caption">
+  <ol class="platform-view-pipeline" aria-label="From language structure to a continuously navigable view">
+    <li><span>STRUCTURE</span><strong>Language graph</strong><small>Lattice groups · relations · focus</small></li>
+    <li><span>LAYOUT</span><strong>3D hyperbolic space</strong><small>Branching · local detail · distant context</small></li>
+    <li><span>PRESENTATION</span><strong>Continuous navigation</strong><small>Focus transitions · stable graph identities</small></li>
+  </ol>
+  <div class="platform-demo-heading"><span>GRAPH VISUALIZATION</span><span>3D graph navigation and rendering</span></div>
+  {{ $video := .Page.Resources.GetMatch "language-graph-demo.mp4" }}
+  {{ $poster := .Page.Resources.GetMatch "language-graph-poster.jpg" }}
+  <video controls playsinline preload="metadata" width="1280" height="720" poster="{{ $poster.RelPermalink }}" aria-label="3D graph visualization with labeled nodes and wireframe connections" aria-describedby="language-view-caption">
+    <source src="{{ $video.RelPermalink }}" type="video/mp4">
+    <p><a href="{{ $video.RelPermalink }}">Watch the 3D graph recording</a>.</p>
+  </video>
+  <figcaption id="language-view-caption">Graph navigation and rendering. Andrej Jovanovic / @digitalbabel · 59 sec. <a href="https://www.instagram.com/reel/DaGLJTlJ9Rw/" target="_blank" rel="noopener noreferrer">Original recording on Instagram <span aria-hidden="true">↗</span></a>.</figcaption>
+</figure>

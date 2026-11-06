@@ -2,3 +2,7 @@
   {{ $styles := resources.Get "css/projects.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous">
 {{ end }}
+{{ if .Params.platform }}
+  {{ $platformStyles := resources.Get "css/platform.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $platformStyles.RelPermalink }}" integrity="{{ $platformStyles.Data.Integrity }}" crossorigin="anonymous">
+{{ end }}

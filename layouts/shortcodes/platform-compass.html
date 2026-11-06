@@ -1,0 +1,10 @@
+<figure class="platform-compass-demo" aria-labelledby="compass-demo-caption">
+  <iframe src="{{ "/demos/compass/" | relURL }}" title="Compass: interactive semantic graph navigation" loading="lazy" width="1280" height="820"></iframe>
+  <noscript>
+    <style>.platform-compass-demo iframe { display: none; }</style>
+    {{ $preview := .Page.Resources.GetMatch "compass-preview.png" }}
+    <img src="{{ $preview.RelPermalink }}" width="1180" height="820" alt="Compass render centered on Document, with inheritance, dependencies and properties in opposing directions">
+    <p>Enable JavaScript to navigate the example graph.</p>
+  </noscript>
+  <figcaption id="compass-demo-caption">The Compass component rendering an example semantic graph. Explore a relation, choose a node, then <strong>Focus selected</strong>. Switch between the focus surface and radial sectors while retaining the current navigation. <a href="{{ "/demos/compass/" | relURL }}" target="_blank" rel="noopener">Open Compass in a full window <span aria-hidden="true">↗</span></a>.</figcaption>
+</figure>

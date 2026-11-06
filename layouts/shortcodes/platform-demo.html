@@ -1,0 +1,10 @@
+<figure class="platform-demo" aria-labelledby="platform-demo-caption">
+  <div class="platform-demo-heading"><span>DEMO / 2026-11-05</span><span>Worker Studio / Unity Shell</span></div>
+  {{ $video := .Page.Resources.GetMatch "worker-studio-glasses.mp4" }}
+  {{ $poster := .Page.Resources.GetMatch "worker-studio-glasses-poster.jpg" }}
+  <video controls playsinline preload="metadata" width="1138" height="640" poster="{{ $poster.RelPermalink }}" aria-label="Worker Studio in glasses: a floating coding workspace over a view of the room" aria-describedby="platform-demo-caption">
+    <source src="{{ $video.RelPermalink }}" type="video/mp4">
+    <p><a href="{{ $video.RelPermalink }}">Watch the Worker Studio in glasses recording</a>.</p>
+  </video>
+  <figcaption id="platform-demo-caption">Worker Studio running in glasses. 1 min 7 sec · November 5, 2026.{{ with .Page.Params.demo_url }} <a href="{{ . }}" target="_blank" rel="noopener noreferrer">Original recording on LinkedIn <span aria-hidden="true">↗</span></a>.{{ end }}</figcaption>
+</figure>

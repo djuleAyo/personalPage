@@ -1,0 +1,9 @@
+{
+  "component": "TMR / rcl/src/Compass",
+  "commit": null,
+  "sourceHashes": {},
+  "fixture": "createExpandedCompassFixture and createCompassFixture",
+  "react": "19.2.6",
+  "esbuild": "0.21.5",
+  "note": "Built from local source. Source hashes and a commit identifier were not captured for this bundle."
+}

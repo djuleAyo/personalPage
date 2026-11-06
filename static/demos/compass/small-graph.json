@@ -1,0 +1,214 @@
+{
+  "focusId": "document",
+  "gap": 4,
+  "maxDepth": 6,
+  "maxOccurrences": 512,
+  "nodes": [
+    {
+      "id": "document",
+      "label": "Document",
+      "description": "One object, several relationships"
+    },
+    {
+      "id": "readable",
+      "label": "Readable",
+      "kind": "interface",
+      "castId": "reader"
+    },
+    {
+      "id": "navigable",
+      "label": "Navigable",
+      "kind": "interface"
+    },
+    {
+      "id": "entity",
+      "label": "Entity",
+      "kind": "interface"
+    },
+    {
+      "id": "worker-reply",
+      "label": "Worker reply"
+    },
+    {
+      "id": "article",
+      "label": "Article"
+    },
+    {
+      "id": "text-store",
+      "label": "Text store"
+    },
+    {
+      "id": "voice-service",
+      "label": "Voice service"
+    },
+    {
+      "id": "storage",
+      "label": "Storage"
+    },
+    {
+      "id": "reader-session",
+      "label": "Reader session"
+    },
+    {
+      "id": "thread-view",
+      "label": "Thread view"
+    },
+    {
+      "id": "text",
+      "label": "Text"
+    },
+    {
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "id": "paragraphs",
+      "label": "Paragraphs"
+    },
+    {
+      "id": "workspace",
+      "label": "Workspace"
+    },
+    {
+      "id": "project",
+      "label": "Project"
+    }
+  ],
+  "relations": [
+    {
+      "id": "inheritance",
+      "label": "Inheritance",
+      "color": "#facc15",
+      "edges": [
+        {
+          "from": "document",
+          "to": "readable"
+        },
+        {
+          "from": "document",
+          "to": "navigable"
+        },
+        {
+          "from": "readable",
+          "to": "entity"
+        },
+        {
+          "from": "navigable",
+          "to": "entity"
+        },
+        {
+          "from": "worker-reply",
+          "to": "document"
+        },
+        {
+          "from": "article",
+          "to": "document"
+        }
+      ]
+    },
+    {
+      "id": "dependency",
+      "label": "Dependency",
+      "color": "#ef4444",
+      "edges": [
+        {
+          "from": "document",
+          "to": "text-store"
+        },
+        {
+          "from": "document",
+          "to": "voice-service"
+        },
+        {
+          "from": "text-store",
+          "to": "storage"
+        },
+        {
+          "from": "reader-session",
+          "to": "document"
+        },
+        {
+          "from": "thread-view",
+          "to": "document"
+        }
+      ]
+    },
+    {
+      "id": "properties",
+      "label": "Properties",
+      "color": "#22c55e",
+      "edges": [
+        {
+          "from": "document",
+          "to": "text"
+        },
+        {
+          "from": "document",
+          "to": "title"
+        },
+        {
+          "from": "text",
+          "to": "paragraphs"
+        },
+        {
+          "from": "workspace",
+          "to": "document"
+        },
+        {
+          "from": "project",
+          "to": "workspace"
+        }
+      ]
+    }
+  ],
+  "partitions": [
+    {
+      "id": "inheritance-up",
+      "relationId": "inheritance",
+      "direction": "outgoing",
+      "label": "Inherits from",
+      "orientation": 0,
+      "angle": 56
+    },
+    {
+      "id": "dependency-out",
+      "relationId": "dependency",
+      "direction": "outgoing",
+      "label": "Depends on",
+      "orientation": 60,
+      "angle": 56
+    },
+    {
+      "id": "properties-out",
+      "relationId": "properties",
+      "direction": "outgoing",
+      "label": "Properties",
+      "orientation": 120,
+      "angle": 56
+    },
+    {
+      "id": "inheritance-down",
+      "relationId": "inheritance",
+      "direction": "incoming",
+      "label": "Derived types",
+      "oppositeOf": "inheritance-up",
+      "angle": 56
+    },
+    {
+      "id": "dependency-in",
+      "relationId": "dependency",
+      "direction": "incoming",
+      "label": "Used by",
+      "oppositeOf": "dependency-out",
+      "angle": 56
+    },
+    {
+      "id": "properties-in",
+      "relationId": "properties",
+      "direction": "incoming",
+      "label": "Property of",
+      "oppositeOf": "properties-out",
+      "angle": 56
+    }
+  ]
+}

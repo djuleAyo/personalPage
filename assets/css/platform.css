@@ -1,0 +1,185 @@
+.projects-platform {
+  max-width: 174rem;
+  --platform-blue: #315e94;
+  --platform-blue-bg: #edf3fa;
+  --platform-violet: #78559c;
+  --platform-violet-bg: #f3eff8;
+  --platform-paper: #fafbfc;
+  --platform-amber: #976019;
+  --platform-amber-bg: #fff5e5;
+}
+.projects-platform > article > :is(header, p, h2, ul, ol) { max-width: 80rem; margin-left: auto; margin-right: auto; }
+.projects-platform > article > h2 { margin-top: 5rem; }
+.projects-platform > article > header h1 { font-size: clamp(3.3rem, 5vw, 4.8rem); line-height: 1.16; letter-spacing: -.035em; }
+.projects-platform > article > header + p { font-size: 2rem; line-height: 1.7; }
+.projects-platform > article > p { line-height: 1.8; }
+.projects .platform-demo { max-width: 96rem; margin: 3.2rem auto 4rem; text-align: left; }
+.platform-demo-heading { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .8rem; padding: 1.2rem 0; font-size: 1.2rem; letter-spacing: .08em; color: var(--project-muted); }
+.platform-demo-heading span:last-child { letter-spacing: 0; }
+.platform-demo video { display: block; width: 100%; height: auto; border: 1px solid var(--project-border); border-radius: .8rem; background: #080a0c; }
+.platform-demo figcaption, .platform-map > figcaption { margin-top: 1.4rem; color: var(--project-muted); font-size: 1.4rem; line-height: 1.65; }
+.projects .platform-map { margin: 3.2rem 0 4rem; padding: 2.8rem; border: 1px solid var(--project-border); border-radius: 1.2rem; background: var(--platform-paper); text-align: left; }
+.platform-map-heading { display: flex; justify-content: space-between; gap: 2rem; align-items: flex-start; }
+.projects .platform-eyebrow { margin: 0 0 1rem; color: var(--project-accent); font-size: 1.2rem; font-weight: 600; letter-spacing: .13em; }
+.projects .platform-map h3 { margin: 0; font-size: 2.8rem; line-height: 1.2; letter-spacing: -.02em; text-align: left; }
+.platform-map-badge { margin-top: .3rem; border: 1px dashed var(--project-border); border-radius: 2rem; padding: .5rem 1rem; font-size: 1.2rem; color: var(--project-muted); white-space: nowrap; }
+.platform-paths { display: flex; flex-wrap: wrap; gap: .8rem; margin: 2.4rem 0 1.2rem; }
+.platform-paths[hidden] { display: none; }
+.platform-paths button { appearance: none; cursor: pointer; border: 1px solid var(--project-border); border-radius: .5rem; padding: .85rem 1.2rem; min-height: 4.4rem; color: inherit; background: transparent; font: inherit; font-size: 1.4rem; line-height: 1.4; }
+.platform-paths button:hover { background: var(--project-surface); }
+.platform-paths button[aria-pressed="true"] { background: var(--project-positive-bg); color: var(--project-accent); border-color: var(--project-positive-border); }
+.platform-paths button:focus-visible, .platform-map summary:focus-visible { outline: 3px solid var(--platform-blue); outline-offset: 3px; }
+.platform-drawing { margin: 1.6rem -1.2rem 0; overflow-x: auto; }
+.platform-drawing:focus-visible { outline: 3px solid var(--platform-blue); outline-offset: 3px; }
+.platform-drawing svg { display: block; width: 100%; min-width: 128rem; height: auto; font-family: inherit; }
+.platform-svg-title { font-size: 21px; font-weight: 600; fill: currentColor; }
+.platform-svg-copy { font-size: 16px; fill: var(--project-muted); }
+.platform-svg-small { font-size: 14px; fill: var(--project-muted); }
+.platform-svg-eyebrow { font-size: 13px; letter-spacing: 1.2px; fill: var(--project-muted); }
+.platform-node rect { fill: var(--project-surface); stroke: var(--project-border); stroke-width: 1.3px; }
+.platform-work rect { fill: var(--platform-blue-bg); stroke: var(--platform-blue); }
+.platform-voice rect { fill: var(--project-positive-bg); stroke: var(--project-positive-border); }
+.platform-spatial rect { fill: var(--platform-violet-bg); stroke: var(--platform-violet); }
+.platform-area > rect { fill: var(--project-surface); fill-opacity: .4; stroke: var(--project-border); stroke-width: 1.5px; }
+.platform-area-title { font-size: 30px; font-weight: 600; fill: currentColor; }
+.platform-svg-emphasis { font-size: 23px; font-weight: 500; fill: currentColor; }
+.platform-core rect { fill: var(--project-positive-bg); stroke: var(--project-positive-border); stroke-width: 2px; }
+.platform-events rect { fill: var(--platform-amber-bg); stroke: var(--platform-amber); }
+.platform-foundation rect { fill: transparent; stroke: var(--project-border); stroke-dasharray: 6 5; }
+.platform-edge path { fill: none; stroke: var(--project-muted); stroke-width: 1.8px; marker-end: url(#platform-arrow); }
+.platform-edge.platform-events path { stroke: var(--platform-amber); }
+.platform-edge.platform-work path { stroke: var(--platform-blue); }
+.platform-edge.platform-voice path { stroke: var(--project-accent); }
+.platform-edge.platform-spatial path { stroke: var(--platform-violet); }
+.platform-edge-label { font-size: 15px; fill: var(--project-muted); paint-order: stroke; stroke: var(--platform-paper); stroke-width: 6px; stroke-linejoin: round; }
+.platform-map [data-on] { transition: opacity 160ms ease; }
+.platform-map .is-muted { opacity: .18; }
+.platform-route-copy { border-top: 1px solid var(--project-border); padding-top: 2rem; min-height: 15rem; }
+.projects .platform-route-label { margin: 0 0 .8rem; font-size: 1.7rem; font-weight: 600; }
+.projects .platform-route-copy > p:not(.platform-route-label) { margin: 0; font-size: 1.6rem; line-height: 1.7; }
+.projects .platform-route-steps { display: flex; flex-wrap: wrap; gap: .8rem 2.2rem; margin: 1.6rem 0 .8rem; padding: 0; list-style: none; font-size: 1.3rem; font-weight: 500; }
+.platform-route-steps li { position: relative; }
+.platform-route-steps li:not(:last-child)::after { position: absolute; right: -1.7rem; content: "→"; color: var(--project-muted); }
+.platform-map-details { margin-top: 2rem; padding: 1.4rem 0; border-top: 1px solid var(--project-border); }
+.platform-map summary { cursor: pointer; font-size: 1.4rem; width: fit-content; }
+.platform-map-details dl { font-size: 1.5rem; line-height: 1.65; }
+.platform-map-details dt { margin-top: 1.4rem; font-weight: 600; }
+.platform-map-details dd { margin: .4rem 0 0; }
+.platform-mobile-map { display: none; }
+body.colorscheme-dark .projects-platform { --platform-blue: #87b5eb; --platform-blue-bg: #263544; --platform-violet: #c8a6e9; --platform-violet-bg: #342b40; --platform-paper: #242629; --platform-amber: #e3b571; --platform-amber-bg: #3a3021; }
+@media (prefers-color-scheme: dark) {
+  body.colorscheme-auto .projects-platform { --platform-blue: #87b5eb; --platform-blue-bg: #263544; --platform-violet: #c8a6e9; --platform-violet-bg: #342b40; --platform-paper: #242629; --platform-amber: #e3b571; --platform-amber-bg: #3a3021; }
+}
+@media (max-width: 760px) {
+  .projects-platform > article > header h1 { font-size: 3.4rem; }
+  .projects-platform > article > header + p { font-size: 1.8rem; }
+  .projects .platform-map { padding: 1.8rem; margin-left: -.8rem; margin-right: -.8rem; }
+  .platform-map-heading { display: block; }
+  .projects .platform-map h3 { font-size: 2.6rem; }
+  .platform-map-badge { display: inline-block; margin-top: 1.2rem; }
+  .platform-paths { display: grid; grid-template-columns: 1fr 1fr; }
+  .platform-paths button { padding: .8rem .6rem; font-size: 1.3rem; }
+  .platform-drawing { display: none; }
+  .platform-mobile-map { display: block; margin: 2.4rem 0; }
+  .platform-mobile-path { margin-bottom: 2.4rem; }
+  .projects .platform-mobile-title { font-size: 1.3rem; letter-spacing: .04em; font-weight: 600; color: var(--project-muted); margin: 0 0 1.2rem; }
+  .projects .platform-mobile-path ol { list-style: none; padding: 0; margin: 0; display: grid; gap: 2rem; }
+  .platform-mobile-path li { position: relative; border: 1px solid var(--project-border); border-radius: .6rem; padding: 1.2rem; font-size: 1.5rem; line-height: 1.5; }
+  .platform-mobile-path li:not(:last-child)::after { content: "↓"; position: absolute; top: 100%; left: 50%; height: 2rem; line-height: 2rem; color: var(--project-muted); }
+  .platform-mobile-path strong, .platform-mobile-foundation strong { display: block; }
+  .platform-mobile-path span, .platform-mobile-foundation span { display: block; font-size: 1.4rem; margin-top: .4rem; color: var(--project-muted); }
+  [data-mobile-path="interaction"] li { background: var(--platform-blue-bg); border-color: var(--platform-blue); }
+  [data-mobile-path="media"] li { background: var(--project-positive-bg); border-color: var(--project-positive-border); }
+  [data-mobile-path="services"] li { background: var(--platform-violet-bg); border-color: var(--platform-violet); }
+  .platform-map[data-selected="interaction"] .platform-mobile-path:not([data-mobile-path="interaction"]),
+  .platform-map[data-selected="media"] .platform-mobile-path:not([data-mobile-path="media"]),
+  .platform-map[data-selected="services"] .platform-mobile-path:not([data-mobile-path="services"]) { display: none; }
+  .platform-mobile-foundation { border: 1px dashed var(--project-border); padding: 1.2rem; border-radius: .6rem; font-size: 1.5rem; }
+  .platform-route-copy { min-height: 0; }
+}
+@media (prefers-reduced-motion: reduce) { .platform-map [data-on] { transition: none; } }
+
+.platform-shell-area > rect { fill: var(--platform-violet-bg); fill-opacity: .35; stroke: var(--platform-violet); stroke-width: 1.3px; }
+.platform-edge path.platform-connector { marker-end: none; }
+.platform-mobile-app { margin-top: 1rem; padding: 1rem; border: 1px solid var(--platform-blue); border-radius: .4rem; background: var(--platform-blue-bg); }
+
+.platform-app > rect { fill: var(--platform-blue-bg); stroke: var(--platform-blue); }
+
+/* Compass showcase and capability model. */
+.projects .platform-compass-demo { max-width: 128rem; margin: 3rem auto 4rem; text-align: left; }
+.platform-compass-demo iframe { display: block; width: 100%; height: 82rem; border: 1px solid var(--project-border); border-radius: 1rem; background: #080c13; }
+.platform-compass-demo figcaption { margin-top: 1.4rem; font-size: 1.4rem; line-height: 1.7; color: var(--project-muted); }
+.platform-compass-demo a { white-space: normal; }
+.platform-compass-node > rect { fill: var(--project-positive-bg); stroke: var(--project-positive-border); }
+.platform-compass-node > text { font-size: 15px; fill: var(--project-accent); }
+.projects .platform-lattice { max-width: 112rem; margin: 3rem auto 4rem; padding: 2.4rem; border: 1px solid var(--project-border); border-radius: 1rem; background: var(--platform-paper); text-align: left; }
+.platform-lattice-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 2rem; }
+.projects .platform-lattice h3 { margin: 0; font-size: 2.5rem; text-align: left; }
+.platform-lattice-drawing { overflow-x: auto; margin: 2rem 0; }
+.platform-lattice-drawing:focus-visible { outline: 3px solid var(--platform-blue); outline-offset: 3px; }
+.platform-lattice svg { width: 100%; min-width: 78rem; display: block; font-family: inherit; }
+.lattice-links path { fill: none; stroke: var(--project-border); stroke-width: 1.8px; }
+.lattice-node rect { fill: var(--project-surface); stroke: var(--project-border); }
+.lattice-node text, .lattice-view text { text-anchor: middle; fill: currentColor; font-size: 18px; }
+.lattice-document rect { fill: var(--project-positive-bg); stroke: var(--project-positive-border); stroke-width: 1.8px; }
+.lattice-node .lattice-document-title { font-size: 23px; font-weight: 600; }
+.lattice-node .lattice-detail, .lattice-view .lattice-detail { font-size: 15px; fill: var(--project-muted); }
+.lattice-presentation-links path { fill: none; stroke: var(--platform-blue); stroke-width: 1.8px; }
+.lattice-view rect { fill: var(--platform-blue-bg); stroke: var(--platform-blue); }
+.lattice-caption { text-anchor: middle; font-size: 14px; fill: var(--project-muted); paint-order: stroke; stroke: var(--platform-paper); stroke-width: 6px; }
+.platform-lattice figcaption { color: var(--project-muted); font-size: 1.4rem; line-height: 1.7; }
+.platform-lattice details p { font-size: 1.5rem; line-height: 1.7; }
+@media (max-width: 760px) {
+ .platform-compass-demo iframe { height: 84rem; }
+ .projects .platform-lattice { padding: 1.6rem; }
+ .platform-lattice-heading { display: block; }
+ .platform-lattice svg { min-width: 90rem; }
+}
+
+.platform-compass-demo img { display: block; width: 100%; height: auto; border-radius: 1rem; }
+
+/* Semantic representation, explicit language structure, and its spatial view. */
+.projects .platform-language-map { max-width: 136rem; margin: 3rem auto 4rem; padding: 2.8rem; border: 1px solid var(--project-border); border-radius: 1rem; background: var(--platform-paper); text-align: left; }
+.projects .platform-language-heading h3 { margin: 0; font-size: 2.8rem; text-align: left; letter-spacing: -.02em; }
+.projects .platform-language-pipeline { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2.8rem; padding: 0; margin: 2.8rem 0; list-style: none; }
+.platform-language-pipeline > li { position: relative; padding: 1.8rem; border: 1px solid var(--project-border); border-radius: .7rem; background: var(--project-surface); }
+.platform-language-pipeline > li:not(:last-child)::after { content: "→"; position: absolute; top: 50%; right: -2.3rem; transform: translateY(-50%); font-size: 2rem; color: var(--project-muted); }
+.platform-language-pipeline .language-semantic { border-color: var(--platform-violet); background: var(--platform-violet-bg); }
+.platform-language-pipeline .language-head { border-color: var(--platform-blue); background: var(--platform-blue-bg); }
+.platform-language-pipeline .language-expression, .platform-language-pipeline .language-structure { border-color: var(--project-positive-border); background: var(--project-positive-bg); }
+.language-stage { display: block; color: var(--project-muted); font-size: 1.05rem; font-weight: 600; letter-spacing: .07em; }
+.language-symbol { display: block; padding: 2.4rem 0 1.6rem; font-family: Georgia, serif; font-size: 4.8rem; line-height: 1; }
+.language-expression-symbol { font-size: 4.2rem; padding-top: 3rem; }
+.platform-language-pipeline strong { display: block; font-size: 1.7rem; line-height: 1.4; }
+.projects .platform-language-pipeline p { margin: 1rem 0 0; font-size: 1.35rem; line-height: 1.7; color: var(--project-muted); }
+.platform-language-function { display: flex; flex-wrap: wrap; gap: 1rem 4rem; border-top: 1px solid var(--project-border); padding: 1.8rem 0; font-family: Georgia, serif; font-size: 2rem; }
+.platform-language-map figcaption, .platform-language-view figcaption { color: var(--project-muted); font-size: 1.4rem; line-height: 1.7; }
+.projects .platform-language-view { max-width: 112rem; margin: 3rem auto 4rem; text-align: left; }
+.projects .platform-view-pipeline { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 3rem; margin: 0 0 2.8rem; padding: 2.2rem; list-style: none; border: 1px solid var(--project-border); border-radius: .8rem; background: var(--platform-paper); }
+.platform-view-pipeline li { position: relative; }
+.platform-view-pipeline li:not(:last-child)::after { content: "→"; position: absolute; top: 50%; right: -2.1rem; transform: translateY(-50%); color: var(--project-muted); }
+.platform-view-pipeline span { display: block; color: var(--project-accent); font-size: 1.1rem; letter-spacing: .1em; }
+.platform-view-pipeline strong { display: block; margin: .7rem 0; font-size: 1.7rem; line-height: 1.4; }
+.platform-view-pipeline small { display: block; color: var(--project-muted); font-size: 1.3rem; line-height: 1.65; }
+.platform-language-view video { display: block; width: 100%; height: auto; border: 1px solid var(--project-border); border-radius: .8rem; background: #080a0c; }
+.platform-language-view figcaption { margin-top: 1.4rem; }
+@media (max-width: 1100px) {
+  .projects .platform-language-pipeline { grid-template-columns: 1fr; gap: 3.2rem; }
+  .platform-language-pipeline > li { display: grid; grid-template-columns: 8rem minmax(0, 1fr); column-gap: 1.8rem; align-items: center; }
+  .language-stage { grid-column: 2; }
+  .language-symbol { grid-column: 1; grid-row: 1 / span 3; padding: 0; text-align: center; }
+  .language-expression-symbol { font-size: 3.6rem; }
+  .platform-language-pipeline strong, .platform-language-pipeline p { grid-column: 2; }
+  .platform-language-pipeline strong { margin-top: .8rem; }
+  .platform-language-pipeline > li:not(:last-child)::after { content: "↓"; top: 100%; left: 50%; right: auto; transform: translateX(-50%); height: 3.2rem; line-height: 3.2rem; }
+}
+@media (max-width: 760px) {
+  .projects .platform-language-map { padding: 1.6rem; }
+  .projects .platform-language-heading h3 { font-size: 2.5rem; }
+  .platform-language-pipeline > li { grid-template-columns: 7rem minmax(0, 1fr); padding: 1.4rem; column-gap: 1.4rem; }
+  .language-symbol { font-size: 4rem; }
+  .language-expression-symbol { font-size: 2.8rem; }
+  .platform-language-function { font-size: 1.75rem; }
+  .projects .platform-view-pipeline { grid-template-columns: 1fr; gap: 3rem; }
+  .platform-view-pipeline li:not(:last-child)::after { content: "↓"; top: 100%; left: 0; right: auto; transform: none; height: 3rem; line-height: 3rem; }
+}

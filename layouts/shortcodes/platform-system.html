@@ -1,0 +1,183 @@
+<figure class="platform-map" data-platform-map aria-labelledby="platform-map-title" aria-describedby="platform-map-caption">
+  <div class="platform-map-heading">
+    <div><p class="platform-eyebrow">TMR / INFRASTRUCTURE</p><h3 id="platform-map-title">Shells, Exobrain &amp; stream processing</h3></div>
+    <span class="platform-map-badge">Architecture sketch</span>
+  </div>
+  <div class="platform-paths" role="group" aria-label="Highlight an architecture path" hidden>
+    <button type="button" data-path="all" aria-pressed="true">Full diagram</button>
+    <button type="button" data-path="interaction" aria-pressed="false">Graph &amp; input</button>
+    <button type="button" data-path="media" aria-pressed="false">Streams &amp; events</button>
+    <button type="button" data-path="services" aria-pressed="false">Services &amp; agents</button>
+  </div>
+  <div class="platform-drawing" tabindex="0" role="region" aria-label="Wide infrastructure diagram. Scroll horizontally if needed. A text description follows.">
+    <svg viewBox="0 0 1600 1000" role="img" aria-labelledby="platform-svg-title platform-svg-desc">
+      <title id="platform-svg-title">theMonoRepo: shells, Exobrain and stream processing</title>
+      <desc id="platform-svg-desc">The user interacts with Web or Unity, two implementations of Shell. Web contains Worker Studio as an application, with Compass for semantic graph navigation. Shell input reaches PIM, and driver agents can also input directly to PIM. Exobrain contains the Molecule SSOT graph, PIM graph linearizer and services. Shells send video and audio streams to Mixer. Mixer calls local models and publishes events on NATS. Worker Studio connects coding-agent adapters. Reader uses local speech services.</desc>
+      <defs><marker id="platform-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10z" fill="context-stroke" /></marker></defs>
+      <g class="platform-area">
+        <rect x="720" y="20" width="860" height="850" rx="14" />
+        <text x="750" y="60" class="platform-area-title">Exobrain</text>
+        <text x="750" y="88" class="platform-svg-copy">Graph · interaction · services</text>
+        <text x="1540" y="60" text-anchor="end" class="platform-svg-small">Chant / model declarations</text>
+      </g>
+      <g class="platform-shell-area">
+        <rect x="20" y="160" width="600" height="350" rx="14" />
+        <text x="320" y="199" text-anchor="middle" class="platform-svg-title">Shell implementations</text>
+      </g>
+
+      <g class="platform-edge platform-voice" data-on="interaction">
+        <path d="M290 100 V145 H170 V228" marker-start="url(#platform-arrow)" />
+        <path d="M370 100 V145 H470 V228" marker-start="url(#platform-arrow)" />
+        <path d="M905 205 V298" />
+        <text x="920" y="278" class="platform-edge-label">agent input</text>
+        <path d="M1170 335 H1042" />
+        <text x="1105" y="323" text-anchor="middle" class="platform-edge-label">linearization</text>
+        <path d="M1040 405 H1168" />
+        <text x="1105" y="393" text-anchor="middle" class="platform-edge-label">interaction</text>
+      </g>
+      <g class="platform-edge platform-spatial" data-on="interaction media">
+        <path d="M170 470 V490 H650 V350 H768" />
+        <path d="M470 470 V490 H650" class="platform-connector" />
+        <text x="690" y="338" text-anchor="middle" class="platform-edge-label">input</text>
+
+        <path d="M1350 300 V255 H675 V190 H622" />
+        <text x="1160" y="243" class="platform-edge-label">projections / state</text>
+      </g>
+      <g class="platform-edge platform-spatial" data-on="media">
+        <path d="M330 490 V638" />
+        <text x="346" y="605" class="platform-edge-label">video + audio streams</text>
+        <path d="M330 780 V918" />
+        <text x="346" y="855" class="platform-edge-label">events</text>
+      </g>
+      <g class="platform-edge platform-spatial" data-on="media services">
+        <path d="M530 710 H768" marker-start="url(#platform-arrow)" />
+        <text x="650" y="698" text-anchor="middle" class="platform-edge-label">model calls / results</text>
+      </g>
+      <g class="platform-edge platform-events" data-on="media">
+        <path d="M1555 920 V405 H1532" />
+        <text x="1540" y="840" text-anchor="end" class="platform-edge-label">event input</text>
+      </g>
+      <g class="platform-edge platform-work" data-on="services">
+        <path d="M280 405 H315 V560 H768" marker-start="url(#platform-arrow)" />
+        <text x="650" y="548" text-anchor="middle" class="platform-edge-label">agent execution</text>
+        <path d="M1350 440 V638" />
+        <text x="1365" y="550" class="platform-edge-label">content / state</text>
+        <path d="M1170 710 H1082" marker-start="url(#platform-arrow)" />
+        <text x="1125" y="698" text-anchor="middle" class="platform-edge-label">speech</text>
+      </g>
+
+      <g class="platform-node platform-voice" data-on="interaction">
+        <rect x="210" y="20" width="240" height="80" rx="8" />
+        <text x="232" y="53" class="platform-svg-title">User</text>
+        <text x="232" y="81" class="platform-svg-copy">Voice · touch · controls</text>
+      </g>
+      <g class="platform-node platform-spatial" data-on="interaction media services" data-node="web-shell">
+        <rect x="40" y="230" width="260" height="240" rx="8" />
+        <text x="60" y="268" class="platform-svg-title">Web</text>
+        <text x="60" y="298" class="platform-svg-copy">Implements Shell</text>
+        <g class="platform-node platform-work platform-app" data-on="interaction services" data-node="worker-studio">
+          <rect x="60" y="335" width="220" height="110" rx="6" />
+          <text x="78" y="370" class="platform-svg-title">Worker Studio</text>
+          <text x="78" y="391" class="platform-svg-small">Application</text>
+          <g class="platform-compass-node" data-on="interaction services" data-node="compass"><rect x="78" y="406" width="184" height="30" rx="4"/><text x="92" y="427" class="platform-svg-copy">Compass · component</text></g>
+        </g>
+      </g>
+      <g class="platform-node platform-spatial" data-on="interaction media services" data-node="unity-shell">
+        <rect x="340" y="230" width="260" height="240" rx="8" />
+        <text x="360" y="268" class="platform-svg-title">Unity</text>
+        <text x="360" y="298" class="platform-svg-copy">Implements Shell</text>
+        <text x="360" y="350" class="platform-svg-copy">Glasses · spatial I/O</text>
+        <text x="360" y="382" class="platform-svg-small">Renders Web app surfaces</text>
+      </g>
+      <g class="platform-node platform-voice" data-on="interaction">
+        <rect x="770" y="115" width="270" height="90" rx="8" />
+        <text x="792" y="153" class="platform-svg-title">Driver agents</text>
+        <text x="792" y="183" class="platform-svg-copy">Direct PIM input</text>
+      </g>
+      <g class="platform-node platform-voice" data-on="interaction">
+        <rect x="770" y="300" width="270" height="140" rx="8" />
+        <text x="792" y="339" class="platform-svg-title">PIM</text>
+        <text x="792" y="374" class="platform-svg-emphasis">Graph linearizer</text>
+        <text x="792" y="408" class="platform-svg-copy">Context · paths · sequences</text>
+      </g>
+      <g class="platform-node platform-core" data-on="interaction media services">
+        <rect x="1170" y="300" width="360" height="140" rx="8" />
+        <text x="1192" y="339" class="platform-svg-title">Molecule</text>
+        <text x="1192" y="374" class="platform-svg-emphasis">SSOT graph</text>
+        <text x="1192" y="408" class="platform-svg-copy">State · relations · operations</text>
+      </g>
+      <g class="platform-node platform-work" data-on="services">
+        <rect x="770" y="490" width="310" height="100" rx="8" />
+        <text x="792" y="529" class="platform-svg-title">Coding-agent adapters</text>
+        <text x="792" y="563" class="platform-svg-copy">Codex · Claude · plugins</text>
+      </g>
+      <g class="platform-node platform-spatial" data-on="media services">
+        <rect x="130" y="640" width="400" height="140" rx="8" />
+        <text x="152" y="679" class="platform-svg-title">Mixer</text>
+        <text x="152" y="714" class="platform-svg-copy">Audio / video stream processing</text>
+        <text x="152" y="749" class="platform-svg-small">Calls models · publishes events</text>
+      </g>
+      <g class="platform-node platform-work" data-on="media services">
+        <rect x="770" y="640" width="310" height="140" rx="8" />
+        <text x="792" y="679" class="platform-svg-title">Local model services</text>
+        <text x="792" y="714" class="platform-svg-copy">Recognition · synthesis</text>
+        <text x="792" y="749" class="platform-svg-small">Perception · decisions</text>
+      </g>
+      <g class="platform-node platform-work" data-on="services">
+        <rect x="1170" y="640" width="360" height="140" rx="8" />
+        <text x="1192" y="679" class="platform-svg-title">Reader</text>
+        <text x="1192" y="714" class="platform-svg-copy">Reading state · speech playback</text>
+        <text x="1192" y="749" class="platform-svg-small">Live text · seek · speed</text>
+      </g>
+      <g class="platform-node platform-events" data-on="media">
+        <rect x="20" y="920" width="1560" height="65" rx="8" />
+        <text x="50" y="960" class="platform-svg-title">NATS</text>
+        <text x="180" y="960" class="platform-svg-copy">Event transport / pub-sub</text>
+      </g>
+    </svg>
+  </div>
+  <div class="platform-mobile-map" aria-label="Architecture paths">
+    <div class="platform-mobile-path" data-mobile-path="interaction">
+      <p class="platform-mobile-title">User → shell → Exobrain</p>
+      <ol>
+        <li><strong>User</strong><span>Interacts with a shell.</span></li>
+        <li><strong>Web / Unity</strong><span>Separate implementations of Shell.</span><div class="platform-mobile-app"><strong>Web contains Worker Studio</strong><span>Application: workers, sessions, coding agents and the Compass component.</span></div></li>
+        <li><strong>PIM · graph linearizer</strong><span>Shell input reaches PIM. Driver agents also enter PIM directly.</span></li>
+        <li><strong>Molecule SSOT graph</strong><span>State, relationships and operations inside Exobrain.</span></li>
+      </ol>
+    </div>
+    <div class="platform-mobile-path" data-mobile-path="media">
+      <p class="platform-mobile-title">Streams, models &amp; events</p>
+      <ol>
+        <li><strong>Web / Unity shells</strong><span>Video and audio streams.</span></li>
+        <li><strong>Mixer ↔ local model services</strong><span>Processing requests and model results.</span></li>
+        <li><strong>Mixer → NATS</strong><span>Publishes events for subscribers.</span></li>
+      </ol>
+    </div>
+    <div class="platform-mobile-path" data-mobile-path="services">
+      <p class="platform-mobile-title">Applications &amp; services</p>
+      <ol>
+        <li><strong>Web → Worker Studio</strong><span>The Web shell contains the application.</span></li>
+        <li><strong>Worker Studio ↔ coding-agent adapters</strong><span>Codex, Claude and other providers.</span></li>
+        <li><strong>Reader ↔ local model services</strong><span>Reading state, speech synthesis and playback.</span></li>
+      </ol>
+    </div>
+  </div>
+  <div class="platform-route-copy" aria-live="polite" aria-atomic="true">
+    <p class="platform-route-label" data-route-label>Shells and Exobrain</p>
+    <p data-route-copy>The user interacts with Web or Unity shells. Web contains Worker Studio. Shell input reaches PIM; shell streams reach Mixer, which calls local models and publishes events on NATS.</p>
+    <ol data-route-steps class="platform-route-steps" aria-label="Selected path"><li>User / shells</li><li>PIM / Molecule</li><li>Mixer / models / NATS</li></ol>
+  </div>
+  <details class="platform-map-details">
+    <summary>Connection notes</summary>
+    <dl>
+      <dt>Shell implementations</dt><dd>Web and Unity implement Shell. The user interacts with these shells. Web contains Worker Studio as an application; Unity renders spatial and Web application surfaces.</dd>
+      <dt>Graph interaction</dt><dd>Shell input reaches PIM, the linearizer of the Molecule SSOT graph. Driver agents can send input directly to PIM.</dd>
+      <dt>Streams and models</dt><dd>Shell audio and video streams enter Mixer. Mixer calls local model services, receives their results and publishes events on NATS.</dd>
+      <dt>Applications and services</dt><dd>Worker Studio connects coding-agent providers through adapters. Reader uses model services for speech synthesis and playback.</dd>
+    </dl>
+  </details>
+  <figcaption id="platform-map-caption">Architecture sketch. Web and Unity implement Shell; Worker Studio is an application inside Web; Compass is a graph-navigation component.</figcaption>
+</figure>
+{{ $script := resources.Get "js/platform-map.js" | minify | fingerprint }}
+<script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}" crossorigin="anonymous" defer></script>
