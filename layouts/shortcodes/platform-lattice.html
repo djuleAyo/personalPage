@@ -1,15 +1,15 @@
 <figure class="platform-lattice" aria-labelledby="lattice-title" aria-describedby="lattice-caption">
-  <div class="platform-lattice-heading"><div><p class="platform-eyebrow">LANGUAGE STRUCTURE / A THREE-DIMENSIONAL SLICE</p><h3 id="lattice-title">Lattice groups &amp; UI polymorphism</h3></div><span class="platform-map-badge">3 capability dimensions</span></div>
+  <div class="platform-lattice-heading"><div><p class="platform-eyebrow">ILLUSTRATIVE BOOLEAN LATTICE / SPECIALIZATION ORDER</p><h3 id="lattice-title">Capability groups &amp; UI polymorphism</h3></div><span class="platform-map-badge">3 predicates · 8 requirement sets</span></div>
   <div class="platform-lattice-drawing" tabindex="0" role="region" aria-label="Capability inclusion lattice. Scroll horizontally if needed.">
     <svg viewBox="0 0 1080 650" role="img" aria-labelledby="lattice-svg-title lattice-svg-desc">
       <title id="lattice-svg-title">Overlapping capability groups and compatible UI presentations</title>
-      <desc id="lattice-svg-desc">The lattice orders groups by capability inclusion: Object, then Readable, Editable and Navigable; their pairwise combinations; and a Document satisfying all three. The same document identity can have Reader, Editor and Compass presentations. This illustrates the interface model rather than an automatic cast registry.</desc>
+      <desc id="lattice-svg-desc">Each point is a capability requirement set. Object at the top requires none; moving down adds requirements. Meet combines requirements and join keeps only shared requirements. The bottom requires all three, with Document shown as an example member. The same document identity can have Reader, Editor and Compass presentations. This illustrates the interface model rather than an automatic cast registry.</desc>
       <g class="lattice-links">
         <path d="M540 75 L180 135 M540 75 V135 M540 75 L900 135" />
         <path d="M180 185 V255 M540 185 L180 255 M180 185 L540 255 M900 185 L540 255 M540 185 L900 255 M900 185 V255" />
         <path d="M180 305 L540 375 M540 305 V375 M900 305 L540 375" />
       </g>
-      <g class="lattice-node"><rect x="430" y="25" width="220" height="50" rx="7"/><text x="540" y="57">Object</text></g>
+      <g class="lattice-node"><rect x="430" y="25" width="220" height="50" rx="7"/><text x="540" y="57">Object · ∅</text></g>
       <g class="lattice-node"><rect x="60" y="135" width="240" height="50" rx="7"/><text x="180" y="167">Readable</text></g>
       <g class="lattice-node"><rect x="420" y="135" width="240" height="50" rx="7"/><text x="540" y="167">Editable</text></g>
       <g class="lattice-node"><rect x="780" y="135" width="240" height="50" rx="7"/><text x="900" y="167">Navigable</text></g>
@@ -24,6 +24,6 @@
       <text x="540" y="531" class="lattice-caption">compatible presentations of the same object</text>
     </svg>
   </div>
-  <figcaption id="lattice-caption">Three capability dimensions within the wider language structure. Moving down adds constraints; intersections form more specific groups. The lower branch shows compatible presentations of the same object.</figcaption>
-  <details class="platform-map-details"><summary>Read the lattice</summary><p>Readable, Editable and Navigable form overlapping groups. Their pairwise intersections and the three-way intersection are more specific groups. A Document at the three-way intersection retains its identity when presented through a Reader, Editor or Compass. The broader UI model uses capabilities to determine applicable operations and presentations.</p></details>
+  <figcaption id="lattice-caption">The eight requirement sets for three Boolean capability predicates, ordered with more specific sets below. The ∩ labels describe intersections of matching object groups. Meet combines requirements; join keeps common requirements. The lower branch illustrates compatible presentations of one example member.</figcaption>
+  <details class="platform-map-details"><summary>Read the lattice</summary><p>Object is the top requirement set, ∅: it imposes none of these capabilities. The bottom requires all three. Readable and Editable meet at the requirement set {Readable, Editable}; their matching objects satisfy both predicates. Their join is Object, because they share no requirement. This join is not the union of the two object populations. Document is an example member of the all-three group and keeps its identity across Reader, Editor and Compass presentations.</p></details>
 </figure>

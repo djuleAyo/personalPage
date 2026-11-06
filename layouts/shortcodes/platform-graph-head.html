@@ -1,6 +1,6 @@
 <figure class="platform-language-map" aria-labelledby="graph-head-title" aria-describedby="graph-head-caption">
   <div class="platform-language-heading">
-    <p class="platform-eyebrow">MODEL → EXPRESSION → STRUCTURE</p>
+    <p class="platform-eyebrow">RESEARCH DIRECTION / PROPOSED INTERFACE</p>
     <h3 id="graph-head-title">A graph head for language</h3>
   </div>
   <ol class="platform-language-pipeline">
@@ -8,30 +8,30 @@
       <span class="language-stage">01 / REPRESENTATION</span>
       <span class="language-symbol" aria-label="S sub m">S<sub>m</sub></span>
       <strong>Semantic space</strong>
-      <p><em>m</em> latent dimensions<br>Context encoded by the model</p>
+      <p>Representation width <em>m</em><br>Context encoded by a model</p>
     </li>
     <li class="language-head">
       <span class="language-stage">02 / GENERATION</span>
       <span class="language-symbol" aria-label="H sub theta">H<sub>θ</sub></span>
       <strong>Transformer graph head</strong>
-      <p>Predicts structured expressions<br>Objects · relations · composition</p>
+      <p>Proposed expression generator<br>Objects · relations · composition</p>
     </li>
     <li class="language-expression">
       <span class="language-stage">03 / OUTPUT</span>
       <span class="language-symbol language-expression-symbol">Expr</span>
       <strong>Molecule expressions</strong>
-      <p>Explicit language objects<br>Interpreted into the shared graph</p>
+      <p>Target output language<br>Objects and relationships</p>
     </li>
     <li class="language-structure">
       <span class="language-stage">04 / INTERPRETATION</span>
-      <span class="language-symbol" aria-label="L sub n">L<sub>n</sub></span>
+      <span class="language-symbol" aria-label="L">L</span>
       <strong>Language structure</strong>
-      <p><em>n</em> structural dimensions<br>Lattice groups and relationships</p>
+      <p>Interpreted graph structure<br>Types, capabilities and relations</p>
     </li>
   </ol>
-  <div class="platform-language-function" aria-label="H theta maps S m to Molecule expressions. Interpret maps Molecule expressions to L n.">
+  <div class="platform-language-function" aria-label="Proposed mapping: H theta maps S m to Molecule expressions. Interpret maps Molecule expressions to L.">
     <span>H<sub>θ</sub> : S<sub>m</sub> → Expr<sub>Molecule</sub></span>
-    <span>interpret : Expr<sub>Molecule</sub> → L<sub>n</sub></span>
+    <span>interpret : Expr<sub>Molecule</sub> → L</span>
   </div>
-  <figcaption id="graph-head-caption">Semantic representations are decoded into explicit language structure through expression generation and interpretation. The spatial renderer then chooses a view of that structure.</figcaption>
+  <figcaption id="graph-head-caption">Proposed interfaces for expression generation and interpretation. No trained head or model input/output result is demonstrated here. Spatial rendering is a separate stage.</figcaption>
 </figure>
